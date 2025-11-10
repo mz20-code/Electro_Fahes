@@ -1,0 +1,455 @@
+/* 
+ * Electro_Fahes - Responsive Stylesheet
+ * Mobile and Tablet Optimizations
+ */
+
+/* ============================================================================
+   Tablet Styles (768px - 1024px)
+   ============================================================================ */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.25rem;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* ============================================================================
+   Mobile Styles (< 768px)
+   ============================================================================ */
+
+@media (max-width: 768px) {
+    /* Typography */
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+
+    /* Container */
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Header & Navigation */
+    .header-inner {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .main-nav ul {
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        background: var(--white);
+        padding: 1rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+        display: none;
+        flex-direction: column;
+        min-width: 200px;
+        z-index: 1000;
+    }
+
+    .main-nav ul.open {
+        display: flex;
+    }
+
+    .main-nav li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 0.75rem 1rem;
+        width: 100%;
+    }
+
+    /* Flash Messages */
+    .flash-container {
+        right: 1rem;
+        left: 1rem;
+        max-width: none;
+        top: 70px;
+    }
+
+    .flash-message {
+        font-size: 0.875rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-copy h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta .btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Grids */
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Features */
+    .features,
+    .how-it-works,
+    .stats,
+    .cta-section {
+        padding: 2.5rem 0;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    /* How It Works */
+    .steps {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .step-arrow {
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+
+    /* Statistics */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    /* CTA Section */
+    .cta-box {
+        padding: 2rem 1rem;
+    }
+
+    .cta-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-box p {
+        font-size: 1rem;
+    }
+
+    /* Auth Pages */
+    .auth-section {
+        padding: 2rem 0;
+        min-height: auto;
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+    }
+
+    /* Forms */
+    .form-control {
+        padding: 0.65rem 0.85rem;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9375rem;
+    }
+
+    .btn-lg {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+
+    /* AI Advisor Specific */
+    .advisor-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .upload-card,
+    .results-card,
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .file-upload-display {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+
+    .upload-icon {
+        font-size: 2.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+
+    .info-step {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .error-tags {
+        justify-content: center;
+    }
+
+    .error-tag {
+        font-size: 0.8125rem;
+        padding: 0.4rem 0.85rem;
+    }
+
+    /* Technicians Page */
+    .tech-card {
+        text-align: center;
+    }
+
+    .tech-card img {
+        height: 200px;
+    }
+
+    /* Videos Page */
+    .video-card iframe,
+    .video-card video {
+        height: 220px;
+    }
+
+    /* Dashboard */
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================================================
+   Small Mobile (< 480px)
+   ============================================================================ */
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.25rem; }
+
+    .hero-copy h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9375rem;
+    }
+
+    .btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.125rem;
+    }
+
+    .auth-card {
+        padding: 1.25rem;
+    }
+
+    .flash-message {
+        padding: 0.875rem 1rem;
+        font-size: 0.8125rem;
+    }
+}
+
+/* ============================================================================
+   Landscape Mobile
+   ============================================================================ */
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 1.5rem 0;
+    }
+
+    .hero-image img {
+        max-width: 200px;
+    }
+
+    .auth-section {
+        padding: 1.5rem 0;
+    }
+
+    .features,
+    .how-it-works {
+        padding: 2rem 0;
+    }
+}
+
+/* ============================================================================
+   Touch Device Optimizations
+   ============================================================================ */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .btn {
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .main-nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Remove hover effects on touch devices */
+    .card:hover {
+        transform: none;
+    }
+
+    .btn:hover {
+        transform: none;
+    }
+
+    /* Better tap highlighting */
+    * {
+        -webkit-tap-highlight-color: rgba(11, 105, 255, 0.1);
+    }
+}
+
+/* ============================================================================
+   Print Styles
+   ============================================================================ */
+
+@media print {
+    .site-header,
+    .site-footer,
+    .nav-toggle,
+    .cta,
+    .flash-container {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}

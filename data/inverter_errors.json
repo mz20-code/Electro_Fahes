@@ -1,0 +1,68 @@
+{
+  "07": {
+    "name": "Grid Overvoltage",
+    "description": "The grid voltage exceeds the acceptable range",
+    "severity": "high",
+    "solutions": [
+      "Check grid voltage with multimeter",
+      "Verify voltage protection settings in inverter",
+      "Contact grid operator if voltage persistently high",
+      "Consider installing voltage regulator"
+    ]
+  },
+  "10": {
+    "name": "Grid Fault",
+    "description": "Grid connection issue detected",
+    "severity": "high",
+    "solutions": [
+      "Check all AC connections and cables",
+      "Verify circuit breaker status",
+      "Test grid voltage and frequency",
+      "Inspect for loose connections"
+    ]
+  },
+  "24": {
+    "name": "Grid Undervoltage",
+    "description": "Grid voltage is below acceptable range",
+    "severity": "medium",
+    "solutions": [
+      "Measure actual grid voltage",
+      "Check for voltage drops in main distribution",
+      "Verify cable sizing is adequate",
+      "Contact electricity provider"
+    ]
+  },
+  "29": {
+    "name": "Isolation Fault",
+    "description": "PV array isolation resistance too low",
+    "severity": "high",
+    "solutions": [
+      "Check for water ingress in junction boxes",
+      "Inspect PV cables for damage",
+      "Test isolation resistance with megger",
+      "Check for ground faults in array"
+    ]
+  },
+  "pv_fault": {
+    "name": "PV Input Fault",
+    "description": "Problem with solar panel input",
+    "severity": "medium",
+    "solutions": [
+      "Check PV string voltage",
+      "Verify PV connections and cables",
+      "Inspect for shading or panel damage",
+      "Test individual panel voltages"
+    ]
+  },
+  "temperature": {
+    "name": "Temperature Warning",
+    "description": "Inverter temperature too high",
+    "severity": "medium",
+    "solutions": [
+      "Ensure adequate ventilation",
+      "Clean cooling vents and fans",
+      "Check ambient temperature",
+      "Verify inverter not in direct sunlight"
+    ]
+  }
+}

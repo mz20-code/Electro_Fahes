@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% block title %}AI Advisor - Electro_Fahes{% endblock %}
+
+{% block content %}
+<div class="ai-advisor-page">
+    <div class="ai-advisor-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">AI-Powered Diagnostics</h1>
+            <p class="page-subtitle">Upload an image of your inverter error screen for instant analysis and solutions</p>
+        </div>
+
+        <!-- Upload Form -->
+        <div class="upload-section">
+            <form method="POST" enctype="multipart/form-data" id="diagnosisForm">
+                <div class="form-group">
+                    <label for="inverter_model" class="form-label">Inverter Model *</label>
+                    <input 
+                        type="text" 
+                        id="inverter_model" 
+                        name="inverter_model" 
+                        class="form-control" 
+                        placeholder="e.g., Sunny Boy 5.0, Fronius Symo 10.0"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Error Screen Image *</label>
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">&#128247;</div>
+                        <h3 class="upload-title">Click to upload or drag and drop</h3>
+                        <p class="upload-hint">PNG, JPG, JPEG, GIF, WEBP up to 16MB</p>
+                        <input 
+                            type="file" 
+                            name="image" 
+                            id="imageInput" 
+                            class="file-input" 
+                            accept="image/*"
+                            required>
+                    </div>
+                    <div id="imagePreview" style="margin-top: var(--space-md); display: none;">
+                        <img id="previewImg" style="max-width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-full">
+                    Analyze Now
+                </button>
+            </form>
+        </div>
+
+        <!-- Results Section -->
+        {% if result %}
+        <div class="result-section">
+            <div class="result-header">
+                <div class="result-icon">&check;</div>
+                <div>
+                    <h2 class="result-title">Diagnosis Complete</h2>
+                    <p style="color: var(--text-secondary); margin: 0;">Analysis for {{ result.model }}</p>
+                </div>
+            </div>
+
+            <div class="diagnosis-content">
+                {% set diag = result.diagnosis | tojson | fromjson %}
+                
+                <div class="diagnosis-item">
+                    <div class="diagnosis-label">Detected Issue</div>
+                    <div class="diagnosis-value">{{ diag.issue }}</div>
+                </div>
+
+                <div class="diagnosis-item">
+                    <div class="diagnosis-label">Severity Level</div>
+                    <div class="diagnosis-value">
+                        <span class="severity-badge severity-{{ diag.severity.lower() }}">
+                            {{ diag.severity }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="diagnosis-item">
+                    <div class="diagnosis-label">Recommended Solution</div>
+                    <div class="diagnosis-value">{{ diag.solution }}</div>
+                </div>
+
+                <div class="diagnosis-item">
+                    <div class="diagnosis-label">Estimated Repair Cost</div>
+                    <div class="diagnosis-value" style="color: var(--primary); font-weight: 700;">
+                        {{ diag.estimated_cost }}
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--space-xl); display: flex; gap: var(--space-md); flex-wrap: wrap;">
+                <a href="{{ url_for('technicians') }}" class="btn btn-primary">
+                    Contact Technician
+                </a>
+                <button onclick="window.location.reload()" class="btn btn-secondary">
+                    New Diagnosis
+                </button>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if error %}
+        <div class="result-section" style="border-left: 4px solid var(--error);">
+            <div class="result-header">
+                <div class="result-icon" style="background: linear-gradient(135deg, #EF4444, #DC2626);">!</div>
+                <div>
+                    <h2 class="result-title">Error</h2>
+                    <p style="color: var(--text-secondary); margin: 0;">{{ error }}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- 3D Background Shapes -->
+    <div class="shape-container">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+</div>
+
+<script>
+    // Upload area interactions
+    const uploadArea = document.getElementById('uploadArea');
+    const imageInput = document.getElementById('imageInput');
+    const imagePreview = document.getElementById('imagePreview');
+    const previewImg = document.getElementById('previewImg');
+
+    uploadArea.addEventListener('click', () => imageInput.click());
+
+    uploadArea.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        uploadArea.style.borderColor = 'var(--primary)';
+        uploadArea.style.background = 'rgba(79, 70, 229, 0.05)';
+    });
+
+    uploadArea.addEventListener('dragleave', () => {
+        uploadArea.style.borderColor = 'var(--gray-300)';
+        uploadArea.style.background = 'var(--bg-secondary)';
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+        e.preventDefault();
+        uploadArea.style.borderColor = 'var(--gray-300)';
+        uploadArea.style.background = 'var(--bg-secondary)';
+        
+        if (e.dataTransfer.files.length) {
+            imageInput.files = e.dataTransfer.files;
+            previewImage(e.dataTransfer.files[0]);
+        }
+    });
+
+    imageInput.addEventListener('change', (e) => {
+        if (e.target.files.length) {
+            previewImage(e.target.files[0]);
+        }
+    });
+
+    function previewImage(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            previewImg.src = e.target.result;
+            imagePreview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+    }
+</script>
+{% endblock %}

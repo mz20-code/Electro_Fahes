@@ -1,0 +1,40 @@
+Electro_Fahes/
+│
+├── app.py                               # Main Flask application (core backend logic)
+│
+├── templates/                           # HTML templates (frontend pages)
+│   ├── base.html                        # Master layout with navigation & footer
+│   ├── index.html                       # Landing page introducing Electro_Fahes
+│   ├── home.html                        # Main user home page (after login)
+│   ├── login.html                       # Login form page
+│   ├── register.html                    # Registration form page
+│   ├── ai_advisor.html                  # AI-based inverter diagnostics page
+│   ├── technicians.html                 # List of technicians & contact info
+│   ├── videos.html                      # Educational video tutorials
+│   └── error.html                       # Error / 404 / fallback page
+│
+├── static/                              # Static assets (frontend design)
+│   ├── css/
+│   │   ├── style.css                    # Main stylesheet (colors, layout, typography)
+│   │   └── responsive.css               # Mobile and tablet responsive styles
+│   ├── js/
+│   │   └── main.js                      # Optional JS scripts for interactivity
+│   ├── images/
+│   │   ├── logo.png                     # Electro_Fahes logo
+│   │   ├── technicians/                 # Photos of team members
+│   │   └── inverters/                   # Sample inverter and error screen images
+│   └── uploads/                         # Uploaded inverter images from users (AI analysis)
+│
+├── ai_model/                            # Artificial Intelligence module
+│   ├── model.py                         # Model loading, inference, and predictions
+│   └── utils.py                         # Helper functions for image preprocessing
+│
+├── data/                                # Databases and static reference data
+│   ├── users.db                         # SQLite database (user info & service logs)
+│   └── inverter_errors.json             # Local database of inverter error codes & solutions
+│
+├── requirements.txt                     # List of Python dependencies
+│
+├── README.md                            # Project documentation and setup guide
+│
+└── .gitignore                           # Ignore virtual env, uploads, and compiled files

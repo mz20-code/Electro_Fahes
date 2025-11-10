@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Create Account - Electro_Fahes{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electro_Fahes" class="auth-logo">
+                <h1 class="auth-title">Create Your Account</h1>
+                <p class="auth-subtitle">Join Electro_Fahes and get instant AI diagnostics</p>
+            </div>
+            
+            <form method="POST" action="{{ url_for('register') }}">
+                <div class="form-group">
+                    <label for="full_name" class="form-label">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="full_name" 
+                        name="full_name" 
+                        class="form-control" 
+                        placeholder="Enter your full name"
+                        required
+                        autocomplete="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-control" 
+                        placeholder="Enter your email"
+                        required
+                        autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-control" 
+                        placeholder="Create a strong password (min 6 characters)"
+                        required
+                        minlength="6"
+                        autocomplete="new-password">
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full btn-large">
+                    Create Account
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="{{ url_for('login') }}">Sign in here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

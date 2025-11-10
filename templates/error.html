@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Error {{ error_code }} - Electro_Fahes{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+    <div class="auth-container" style="max-width: 600px;">
+        <div class="auth-card" style="text-align: center;">
+            <div style="font-size: 6rem; font-weight: 900; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-md);">
+                {{ error_code or 404 }}
+            </div>
+            
+            <h1 class="auth-title">Oops! Something went wrong</h1>
+            <p class="auth-subtitle" style="margin-bottom: var(--space-xl);">
+                {{ error_message or "The page you're looking for doesn't exist or has been moved." }}
+            </p>
+            
+            <div style="display: flex; gap: var(--space-md); justify-content: center;">
+                <a href="{{ url_for('index') if not is_logged_in else url_for('ai_advisor') }}" class="btn btn-primary">
+                    Go to {% if is_logged_in %}AI Advisor{% else %}Home{% endif %}
+                </a>
+                <button onclick="history.back()" class="btn btn-secondary">
+                    &larr; Go Back
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

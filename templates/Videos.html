@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Video Tutorials - Electro_Fahes{% endblock %}
+
+{% block content %}
+<div class="videos-page">
+    <div class="videos-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">Video Tutorials</h1>
+            <p class="page-subtitle">Learn from expert guides on troubleshooting and maintenance</p>
+        </div>
+
+        <!-- Videos Grid -->
+        <div class="videos-grid">
+            {% for video in videos %}
+            <div class="video-card">
+                <iframe 
+                    src="{{ video['url'] }}" 
+                    class="video-embed"
+                    title="{{ video['title'] }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                
+                <div class="video-info">
+                    <h3 class="video-title">{{ video['title'] }}</h3>
+                    <p class="video-description">{{ video['description'] }}</p>
+                    <span class="video-duration">Duration: {{ video['duration'] }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

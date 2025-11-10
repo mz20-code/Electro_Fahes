@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Welcome - Electro_Fahes | Smart Solar Solutions{% endblock %}
+
+{% block content %}
+<div class="landing-page">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>AI-Powered Diagnostics</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Smart Solar Inverter
+                    <span class="title-gradient">Solutions for Lebanon</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Professional AI-powered diagnostics and expert repair services for your solar inverter systems. Get instant analysis, connect with certified technicians, and keep your power running smoothly.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="{{ url_for('register') }}" class="btn btn-primary btn-large">
+                        Get Started Free
+                    </a>
+                    <a href="{{ url_for('login') }}" class="btn btn-secondary btn-large">
+                        Sign In
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Accuracy Rate</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electro_Fahes">
+                    <div class="visual-pulse"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

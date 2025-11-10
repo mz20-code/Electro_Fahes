@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}{{ t('settings_title') }} - Electro_Fahes{% endblock %}
+
+{% block content %}
+<div class="settings-page">
+    <div class="settings-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">{{ t('settings_title') }}</h1>
+            <p class="page-subtitle" style="color: gray;">{{ t('settings_subtitle') }}</p>
+        </div>
+
+        <!-- Settings Grid -->
+        <div class="settings-grid">
+            <!-- Profile Settings Card -->
+            <div class="settings-card">
+                <div class="settings-card-header">
+                    <div class="settings-icon icon-primary">
+                        <span></span>
+                    </div>
+                    <div>
+                        <h3 class="settings-card-title">{{ t('settings_profile') }}</h3>
+                        <p class="settings-card-subtitle" style="color: gray;">{{ t('settings_profile_subtitle') }}</p>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{{ url_for('settings') }}" class="settings-form">
+                    <input type="hidden" name="action" value="update_name">
+                    
+                    <div class="form-group">
+                        <label for="full_name" class="form-label">{{ t('label_full_name') }}</label>
+                        <input 
+                            type="text" 
+                            id="full_name" 
+                            name="full_name" 
+                            class="form-control" 
+                            value="{{ user['full_name'] }}"
+                            placeholder="{{ t('placeholder_name') }}"
+                            required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">{{ t('label_email') }}</label>
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            value="{{ user['email'] }}"
+                            disabled>
+                        <small style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem; display: block;">
+                            {{ t('email_cannot_change') }}
+                        </small>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        {{ t('btn_save_changes') }}
+                    </button>
+                </form>
+            </div>
+
+            <!-- Language Settings Card -->
+            <div class="settings-card">
+                <div class="settings-card-header">
+                    <div class="settings-icon icon-secondary">
+                        <span></span>
+                    </div>
+                    <div>
+                        <h3 class="settings-card-title">{{ t('settings_language') }}</h3>
+                        <p class="settings-card-subtitle" style="color: gray;">{{ t('settings_language_subtitle') }}</p>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{{ url_for('settings') }}" class="settings-form">
+                    <input type="hidden" name="action" value="update_language">
+                    
+                    <div class="form-group">
+                        <label class="form-label">{{ t('label_select_language') }}</label>
+                        
+                        <div class="language-options">
+                            <label class="language-option {% if current_language == 'en' %}active{% endif %}">
+                                <input 
+                                    type="radio" 
+                                    name="language" 
+                                    value="en" 
+                                    {% if current_language == 'en' %}checked{% endif %}
+                                    onchange="this.form.submit()">
+                                <div class="language-card">
+                                    <div class="language-flag">EN</div>
+                                    <div class="language-name">{{ t('language_english') }}</div>
+                                </div>
+                            </label>
+                            
+                            <label class="language-option {% if current_language == 'ar' %}active{% endif %}">
+                                <input 
+                                    type="radio" 
+                                    name="language" 
+                                    value="ar" 
+                                    {% if current_language == 'ar' %}checked{% endif %}
+                                    onchange="this.form.submit()">
+                                <div class="language-card">
+                                    <div class="language-flag">AR</div>
+                                    <div class="language-name">{{ t('language_arabic') }}</div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="info-box">
+                    <div class="info-icon">i</div>
+                    <div class="info-text">
+                        <strong>Note:</strong> {{ t('info_language_note') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Account Status Card -->
+        <div class="account-status-card">
+            <div class="status-header">
+                <h3>{{ t('account_status') }}</h3>
+                <span class="btn btn-primary btn-full" style="background-color:#007bff;">
+                    <span style="color: white;">{{ t('status_verified') }}</span>
+                </span>
+            </div>
+            <div class="status-info">
+                <div class="status-item">
+                    <span class="status-label">{{ t('status_member_since') }}</span>
+                    <span class="status-value" style="color: gray;">{{ user['created_at'][:10] }}</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">{{ t('status_account_type') }}</span>
+                    <span class="status-value" style="color: gray;">{{ t('status_standard_user') }}</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">{{ t('status_user_id') }}</span>
+                    <span class="status-value" style="color: gray;">#{{ user['id'] }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Background Shapes -->
+    <div class="shape-container">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+</div>
+{% endblock %}

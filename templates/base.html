@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electro_Fahes - AI-powered solar inverter diagnostics and repair services in Lebanon.">
+    <meta name="keywords" content="solar inverter, AI diagnostics, repair, Lebanon, renewable energy">
+    <meta name="author" content="Electro_Fahes">
+    <meta property="og:title" content="Electro_Fahes - Smart Solar Solutions">
+    <meta property="og:description" content="Professional AI-powered solar inverter diagnostics and expert repair services">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}">
+    <title>{% block title %}Electro_Fahes - Smart Solar Solutions{% endblock %}</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+{% if session.get('user_id') %}
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="{{ url_for('home') }}" class="nav-brand">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electro_Fahes Logo">
+            <span class="brand-text">
+                <span class="brand-accent">Electro_Fahes</span>
+            </span>
+        </a>
+        
+        <div class="nav-menu" id="navMenu">
+
+            <a href="{{ url_for('home') }}" class="nav-link {% if request.endpoint=='home' %}active{% endif %}"></a>
+
+            {% if session.get('is_verified') %}
+            <a href="{{ url_for('ai_advisor') }}" class="nav-link {% if request.endpoint=='ai_advisor' %}active{% endif %}">
+                AI Advisor
+            </a>
+            <a href="{{ url_for('technicians') }}" class="nav-link {% if request.endpoint=='technicians' %}active{% endif %}">
+                Technicians
+            </a>
+            <a href="{{ url_for('videos') }}" class="nav-link {% if request.endpoint=='videos' %}active{% endif %}">
+                Videos
+            </a>
+            {% else %}
+            <span class="nav-link disabled" title="Verify your email to unlock">
+                AI Advisor [Locked]
+            </span>
+            <span class="nav-link disabled" title="Verify your email to unlock">
+                Technicians [Locked]
+            </span>
+            <span class="nav-link disabled" title="Verify your email to unlock">
+                Videos [Locked]
+            </span>
+            {% endif %}
+
+            <a href="{{ url_for('settings') }}" class="nav-link {% if request.endpoint=='settings' %}active{% endif %}">
+                Settings
+            </a>
+
+            <a href="{{ url_for('logout') }}" class="nav-link nav-link-logout">
+                Logout
+            </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+{% endif %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-container">
+      {% for category, message in messages %}
+        <div class="flash-alert flash-{{ category }}">
+          <div class="flash-icon">
+            {% if category == 'success' %}✓{% elif category == 'error' %}✕{% elif category == 'warning' %}⚠{% else %}ℹ{% endif %}
+          </div>
+          <div class="flash-text">{{ message }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" style="width: 40px; height: 40px; border-radius: 8px;">
+                <span>Electro<span style="color: #818CF8;">_Fahes</span></span>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ current_year }} Electro_Fahes. All rights reserved. Made in Lebanon.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    }
+    
+    const flashAlerts = document.querySelectorAll('.flash-alert');
+    flashAlerts.forEach(alert => {
+        setTimeout(() => {
+            alert.style.animation = 'slideOut 0.3s ease-out forwards';
+            setTimeout(() => alert.remove(), 300);
+        }, 5000);
+    });
+</script>
+
+{% block extra_js %}{% endblock %}
+</body>
+</html>
