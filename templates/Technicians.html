@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Expert Technicians - Electro_Fahes{% endblock %}
+{% block title %}{{ t('tech_title') }} - Electro_Fahes{% endblock %}
 
 {% block content %}
 <div class="technicians-page">
     <div class="technicians-container">
         <!-- Page Header -->
         <div class="page-header">
-            <h1 class="page-title">Expert Technicians</h1>
-            <p class="page-subtitle">Connect with certified solar inverter specialists across South Lebanon</p>
+            <h1 class="page-title">{{ t('tech_title') }}</h1>
+            <p class="page-subtitle">{{ t('tech_subtitle') }}</p>
         </div>
 
         <!-- Technicians Grid -->
@@ -23,20 +23,20 @@
                 
                 <div class="tech-info">
                     <div class="tech-info-item">
-                        <span {% if tech['location'] in ['Nabatieh','Sidon','Tyre','Saida'] %}style="color: gray; font-weight: bold;"{% endif %}>Location:</span>
-                        <span {% if tech['location'] in ['Nabatieh','Sidon','Tyre','Saida'] %}style="color: gray; font-weight: bold;"{% endif %}>{{ tech['location'] }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ t('tech_location') }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ tech['location'] }}</span>
                     </div>
                     <div class="tech-info-item">
-                        <span {% if tech['phone'] in ['+961 76 345 678','+961 70 123 456','+961 71 234 567','+961 03 456 789'] %}style="color: gray; font-weight: bold;"{% endif %}>Phone:</span>
-                        <span {% if tech['phone'] in ['+961 76 345 678','+961 70 123 456','+961 71 234 567','+961 03 456 789'] %}style="color: gray; font-weight: bold;"{% endif %}>{{ tech['phone'] }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ t('tech_phone') }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ tech['phone'] }}</span>
                     </div>
                     <div class="tech-info-item">
-                        <span {% if tech['email'] in ['karim@electro.com','ahmad@electro.com','sarah@electro.com','layla@electro.com'] %}style="color: gray; font-weight: bold;"{% endif %}>Email:</span>
-                        <span {% if tech['email'] in ['karim@electro.com','ahmad@electro.com','sarah@electro.com','layla@electro.com'] %}style="color: gray; font-weight: bold;"{% endif %}>{{ tech['email'] }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ t('tech_email') }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ tech['email'] }}</span>
                     </div>
                     <div class="tech-info-item">
-                        <span {% if tech['experience_years'] in [10,8,6,5] %}style="color: gray; font-weight: bold;"{% endif %}>Experience:</span>
-                        <span {% if tech['experience_years'] in [10,8,6,5] %}style="color: gray; font-weight: bold;"{% endif %}>{{ tech['experience_years'] }} years</span>
+                        <span style="color: gray; font-weight: bold;">{{ t('tech_experience') }}</span>
+                        <span style="color: gray; font-weight: bold;">{{ tech['experience_years'] }} {{ t('tech_years') }}</span>
                     </div>
                 </div>
                 
@@ -46,7 +46,7 @@
                 </div>
                 
                 <a href="tel:{{ tech['phone'] }}" class="btn btn-primary btn-full">
-                    Call Now
+                    {{ t('btn_call_now') }}
                 </a>
             </div>
             {% endfor %}

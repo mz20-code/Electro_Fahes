@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ 'ar' if session.get('language') == 'ar' else 'en' }}" dir="{{ 'rtl' if session.get('language') == 'ar' else 'ltr' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 {% if session.get('user_id') %}
 <nav class="navbar">
     <div class="nav-container">
-        <a href="{{ url_for('home') }}" class="nav-brand">
+        <a href="{{ url_for('ai_advisor') }}" class="nav-brand">
             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Electro_Fahes Logo">
             <span class="brand-text">
                 <span class="brand-accent">Electro_Fahes</span>
@@ -29,36 +29,34 @@
         
         <div class="nav-menu" id="navMenu">
 
-            <a href="{{ url_for('home') }}" class="nav-link {% if request.endpoint=='home' %}active{% endif %}"></a>
-
             {% if session.get('is_verified') %}
             <a href="{{ url_for('ai_advisor') }}" class="nav-link {% if request.endpoint=='ai_advisor' %}active{% endif %}">
-                AI Advisor
+                {{ t('nav_ai_advisor') }}
             </a>
             <a href="{{ url_for('technicians') }}" class="nav-link {% if request.endpoint=='technicians' %}active{% endif %}">
-                Technicians
+                {{ t('nav_technicians') }}
             </a>
             <a href="{{ url_for('videos') }}" class="nav-link {% if request.endpoint=='videos' %}active{% endif %}">
-                Videos
+                {{ t('nav_videos') }}
             </a>
             {% else %}
-            <span class="nav-link disabled" title="Verify your email to unlock">
-                AI Advisor [Locked]
+            <span class="nav-link disabled" title="{{ t('tooltip_locked') }}">
+                {{ t('nav_ai_advisor') }} {{ t('nav_locked') }}
             </span>
-            <span class="nav-link disabled" title="Verify your email to unlock">
-                Technicians [Locked]
+            <span class="nav-link disabled" title="{{ t('tooltip_locked') }}">
+                {{ t('nav_technicians') }} {{ t('nav_locked') }}
             </span>
-            <span class="nav-link disabled" title="Verify your email to unlock">
-                Videos [Locked]
+            <span class="nav-link disabled" title="{{ t('tooltip_locked') }}">
+                {{ t('nav_videos') }} {{ t('nav_locked') }}
             </span>
             {% endif %}
 
             <a href="{{ url_for('settings') }}" class="nav-link {% if request.endpoint=='settings' %}active{% endif %}">
-                Settings
+                {{ t('nav_settings') }}
             </a>
 
             <a href="{{ url_for('logout') }}" class="nav-link nav-link-logout">
-                Logout
+                {{ t('nav_logout') }}
             </a>
         </div>
         
@@ -90,6 +88,15 @@
     {% block content %}{% endblock %}
 </main>
 
+<!-- 3D Background Shapes - Added to all pages -->
+<div class="shape-container">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+</div>
+
 <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-content">
@@ -98,14 +105,14 @@
                 <span>Electro<span style="color: #818CF8;">_Fahes</span></span>
             </div>
             <div class="footer-links">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-                <a href="#privacy">Privacy</a>
+                <a href="#about">{{ t('footer_about') }}</a>
+                <a href="#services">{{ t('footer_services') }}</a>
+                <a href="#contact">{{ t('footer_contact') }}</a>
+                <a href="#privacy">{{ t('footer_privacy') }}</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; {{ current_year }} Electro_Fahes. All rights reserved. Made in Lebanon.</p>
+            <p>&copy; {{ current_year }} Electro_Fahes. {{ t('footer_copyright') }}</p>
         </div>
     </div>
 </footer>

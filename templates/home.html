@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Dashboard - Electro_Fahes{% endblock %}
+{% block title %}{{ t('dashboard_title') }} - Electro_Fahes{% endblock %}
 
 {% block content %}
 <div class="dashboard-page">
     <div class="dashboard-container">
         <!-- Header -->
         <div class="dashboard-header">
-            <h1 class="welcome-title">Welcome back, {{ session.get('user_name', 'User') }}!</h1>
-            <p class="welcome-subtitle">Here's what you can do today</p>
+            <h1 class="welcome-title">{{ t('dashboard_welcome').format(name=session.get('user_name', 'User')) }}</h1>
+            <p class="welcome-subtitle">{{ t('dashboard_subtitle') }}</p>
         </div>
 
         <!-- Verification Warning -->
@@ -15,8 +15,8 @@
         <div class="verification-warning">
             <span style="font-size: 1.5rem;">!</span>
             <div>
-                <strong>Email Verification Required</strong><br>
-                <small>Your account is not verified. Check your email for the verification link to unlock all features.</small>
+                <strong>{{ t('verification_warning_title') }}</strong><br>
+                <small>{{ t('verification_warning_text') }}</small>
             </div>
         </div>
         {% endif %}
@@ -25,15 +25,15 @@
         <div class="quick-stats">
             <div class="stat-card">
                 <div class="stat-value">{{ total_requests }}</div>
-                <div class="stat-title">Total Requests</div>
+                <div class="stat-title">{{ t('stat_total_requests') }}</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">{% if session.get('is_verified') %}Active{% else %}Pending{% endif %}</div>
-                <div class="stat-title">Account Status</div>
+                <div class="stat-value">{% if session.get('is_verified') %}{{ t('status_active') }}{% else %}{{ t('status_pending') }}{% endif %}</div>
+                <div class="stat-title">{{ t('stat_account_status') }}</div>
             </div>
             <div class="stat-card">
                 <div class="stat-value">4.8</div>
-                <div class="stat-title">Avg. Rating</div>
+                <div class="stat-title">{{ t('stat_avg_rating') }}</div>
             </div>
         </div>
 
@@ -44,17 +44,17 @@
                 <div class="card-icon icon-primary">
                     <span>AI</span>
                 </div>
-                <h3 class="card-title">AI Diagnostics</h3>
+                <h3 class="card-title">{{ t('card_ai_title') }}</h3>
                 <p class="card-description">
-                    Upload an image of your inverter error screen and get instant AI-powered diagnosis and solutions.
+                    {{ t('card_ai_description') }}
                 </p>
                 {% if session.get('is_verified') %}
                 <a href="{{ url_for('ai_advisor') }}" class="card-action">
-                    Start Diagnosis &rarr;
+                    {{ t('btn_start_diagnosis') }}
                 </a>
                 {% else %}
                 <span class="card-action" style="color: var(--gray-400); cursor: not-allowed;">
-                    Verify email to unlock
+                    {{ t('verify_to_unlock') }}
                 </span>
                 {% endif %}
             </div>
@@ -62,19 +62,19 @@
             <!-- Technicians Card -->
             <div class="dashboard-card">
                 <div class="card-icon icon-secondary">
-                    <span>TECH</span>
+                    <span>{{ t('tech_icon') }}</span>
                 </div>
-                <h3 class="card-title">Expert Technicians</h3>
+                <h3 class="card-title">{{ t('card_tech_title') }}</h3>
                 <p class="card-description">
-                    Connect with certified solar inverter repair specialists across South Lebanon for professional help.
+                    {{ t('card_tech_description') }}
                 </p>
                 {% if session.get('is_verified') %}
                 <a href="{{ url_for('technicians') }}" class="card-action">
-                    Find Technician &rarr;
+                    {{ t('btn_find_technician') }}
                 </a>
                 {% else %}
                 <span class="card-action" style="color: var(--gray-400); cursor: not-allowed;">
-                    Verify email to unlock
+                    {{ t('verify_to_unlock') }}
                 </span>
                 {% endif %}
             </div>
@@ -82,19 +82,19 @@
             <!-- Video Tutorials Card -->
             <div class="dashboard-card">
                 <div class="card-icon icon-warning">
-                    <span>VIDEO</span>
+                    <span>{{ t('video_icon') }}</span>
                 </div>
-                <h3 class="card-title">Video Tutorials</h3>
+                <h3 class="card-title">{{ t('card_videos_title') }}</h3>
                 <p class="card-description">
-                    Learn from our comprehensive library of troubleshooting guides and maintenance tips.
+                    {{ t('card_videos_description') }}
                 </p>
                 {% if session.get('is_verified') %}
                 <a href="{{ url_for('videos') }}" class="card-action">
-                    Watch Videos &rarr;
+                    {{ t('btn_watch_videos') }}
                 </a>
                 {% else %}
                 <span class="card-action" style="color: var(--gray-400); cursor: not-allowed;">
-                    Verify email to unlock
+                    {{ t('verify_to_unlock') }}
                 </span>
                 {% endif %}
             </div>
@@ -103,20 +103,20 @@
         <!-- Recent Activity -->
         {% if recent_requests %}
         <div class="recent-activity" style="margin-top: var(--space-2xl);">
-            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: var(--space-lg);">Recent Activity</h2>
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: var(--space-lg);">{{ t('recent_activity') }}</h2>
             <div class="activity-list" style="display: grid; gap: var(--space-md);">
                 {% for req in recent_requests %}
                 <div class="activity-item" style="background: var(--white); padding: var(--space-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); display: flex; justify-content: space-between; align-items: center;">
                     <div>
                         <h4 style="font-weight: 600; color: var(--text-primary); margin-bottom: var(--space-xs);">
-                            {{ req['inverter_model'] or 'Unknown Model' }}
+                            {{ req['inverter_model'] or t('unknown_model') }}
                         </h4>
                         <p style="color: var(--text-secondary); font-size: 0.875rem;">
                             {{ req['created_at'] }}
                         </p>
                     </div>
                     <span style="padding: 0.375rem 0.875rem; border-radius: var(--radius-full); font-weight: 600; font-size: 0.875rem; background: rgba(16, 185, 129, 0.1); color: #065F46;">
-                        {{ req['status'].title() }}
+                        {{ t('status_' + req['status']) }}
                     </span>
                 </div>
                 {% endfor %}

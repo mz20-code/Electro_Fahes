@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Welcome - Electro_Fahes | Smart Solar Solutions{% endblock %}
+{% block title %}{{ t('landing_welcome') }} - Electro_Fahes | {{ t('landing_tagline') }}{% endblock %}
 
 {% block content %}
 <div class="landing-page">
@@ -14,41 +14,41 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="badge-dot"></span>
-                    <span>AI-Powered Diagnostics</span>
+                    <span>{{ t('hero_badge') }}</span>
                 </div>
                 
                 <h1 class="hero-title">
-                    Smart Solar Inverter
-                    <span class="title-gradient">Solutions for Lebanon</span>
+                    {{ t('hero_title') }}
+                    <span class="title-gradient">{{ t('hero_subtitle_gradient') }}</span>
                 </h1>
                 
                 <p class="hero-subtitle">
-                    Professional AI-powered diagnostics and expert repair services for your solar inverter systems. Get instant analysis, connect with certified technicians, and keep your power running smoothly.
+                    {{ t('hero_description') }}
                 </p>
                 
                 <div class="hero-buttons">
                     <a href="{{ url_for('register') }}" class="btn btn-primary btn-large">
-                        Get Started Free
+                        {{ t('btn_get_started') }}
                     </a>
                     <a href="{{ url_for('login') }}" class="btn btn-secondary btn-large">
-                        Sign In
+                        {{ t('btn_sign_in') }}
                     </a>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat-item">
                         <div class="stat-number">500+</div>
-                        <div class="stat-label">Happy Customers</div>
+                        <div class="stat-label">{{ t('stat_customers') }}</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat-item">
                         <div class="stat-number">98%</div>
-                        <div class="stat-label">Accuracy Rate</div>
+                        <div class="stat-label">{{ t('stat_accuracy') }}</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat-item">
                         <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support Available</div>
+                        <div class="stat-label">{{ t('stat_support') }}</div>
                     </div>
                 </div>
             </div>

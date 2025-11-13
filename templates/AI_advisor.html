@@ -1,35 +1,35 @@
 {% extends "base.html" %}
-{% block title %}AI Advisor - Electro_Fahes{% endblock %}
+{% block title %}{{ t('ai_title') }} - Electro_Fahes{% endblock %}
 
 {% block content %}
 <div class="ai-advisor-page">
     <div class="ai-advisor-container">
         <!-- Page Header -->
         <div class="page-header">
-            <h1 class="page-title">AI-Powered Diagnostics</h1>
-            <p class="page-subtitle">Upload an image of your inverter error screen for instant analysis and solutions</p>
+            <h1 class="page-title">{{ t('ai_title') }}</h1>
+            <p class="page-subtitle">{{ t('ai_subtitle') }}</p>
         </div>
 
         <!-- Upload Form -->
         <div class="upload-section">
             <form method="POST" enctype="multipart/form-data" id="diagnosisForm">
                 <div class="form-group">
-                    <label for="inverter_model" class="form-label">Inverter Model *</label>
+                    <label for="inverter_model" class="form-label">{{ t('label_inverter_model') }}</label>
                     <input 
                         type="text" 
                         id="inverter_model" 
                         name="inverter_model" 
                         class="form-control" 
-                        placeholder="e.g., Sunny Boy 5.0, Fronius Symo 10.0"
+                        placeholder="{{ t('placeholder_inverter') }}"
                         required>
                 </div>
 
                 <div class="form-group">
-                    <label class="form-label">Error Screen Image *</label>
+                    <label class="form-label">{{ t('label_error_image') }}</label>
                     <div class="upload-area" id="uploadArea">
                         <div class="upload-icon">&#128247;</div>
-                        <h3 class="upload-title">Click to upload or drag and drop</h3>
-                        <p class="upload-hint">PNG, JPG, JPEG, GIF, WEBP up to 16MB</p>
+                        <h3 class="upload-title">{{ t('upload_title') }}</h3>
+                        <p class="upload-hint">{{ t('upload_hint') }}</p>
                         <input 
                             type="file" 
                             name="image" 
@@ -44,7 +44,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-large btn-full">
-                    Analyze Now
+                    {{ t('btn_analyze') }}
                 </button>
             </form>
         </div>
@@ -55,8 +55,8 @@
             <div class="result-header">
                 <div class="result-icon">&check;</div>
                 <div>
-                    <h2 class="result-title">Diagnosis Complete</h2>
-                    <p style="color: var(--text-secondary); margin: 0;">Analysis for {{ result.model }}</p>
+                    <h2 class="result-title">{{ t('diagnosis_complete') }}</h2>
+                    <p style="color: var(--text-secondary); margin: 0;">{{ t('diagnosis_analysis_for') }} {{ result.model }}</p>
                 </div>
             </div>
 
@@ -64,26 +64,26 @@
                 {% set diag = result.diagnosis | tojson | fromjson %}
                 
                 <div class="diagnosis-item">
-                    <div class="diagnosis-label">Detected Issue</div>
+                    <div class="diagnosis-label">{{ t('label_detected_issue') }}</div>
                     <div class="diagnosis-value">{{ diag.issue }}</div>
                 </div>
 
                 <div class="diagnosis-item">
-                    <div class="diagnosis-label">Severity Level</div>
+                    <div class="diagnosis-label">{{ t('label_severity') }}</div>
                     <div class="diagnosis-value">
                         <span class="severity-badge severity-{{ diag.severity.lower() }}">
-                            {{ diag.severity }}
+                            {{ t('severity_' + diag.severity.lower()) }}
                         </span>
                     </div>
                 </div>
 
                 <div class="diagnosis-item">
-                    <div class="diagnosis-label">Recommended Solution</div>
+                    <div class="diagnosis-label">{{ t('label_solution') }}</div>
                     <div class="diagnosis-value">{{ diag.solution }}</div>
                 </div>
 
                 <div class="diagnosis-item">
-                    <div class="diagnosis-label">Estimated Repair Cost</div>
+                    <div class="diagnosis-label">{{ t('label_cost') }}</div>
                     <div class="diagnosis-value" style="color: var(--primary); font-weight: 700;">
                         {{ diag.estimated_cost }}
                     </div>
@@ -92,10 +92,10 @@
 
             <div style="margin-top: var(--space-xl); display: flex; gap: var(--space-md); flex-wrap: wrap;">
                 <a href="{{ url_for('technicians') }}" class="btn btn-primary">
-                    Contact Technician
+                    {{ t('btn_contact_tech') }}
                 </a>
                 <button onclick="window.location.reload()" class="btn btn-secondary">
-                    New Diagnosis
+                    {{ t('btn_new_diagnosis') }}
                 </button>
             </div>
         </div>
@@ -106,19 +106,12 @@
             <div class="result-header">
                 <div class="result-icon" style="background: linear-gradient(135deg, #EF4444, #DC2626);">!</div>
                 <div>
-                    <h2 class="result-title">Error</h2>
+                    <h2 class="result-title">{{ t('error_title') }}</h2>
                     <p style="color: var(--text-secondary); margin: 0;">{{ error }}</p>
                 </div>
             </div>
         </div>
         {% endif %}
-    </div>
-
-    <!-- 3D Background Shapes -->
-    <div class="shape-container">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
     </div>
 </div>
 

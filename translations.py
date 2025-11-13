@@ -1,8 +1,12 @@
 # translations.py
-# Language Support for Electro_Fahes
+# Complete Language Support for Electro_Fahes
 
 translations = {
     'en': {
+        # Landing Page
+        'landing_welcome': 'Welcome',
+        'landing_tagline': 'Smart Solar Solutions',
+        
         # Navigation
         'nav_ai_advisor': 'AI Advisor',
         'nav_technicians': 'Technicians',
@@ -10,65 +14,146 @@ translations = {
         'nav_settings': 'Settings',
         'nav_logout': 'Logout',
         'nav_locked': '[Locked]',
+        'tooltip_locked': 'Verify your email to unlock',
+        
         # Landing Page
         'hero_badge': 'AI-Powered Diagnostics',
         'hero_title': 'Smart Solar Inverter',
         'hero_subtitle_gradient': 'Solutions for Lebanon',
-        'hero_description': 'Professional AI-powered diagnostics and expert repair services for your solar inverter systems.',
+        'hero_description': 'Professional AI-powered diagnostics and expert repair services for your solar inverter systems. Get instant analysis, connect with certified technicians, and keep your power running smoothly.',
         'btn_get_started': 'Get Started Free',
         'btn_sign_in': 'Sign In',
+        'stat_customers': 'Happy Customers',
+        'stat_accuracy': 'Accuracy Rate',
+        'stat_support': 'Support Available',
+        
         # Auth Pages
         'auth_welcome': 'Welcome Back!',
         'auth_sign_in_subtitle': 'Sign in to access your dashboard',
         'auth_create_account': 'Create Your Account',
+        'auth_create_subtitle': 'Join Electro_Fahes and get instant AI diagnostics',
         'label_full_name': 'Full Name',
         'label_email': 'Email Address',
         'label_password': 'Password',
+        'placeholder_name': 'Enter your full name',
+        'placeholder_email': 'Enter your email',
+        'placeholder_password': 'Enter your password',
+        'placeholder_password_create': 'Create a strong password (min 6 characters)',
         'btn_login': 'Sign In',
         'btn_register': 'Create Account',
-        # Settings
+        'link_no_account': "Don't have an account?",
+        'link_create_one': 'Create one now',
+        'link_have_account': 'Already have an account?',
+        'link_sign_in': 'Sign in here',
+        
+        # Home/Dashboard Page
+        'dashboard_title': 'Dashboard',
+        'dashboard_welcome': 'Welcome back, {name}!',
+        'dashboard_subtitle': "Here's what you can do today",
+        'tech_icon': 'TECH',
+        'video_icon': 'VIDEO',
+        'unknown_model': 'Unknown Model',
+        'status_completed': 'Completed',
+        'status_pending': 'Pending',
+        'status_processing': 'Processing',
+        'verification_warning_title': 'Email Verification Required',
+        'verification_warning_text': 'Your account is not verified. Check your email for the verification link to unlock all features.',
+        'stat_total_requests': 'Total Requests',
+        'stat_account_status': 'Account Status',
+        'stat_avg_rating': 'Avg. Rating',
+        'status_active': 'Active',
+        'status_pending': 'Pending',
+        'card_ai_title': 'AI Diagnostics',
+        'card_ai_description': 'Upload an image of your inverter error screen and get instant AI-powered diagnosis and solutions.',
+        'card_tech_title': 'Expert Technicians',
+        'card_tech_description': 'Connect with certified solar inverter repair specialists across South Lebanon for professional help.',
+        'card_videos_title': 'Video Tutorials',
+        'card_videos_description': 'Learn from our comprehensive library of troubleshooting guides and maintenance tips.',
+        'btn_start_diagnosis': 'Start Diagnosis →',
+        'btn_find_technician': 'Find Technician →',
+        'btn_watch_videos': 'Watch Videos →',
+        'verify_to_unlock': 'Verify email to unlock',
+        'recent_activity': 'Recent Activity',
+        
+        # Settings Page
         'settings_title': 'Settings',
+        'settings_subtitle': 'Manage your account preferences and settings',
         'settings_profile': 'Profile Settings',
+        'settings_profile_subtitle': 'Update your personal information',
         'settings_language': 'Language Preferences',
+        'settings_language_subtitle': 'Choose your preferred language',
         'label_select_language': 'Select Language',
         'language_english': 'English',
         'language_arabic': 'العربية',
+        'info_language_note': 'Language preference is saved automatically and will be applied across the entire website.',
+        'email_cannot_change': 'Email cannot be changed',
         'btn_save_changes': 'Save Changes',
-        # AI Advisor
+        'account_status': 'Account Status',
+        'status_verified': 'Verified',
+        'status_pending_verification': 'Pending Verification',
+        'status_member_since': 'Member Since',
+        'status_account_type': 'Account Type',
+        'status_user_id': 'User ID',
+        'status_standard_user': 'Standard User',
+        
+        # AI Advisor Page
         'ai_title': 'AI-Powered Diagnostics',
         'ai_subtitle': 'Upload an image of your inverter error screen for instant analysis and solutions',
-        'label_inverter_model': 'Inverter Model',
+        'label_inverter_model': 'Inverter Model *',
         'placeholder_inverter': 'e.g., Sunny Boy 5.0, Fronius Symo 10.0',
-        'label_error_image': 'Error Screen Image',
+        'label_error_image': 'Error Screen Image *',
+        'upload_title': 'Click to upload or drag and drop',
+        'upload_hint': 'PNG, JPG, JPEG, GIF, WEBP up to 16MB',
         'btn_analyze': 'Analyze Now',
         'diagnosis_complete': 'Diagnosis Complete',
+        'diagnosis_analysis_for': 'Analysis for',
         'label_detected_issue': 'Detected Issue',
         'label_severity': 'Severity Level',
         'label_solution': 'Recommended Solution',
         'label_cost': 'Estimated Repair Cost',
-        # Technicians
+        'btn_contact_tech': 'Contact Technician',
+        'btn_new_diagnosis': 'New Diagnosis',
+        'error_title': 'Error',
+        'severity_low': 'Low',
+        'severity_medium': 'Medium',
+        'severity_high': 'High',
+        
+        # Technicians Page
         'tech_title': 'Expert Technicians',
         'tech_subtitle': 'Connect with certified solar inverter specialists across South Lebanon',
         'tech_location': 'Location:',
         'tech_phone': 'Phone:',
         'tech_email': 'Email:',
         'tech_experience': 'Experience:',
+        'tech_years': 'years',
         'btn_call_now': 'Call Now',
-        # Videos
+        
+        # Videos Page
         'videos_title': 'Video Tutorials',
         'videos_subtitle': 'Learn from expert guides on troubleshooting and maintenance',
         'video_duration': 'Duration:',
-        # Flash Messages
+        
+        # Flash Messages & Errors
         'msg_name_updated': 'Name updated successfully!',
         'msg_name_empty': 'Name cannot be empty.',
         'msg_language_updated': 'Language updated successfully!',
         'msg_welcome_back': 'Welcome back, {name}!',
-        'msg_account_created': 'Account created successfully! Check your email to verify.',
+        'msg_account_created': 'Account created successfully! Please verify your email.',
         'msg_email_exists': 'Email already registered. Please log in.',
         'msg_wrong_credentials': 'Invalid email or password.',
         'msg_verify_email': 'Please verify your email to access this feature.',
         'msg_login_required': 'Please log in to access this page.',
         'msg_goodbye': 'Goodbye, {name}! You have been logged out.',
+        'msg_all_fields_required': 'All fields are required.',
+        'msg_password_length': 'Password must be at least 6 characters long.',
+        'msg_email_verified': 'Email verified successfully! You can now log in.',
+        'msg_invalid_verification': 'Invalid verification link.',
+        'msg_diagnosis_complete': 'Diagnosis completed successfully!',
+        'error_no_model': 'Please specify the inverter model.',
+        'error_no_image': "Please upload an image of the inverter screen.",
+        'error_invalid_file': 'Invalid file type. Allowed: PNG, JPG, JPEG, GIF, WEBP.',
+        'error_processing': 'Error processing request',
+        
         # Footer
         'footer_about': 'About',
         'footer_services': 'Services',
@@ -76,73 +161,160 @@ translations = {
         'footer_privacy': 'Privacy',
         'footer_copyright': 'All rights reserved. Made in Lebanon.',
     },
+    
     'ar': {
+        # Landing Page
+        'landing_welcome': 'مرحباً',
+        'landing_tagline': 'حلول ذكية للطاقة الشمسية',
+        
         # Navigation
+        'nav_home': 'الرئيسية',
         'nav_ai_advisor': 'مستشار الذكاء الاصطناعي',
         'nav_technicians': 'الفنيين',
         'nav_videos': 'الفيديوهات',
         'nav_settings': 'الإعدادات',
         'nav_logout': 'تسجيل الخروج',
         'nav_locked': '[مقفل]',
+        'tooltip_locked': 'تحقق من بريدك الإلكتروني لإلغاء القفل',
+        
         # Landing Page
         'hero_badge': 'تشخيص بالذكاء الاصطناعي',
         'hero_title': 'حلول ذكية للألواح الشمسية',
         'hero_subtitle_gradient': 'في لبنان',
-        'hero_description': 'خدمات تشخيص احترافية بالذكاء الاصطناعي وإصلاح متخصص لأنظمة الألواح الشمسية الخاصة بك.',
+        'hero_description': 'خدمات تشخيص احترافية بالذكاء الاصطناعي وإصلاح متخصص لأنظمة الألواح الشمسية الخاصة بك. احصل على تحليل فوري، تواصل مع فنيين معتمدين، واحتفظ بطاقتك تعمل بسلاسة.',
         'btn_get_started': 'ابدأ مجاناً',
         'btn_sign_in': 'تسجيل الدخول',
+        'stat_customers': 'عميل سعيد',
+        'stat_accuracy': 'نسبة الدقة',
+        'stat_support': 'دعم متاح',
+        
         # Auth Pages
         'auth_welcome': 'مرحباً بعودتك!',
         'auth_sign_in_subtitle': 'سجل الدخول للوصول إلى لوحة التحكم',
         'auth_create_account': 'إنشاء حسابك',
+        'auth_create_subtitle': 'انضم إلى Electro_Fahes واحصل على تشخيص فوري بالذكاء الاصطناعي',
         'label_full_name': 'الاسم الكامل',
         'label_email': 'البريد الإلكتروني',
         'label_password': 'كلمة المرور',
+        'placeholder_name': 'أدخل اسمك الكامل',
+        'placeholder_email': 'أدخل بريدك الإلكتروني',
+        'placeholder_password': 'أدخل كلمة المرور',
+        'placeholder_password_create': 'أنشئ كلمة مرور قوية (6 أحرف على الأقل)',
         'btn_login': 'تسجيل الدخول',
         'btn_register': 'إنشاء حساب',
-        # Settings
+        'link_no_account': 'ليس لديك حساب؟',
+        'link_create_one': 'أنشئ واحداً الآن',
+        'link_have_account': 'لديك حساب بالفعل؟',
+        'link_sign_in': 'سجل الدخول هنا',
+        
+        # Home/Dashboard Page
+        'dashboard_title': 'لوحة التحكم',
+        'dashboard_welcome': 'مرحباً بعودتك، {name}!',
+        'dashboard_subtitle': 'إليك ما يمكنك فعله اليوم',
+        'tech_icon': 'فني',
+        'video_icon': 'فيديو',
+        'unknown_model': 'موديل غير معروف',
+        'status_completed': 'مكتمل',
+        'status_pending': 'قيد الانتظار',
+        'status_processing': 'قيد المعالجة',
+        'verification_warning_title': 'مطلوب التحقق من البريد الإلكتروني',
+        'verification_warning_text': 'حسابك غير موثق. تحقق من بريدك الإلكتروني للحصول على رابط التحقق لفتح جميع الميزات.',
+        'stat_total_requests': 'إجمالي الطلبات',
+        'stat_account_status': 'حالة الحساب',
+        'stat_avg_rating': 'متوسط التقييم',
+        'status_active': 'نشط',
+        'status_pending': 'قيد الانتظار',
+        'card_ai_title': 'تشخيص بالذكاء الاصطناعي',
+        'card_ai_description': 'قم برفع صورة لشاشة الخطأ في الانفرتر واحصل على تشخيص فوري وحلول مدعومة بالذكاء الاصطناعي.',
+        'card_tech_title': 'فنيون خبراء',
+        'card_tech_description': 'تواصل مع متخصصي إصلاح الانفرتر الشمسي المعتمدين في جنوب لبنان للحصول على مساعدة احترافية.',
+        'card_videos_title': 'دروس فيديو',
+        'card_videos_description': 'تعلم من مكتبتنا الشاملة من أدلة استكشاف الأخطاء ونصائح الصيانة.',
+        'btn_start_diagnosis': 'بدء التشخيص ←',
+        'btn_find_technician': 'ابحث عن فني ←',
+        'btn_watch_videos': 'شاهد الفيديوهات ←',
+        'verify_to_unlock': 'تحقق من البريد الإلكتروني لفتح القفل',
+        'recent_activity': 'النشاط الأخير',
+        
+        # Settings Page
         'settings_title': 'الإعدادات',
+        'settings_subtitle': 'إدارة تفضيلات وإعدادات حسابك',
         'settings_profile': 'إعدادات الملف الشخصي',
+        'settings_profile_subtitle': 'تحديث معلوماتك الشخصية',
         'settings_language': 'تفضيلات اللغة',
+        'settings_language_subtitle': 'اختر لغتك المفضلة',
         'label_select_language': 'اختر اللغة',
         'language_english': 'English',
         'language_arabic': 'العربية',
+        'info_language_note': 'يتم حفظ تفضيلات اللغة تلقائياً وسيتم تطبيقها على الموقع بالكامل.',
+        'email_cannot_change': 'لا يمكن تغيير البريد الإلكتروني',
         'btn_save_changes': 'حفظ التغييرات',
-        # AI Advisor
+        'account_status': 'حالة الحساب',
+        'status_verified': 'تم التحقق',
+        'status_pending_verification': 'في انتظار التحقق',
+        'status_member_since': 'عضو منذ',
+        'status_account_type': 'نوع الحساب',
+        'status_user_id': 'معرف المستخدم',
+        'status_standard_user': 'مستخدم عادي',
+        
+        # AI Advisor Page
         'ai_title': 'التشخيص بالذكاء الاصطناعي',
         'ai_subtitle': 'قم برفع صورة لشاشة الخطأ للحصول على تحليل فوري وحلول',
-        'label_inverter_model': 'موديل الانفرتر',
+        'label_inverter_model': 'موديل الانفرتر *',
         'placeholder_inverter': 'مثال: Sunny Boy 5.0, Fronius Symo 10.0',
-        'label_error_image': 'صورة شاشة الخطأ',
+        'label_error_image': 'صورة شاشة الخطأ *',
+        'upload_title': 'انقر للرفع أو اسحب وأفلت',
+        'upload_hint': 'PNG, JPG, JPEG, GIF, WEBP حتى 16 ميجابايت',
         'btn_analyze': 'تحليل الآن',
         'diagnosis_complete': 'اكتمل التشخيص',
+        'diagnosis_analysis_for': 'تحليل لـ',
         'label_detected_issue': 'المشكلة المكتشفة',
         'label_severity': 'مستوى الخطورة',
         'label_solution': 'الحل الموصى به',
         'label_cost': 'التكلفة التقديرية للإصلاح',
-        # Technicians
+        'btn_contact_tech': 'تواصل مع فني',
+        'btn_new_diagnosis': 'تشخيص جديد',
+        'error_title': 'خطأ',
+        'severity_low': 'منخفض',
+        'severity_medium': 'متوسط',
+        'severity_high': 'عالي',
+        
+        # Technicians Page
         'tech_title': 'الفنيون المتخصصون',
         'tech_subtitle': 'تواصل مع متخصصي إصلاح الألواح الشمسية المعتمدين في جنوب لبنان',
         'tech_location': 'الموقع:',
         'tech_phone': 'الهاتف:',
         'tech_email': 'البريد:',
         'tech_experience': 'الخبرة:',
+        'tech_years': 'سنوات',
         'btn_call_now': 'اتصل الآن',
-        # Videos
+        
+        # Videos Page
         'videos_title': 'دروس الفيديو',
         'videos_subtitle': 'تعلم من أدلة الخبراء حول استكشاف الأخطاء والصيانة',
         'video_duration': 'المدة:',
-        # Flash Messages
+        
+        # Flash Messages & Errors
         'msg_name_updated': 'تم تحديث الاسم بنجاح!',
         'msg_name_empty': 'لا يمكن أن يكون الاسم فارغاً.',
         'msg_language_updated': 'تم تحديث اللغة بنجاح!',
         'msg_welcome_back': 'مرحباً بعودتك، {name}!',
-        'msg_account_created': 'تم إنشاء الحساب بنجاح! تحقق من بريدك الإلكتروني للتحقق.',
+        'msg_account_created': 'تم إنشاء الحساب بنجاح! يرجى التحقق من بريدك الإلكتروني.',
         'msg_email_exists': 'البريد الإلكتروني مسجل بالفعل. يرجى تسجيل الدخول.',
         'msg_wrong_credentials': 'بريد إلكتروني أو كلمة مرور غير صحيحة.',
         'msg_verify_email': 'يرجى التحقق من بريدك الإلكتروني للوصول إلى هذه الميزة.',
         'msg_login_required': 'يرجى تسجيل الدخول للوصول إلى هذه الصفحة.',
         'msg_goodbye': 'وداعاً، {name}! تم تسجيل خروجك.',
+        'msg_all_fields_required': 'جميع الحقول مطلوبة.',
+        'msg_password_length': 'يجب أن تكون كلمة المرور 6 أحرف على الأقل.',
+        'msg_email_verified': 'تم التحقق من البريد الإلكتروني بنجاح! يمكنك الآن تسجيل الدخول.',
+        'msg_invalid_verification': 'رابط التحقق غير صالح.',
+        'msg_diagnosis_complete': 'اكتمل التشخيص بنجاح!',
+        'error_no_model': 'يرجى تحديد موديل الانفرتر.',
+        'error_no_image': 'يرجى رفع صورة لشاشة الانفرتر.',
+        'error_invalid_file': 'نوع ملف غير صالح. المسموح: PNG, JPG, JPEG, GIF, WEBP.',
+        'error_processing': 'خطأ في معالجة الطلب',
+        
         # Footer
         'footer_about': 'حول',
         'footer_services': 'الخدمات',
@@ -153,9 +325,9 @@ translations = {
 }
 
 def get_translation(lang, key):
-    """Return translation for key in the given language."""
+    """Get translation for a specific key in the given language"""
     return translations.get(lang, translations['en']).get(key, key)
 
 def get_all_translations(lang):
-    """Return all translations for a given language."""
+    """Get all translations for a specific language"""
     return translations.get(lang, translations['en'])
