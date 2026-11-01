@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import field,icon with context %}
+{% block title %}{{ t('login') }} · TechVerse{% endblock %}
+{% block body_class %}auth-page{% endblock %}
+{% block content %}
+<section class="auth-layout container">{% include '_auth_art.html' %}<div class="auth-form"><a class="text-link auth-back" href="{{ url_for('index') }}">{{ t('back_shop') }}{{ icon('arrow') }}</a><span class="eyebrow">{{ t('account_registration_eyebrow') }}</span><h2>{{ t('login_title') }}</h2><p>{{ t('login_description') }}</p><form method="post" data-enhanced-form><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.form.get('next',request.args.get('next','/')) }}">{{ field('email','email','email',request.form.get('email',''),placeholder='email_placeholder',autocomplete='email') }}{{ field('password','password','password',autocomplete='current-password') }}<button class="btn btn-primary full-width">{{ t('login') }}{{ icon('arrow') }}</button></form><p class="auth-switch">{{ t('need_account') }} <a href="{{ url_for('register',next=request.form.get('next',request.args.get('next','/'))) }}">{{ t('register') }}</a></p></div></section>
+{% endblock %}

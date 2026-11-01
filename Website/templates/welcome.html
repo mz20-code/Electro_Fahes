@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon with context %}
+{% block title %}TechVerse · {{ t('shop') }}{% endblock %}
+{% block body_class %}catalog-entry{% endblock %}
+{% block content %}
+{% set guide_url = url_for('login',next=url_for('ai_advisor')) %}
+<section class="container wb-hero" aria-labelledby="hero-title">
+  <div class="wb-hero-main">
+    <span class="eyebrow wb-kicker"><span class="small-dot"></span>{{ t('hero_kicker') }}</span>
+    <h1 id="hero-title">{{ t('hero_title') }}</h1>
+    <p>{{ t('hero_copy') }}</p>
+    <div class="wb-hero-actions">
+      <a href="#products" class="btn btn-primary">{{ t('hero_cta_shop') }}{{ icon('arrow') }}</a>
+      <a href="{{ guide_url }}" class="btn btn-secondary">{{ icon('bolt') }}{{ t('hero_cta_guide') }}</a>
+    </div>
+    <ul class="wb-hero-facts">
+      <li>{{ icon('chip') }}<span>{{ t('hero_fact_parts') }}</span></li>
+      <li>{{ icon('book') }}<span>{{ t('hero_fact_manuals') }}</span></li>
+      <li>{{ icon('pin') }}<span>{{ t('location') }}</span></li>
+    </ul>
+  </div>
+  <div class="wb-hero-stage" aria-hidden="true">
+    <div class="wb-stage-grid"></div>
+    <img class="wb-stage-main" src="{{ url_for('static',filename='images/photos/b-arduino-uno.jpg') }}" alt="" width="800" height="600" fetchpriority="high">
+    <img class="wb-stage-side" src="{{ url_for('static',filename='images/photos/b-esp32-devkit.jpg') }}" alt="" width="400" height="300" loading="lazy">
+    <span class="wb-stage-tag wb-tag-a"><bdi>ARDUINO · ESP32 · RASPBERRY PI PICO</bdi></span>
+    <span class="wb-stage-tag wb-tag-b">{{ icon('bolt') }}<bdi>SOLAR · INVERTERS</bdi></span>
+  </div>
+</section>
+
+<section class="container wb-bento" aria-label="{{ t('hero_services') }}">
+  <a class="wb-tile wb-tile-guide" href="{{ guide_url }}">
+    <span class="wb-tile-icon">{{ icon('bolt') }}</span>
+    <span class="eyebrow">{{ t('guide_kicker') }}</span>
+    <h2>{{ t('tile_guide_title') }}</h2>
+    <p>{{ t('tile_guide_copy') }}</p>
+    <ol class="wb-steps"><li><b>01</b>{{ t('guide_step_model') }}</li><li><b>02</b>{{ t('guide_step_code') }}</li><li><b>03</b>{{ t('guide_step_result') }}</li></ol>
+    <span class="wb-tile-link">{{ t('get_started') }}{{ icon('arrow') }}</span>
+  </a>
+  <a class="wb-tile wb-tile-tech" href="{{ url_for('login',next=url_for('membership')) }}">
+    <span class="wb-tile-icon">{{ icon('repair') }}</span>
+    <h2>{{ t('tile_tech_title') }}</h2>
+    <p>{{ t('tile_tech_copy') }}</p>
+    <span class="wb-tile-link">{{ t('technicians') }}{{ icon('arrow') }}</span>
+  </a>
+  <a class="wb-tile wb-tile-support" href="{{ url_for('contact') }}">
+    <span class="wb-tile-icon">{{ icon('chat') }}</span>
+    <h2>{{ t('tile_support_title') }}</h2>
+    <p><bdi>{{ company_phone }}</bdi></p>
+    <span class="wb-tile-link">{{ t('contact') }}{{ icon('arrow') }}</span>
+  </a>
+</section>
+
+<section class="container wb-section" aria-labelledby="categories-heading">
+  <div class="wb-section-head"><div><span class="eyebrow">{{ t('catalog_eyebrow') }}</span><h2 id="categories-heading">{{ t('categories_heading') }}</h2></div><p>{{ t('categories_copy') }}</p></div>
+  <ul class="wb-categories">
+    {% for cat in categories %}{% set count = products|selectattr('category','equalto',cat)|list|length %}{% if count %}
+    <li><a class="wb-category" href="{{ url_for('index',category=cat) }}#products"><span class="wb-category-icon">{{ icon(cat) }}</span><span class="wb-category-name">{{ t('cat_'+cat) }}</span><span class="wb-category-count"><bdi>{{ count }}</bdi> {{ t('items_count') }}</span>{{ icon('arrow','wb-category-arrow') }}</a></li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+
+{% if catalogs %}
+<section class="container wb-section wb-brands" aria-labelledby="brands-heading">
+  <div class="wb-section-head"><div><span class="eyebrow">{{ t('guide_kicker') }}</span><h2 id="brands-heading">{{ t('brands_heading') }}</h2></div><p>{{ t('brands_copy') }}</p></div>
+  <ul class="wb-brand-list">
+    {% set seen = namespace(brands=[]) %}
+    {% for c in catalogs %}{% if c.brand not in seen.brands %}{% set seen.brands = seen.brands + [c.brand] %}
+    <li><a class="wb-brand" href="{{ guide_url }}">{% if c.image %}<img src="{{ url_for('static',filename=c.image) }}" alt="" width="56" height="56" loading="lazy">{% endif %}<span><b>{{ c.brand }}</b><small><bdi>{{ c.model }}</bdi></small></span></a></li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% include '_catalog.html' %}
+{% endblock %}
+{% block extra_js %}<script src="{{ url_for('static',filename='js/shop.js',v=release) }}" defer></script>{% endblock %}

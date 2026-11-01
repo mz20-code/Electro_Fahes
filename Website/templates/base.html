@@ -1,0 +1,53 @@
+{% from '_macros.html' import icon with context %}
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ 'rtl' if lang=='ar' else 'ltr' }}" data-theme="{{ session.get('theme','dark') }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ t('footer_description') }}"><meta name="theme-color" content="#101113">
+  {% if canonical_base and request.endpoint in ['index','arabic_preview','english_preview','about','contact','privacy'] %}<link rel="canonical" href="{{ canonical_base }}{{ request.path }}">{% if request.endpoint in ['index','arabic_preview','english_preview'] %}<link rel="alternate" hreflang="en" href="{{ canonical_base }}/en"><link rel="alternate" hreflang="ar" href="{{ canonical_base }}/ar">{% endif %}{% endif %}
+  <meta property="og:title" content="TechVerse"><meta property="og:description" content="{{ t('footer_description') }}">{% if canonical_base %}<meta property="og:image" content="{{ canonical_base }}/static/images/logo.png">{% endif %}
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>{% block title %}TechVerse{% endblock %}</title>
+  <link rel="icon" href="{{ url_for('static',filename='images/logo.png') }}">
+  <script src="{{ url_for('static',filename='js/theme-init.js',v=release) }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css',v=release) }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/experience.css',v=release) }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/workbench.css',v=release) }}">
+  {% block extra_css %}{% endblock %}
+</head>
+<body class="page-{{ request.endpoint }} {% block body_class %}{% endblock %}">
+<a class="skip-link" href="#main">{{ t('skip') }}</a>
+<div class="utility-bar"><div class="container"><span>{{ t('footer_description') }}</span><a href="{{ url_for('contact') }}">{{ icon('pin') }}{{ t('location') }}{{ icon('arrow') }}</a></div></div>
+<header class="site-header {{ 'entry-header' if not user else '' }}"><div class="header-inner">
+  <a href="{{ url_for('shop') if user else url_for('index') }}" class="wordmark" aria-label="TechVerse"><img src="{{ url_for('static',filename='images/logo.png') }}" alt="" width="46" height="46"><span>Tech<span>Verse</span><small>ELECTRONICS &amp; SOLAR</small></span></a>
+  <nav id="nav-menu" class="nav-menu" aria-label="{{ t('menu') }}">
+  {% if user %}{% for endpoint,key in [('shop','shop'),('ai_advisor','advisor'),('membership','technicians'),('videos','videos'),('companies','companies')] %}
+    <a href="{{ url_for(endpoint) }}" {% if request.endpoint==endpoint %}aria-current="page" class="active"{% endif %}>{{ t(key) }}</a>
+  {% endfor %}{% else %}
+    <a href="{{ url_for('index') }}#products" {% if request.endpoint in ['index','arabic_preview','english_preview'] %}class="active" aria-current="page"{% endif %}>{{ t('shop') }}</a>
+    <a href="{{ url_for('login',next=url_for('ai_advisor')) }}">{{ t('advisor') }}</a>
+    <a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %}class="active" aria-current="page"{% endif %}>{{ t('contact') }}</a>
+  {% endif %}
+  </nav>
+  <div class="header-actions">
+    <button type="button" id="theme-toggle" class="icon-button" aria-label="{{ t('theme') }}"><span class="theme-sun">{{ icon('sun') }}</span><span class="theme-moon">{{ icon('moon') }}</span></button>
+    <form action="{{ url_for('change_language',language='en' if lang=='ar' else 'ar') }}" method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.full_path }}"><button class="language-button" aria-label="{{ t('language') }}">{{ 'EN' if lang=='ar' else 'عربي' }}</button></form>
+    {% if user %}<a href="{{ url_for('cart') }}" class="icon-button cart-link" aria-label="{{ t('cart') }}">{{ icon('cart') }}<span id="cart-badge" hidden>0</span></a><a href="{{ url_for('settings') }}" class="icon-button account-link" aria-label="{{ t('settings') }}">{{ icon('user') }}</a>{% else %}<a href="{{ url_for('login') }}" class="text-link header-signin">{{ t('login') }}</a><a href="{{ url_for('register') }}" class="btn btn-primary btn-small header-login">{{ t('register') }}{{ icon('arrow') }}</a>{% endif %}
+    <button type="button" id="nav-toggle" class="icon-button mobile-toggle" aria-label="{{ t('menu') }}" aria-expanded="false" aria-controls="nav-menu">{{ icon('menu') }}</button>
+  </div>
+</div></header>
+{% with messages=get_flashed_messages(with_categories=true) %}{% if messages %}<div class="flash-stack" role="status">{% for category,message in messages %}<div class="flash {{ category }}">{{ message }}<button type="button" data-dismiss-flash aria-label="{{ t('close') }}">{{ icon('close') }}</button></div>{% endfor %}</div>{% endif %}{% endwith %}
+<main id="main">{% block content %}{% endblock %}</main>
+<footer class="site-footer"><div class="container footer-top">
+  <div class="footer-brand"><a class="wordmark" href="{{ url_for('shop') if user else url_for('index') }}"><img src="{{ url_for('static',filename='images/logo.png') }}" width="40" height="40" alt=""><span>Tech<span>Verse</span></span></a><p>{{ t('footer_tagline') }}</p><p class="footer-description">{{ t('footer_description') }}</p></div>
+  <nav class="footer-links" aria-label="{{ t('footer_explore') }}"><h2 class="footer-heading">{{ t('footer_explore') }}</h2>{% if user %}<a href="{{ url_for('shop') }}">{{ t('shop') }}</a><a href="{{ url_for('ai_advisor') }}">{{ t('advisor') }}</a><a href="{{ url_for('membership') }}">{{ t('technicians') }}</a><a href="{{ url_for('companies') }}">{{ t('companies') }}</a>{% else %}<a href="{{ url_for('index') }}#products">{{ t('shop') }}</a><a href="{{ url_for('login',next=url_for('ai_advisor')) }}">{{ t('advisor') }}</a><a href="{{ url_for('register') }}">{{ t('register') }}</a>{% endif %}</nav>
+  <nav class="footer-links" aria-label="{{ t('footer_company') }}"><h2 class="footer-heading">{{ t('footer_company') }}</h2><a href="{{ url_for('about') }}">{{ t('about') }}</a>{% if user %}<a href="{{ url_for('sources') }}">{{ t('sources') }}</a>{% endif %}<a href="{{ url_for('contact') }}">{{ t('contact') }}</a><a href="{{ url_for('privacy') }}">{{ t('privacy') }}</a>{% if user and user.role=='admin' %}<a href="{{ url_for('admin_panel') }}">{{ t('admin') }}</a>{% endif %}</nav>
+  <a class="footer-contact" href="tel:{{ company_phone_link }}"><span>{{ t('local_support') }}</span><bdi>{{ company_phone }}</bdi><span class="footer-contact-cta">{{ t('contact') }}{{ icon('arrow') }}</span></a>
+</div><div class="container footer-bottom"><span>© {{ current_year }} TechVerse. {{ t('rights') }}</span><span>{{ icon('pin') }}{{ t('location') }}</span></div></footer>
+<a class="whatsapp-float" href="{{ wa_url() }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="{{ t('whatsapp_us') }}" title="{{ t('whatsapp_us') }}">{{ icon('whatsapp') }}</a>
+<button type="button" id="back-to-top" class="back-to-top icon-button" aria-label="{{ t('back_to_top') }}" hidden>{{ icon('arrow-up') }}</button>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+<script id="ui-data" type="application/json">{{ {'strings':ui_strings,'language':lang,'whatsapp':wa_url(),'whatsappConfigured':wa_configured}|tojson }}</script>
+<script src="{{ url_for('static',filename='js/main.js',v=release) }}" defer></script>
+{% block extra_js %}{% endblock %}
+</body></html>

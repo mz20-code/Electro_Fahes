@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import icon with context %}
+{% block title %}{{ t('shop') }} · TechVerse{% endblock %}
+{% block body_class %}shop-page{% endblock %}
+{% block content %}
+<section class="container page-intro shop-page-intro"><span class="eyebrow">TECHVERSE / {{ t('shop') }}</span><div class="shop-intro-line"><div><h1>{{ t('shop_intro') }}</h1><p>{{ t('shop_description') }}</p></div><a class="btn btn-secondary" href="{{ wa_url() }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ icon('whatsapp') }}{{ t('shop_help_link') }}</a></div></section>
+{% include '_catalog.html' %}
+{% endblock %}
+{% block extra_js %}<script src="{{ url_for('static',filename='js/shop.js',v=release) }}" defer></script>{% endblock %}

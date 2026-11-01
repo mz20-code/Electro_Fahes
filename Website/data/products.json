@@ -1,0 +1,3492 @@
+[
+  {
+    "id": "tv-001",
+    "name": "Arduino UNO R3 kit",
+    "name_ar": "طقم أردوينو UNO R3",
+    "aliases": [
+      "Arduino UNO R3 kit"
+    ],
+    "category": "kits",
+    "price_cents": 2200,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-uno-beginner-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 2,
+        "retail_cell": "F2"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 2,
+        "retail_cell": "F2"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-345.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-002",
+    "name": "Arduino UNO super kit",
+    "name_ar": "طقم أردوينو UNO المتكامل",
+    "aliases": [
+      "Arduino UNO super kit"
+    ],
+    "category": "kits",
+    "price_cents": 5500,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-uno-super-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 3,
+        "retail_cell": "F3"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 3,
+        "retail_cell": "F3"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit",
+      "credit": "ELEGOO",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-003",
+    "name": "Arduino Nano V3",
+    "name_ar": "أردوينو Nano V3",
+    "aliases": [
+      "Arduino Nano V3",
+      "Arduino Nano V3"
+    ],
+    "category": "boards",
+    "price_cents": 800,
+    "price_status": "confirmed",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-arduino-nano.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 4,
+        "retail_cell": "F4"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 4,
+        "retail_cell": "F4"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 3,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://store.arduino.cc/products/arduino-nano",
+      "credit": "Arduino",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-004",
+    "name": "ESP32 Dev Board (CH340)",
+    "name_ar": "لوحة تطوير ESP32 (CH340)",
+    "aliases": [
+      "ESP32 Dev Board (CH340)"
+    ],
+    "category": "boards",
+    "price_cents": 1200,
+    "price_status": "confirmed",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-esp32-ch340.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 5,
+        "retail_cell": "F5"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 5,
+        "retail_cell": "F5"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.az-delivery.de/en/products/esp32-dev-kitc-v2-ai-thinker-soldered",
+      "credit": "AZ-Delivery",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-005",
+    "name": "ESP8266 NodeMCU",
+    "name_ar": "لوحة ESP8266 NodeMCU",
+    "aliases": [
+      "ESP8266 NodeMCU",
+      "ESP8266 NodeMCU"
+    ],
+    "category": "boards",
+    "price_cents": 600,
+    "price_status": "confirmed",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-nodemcu.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 6,
+        "retail_cell": "F6"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 6,
+        "retail_cell": "F6"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 6,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/wireless-module-nodemcu-based-on-esp8266-with-pcb-antenna-and-usb-port",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-006",
+    "name": "Arduino Mega 2560",
+    "name_ar": "أردوينو Mega 2560",
+    "aliases": [
+      "Arduino Mega 2560",
+      "Arduino Mega 2560"
+    ],
+    "category": "boards",
+    "price_cents": 2500,
+    "price_status": "confirmed",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-arduino-mega.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 7,
+        "retail_cell": "F7"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 7,
+        "retail_cell": "F7"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 4,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://store.arduino.cc/products/arduino-mega-2560-rev3",
+      "credit": "Arduino",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-007",
+    "name": "HC-SR04 Ultrasonic Sensor",
+    "name_ar": "حساس المسافة بالموجات فوق الصوتية HC-SR04",
+    "aliases": [
+      "HC-SR04 Ultrasonic Sensor",
+      "HC-SR04 Ultrasonic"
+    ],
+    "category": "sensors",
+    "price_cents": 150,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-hc-sr04.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 8,
+        "retail_cell": "F8"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 8,
+        "retail_cell": "F8"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 24,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/srf04-ultrasonic-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-008",
+    "name": "DHT11 Sensor",
+    "name_ar": "حساس الحرارة والرطوبة DHT11",
+    "aliases": [
+      "DHT11 Sensor",
+      "DHT11"
+    ],
+    "category": "sensors",
+    "price_cents": 300,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-dht11.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 9,
+        "retail_cell": "F9"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 9,
+        "retail_cell": "F9"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 25,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/dht11-humidity-temperature-sensor",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-009",
+    "name": "DHT22 Sensor",
+    "name_ar": "حساس الحرارة والرطوبة DHT22",
+    "aliases": [
+      "DHT22 Sensor"
+    ],
+    "category": "sensors",
+    "price_cents": 1500,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-dht22.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 10,
+        "retail_cell": "F10"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 10,
+        "retail_cell": "F10"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.adafruit.com/product/385",
+      "credit": "Adafruit",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-010",
+    "name": "Real time clock module",
+    "name_ar": "وحدة ساعة الوقت الحقيقي",
+    "aliases": [
+      "Real time clock module"
+    ],
+    "category": "components",
+    "price_cents": 350,
+    "price_status": "confirmed",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-rtc-module.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 11,
+        "retail_cell": "F11"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 11,
+        "retail_cell": "F11"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/ds1307-rtc-real-time-clock-module",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-011",
+    "name": "MQ-2 Gas Sensor",
+    "name_ar": "حساس الغاز MQ-2",
+    "aliases": [
+      "MQ-2 Gas Sensor",
+      "MQ-2"
+    ],
+    "category": "sensors",
+    "price_cents": 200,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-2.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 12,
+        "retail_cell": "F12"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 12,
+        "retail_cell": "F12"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 29,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/smoke-sensor-module-mq2-1",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-012",
+    "name": "MQ-9 Gas Sensor",
+    "name_ar": "حساس الغاز MQ-9",
+    "aliases": [
+      "MQ-9 Gas Sensor"
+    ],
+    "category": "sensors",
+    "price_cents": 250,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-9.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 13,
+        "retail_cell": "F13"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 13,
+        "retail_cell": "F13"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/mq-9-gas-sensor-1",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-013",
+    "name": "PIR Motion Sensor",
+    "name_ar": "حساس الحركة PIR",
+    "aliases": [
+      "PIR Motion Sensor",
+      "PIR Motion"
+    ],
+    "category": "sensors",
+    "price_cents": 250,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-pir-motion.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 14,
+        "retail_cell": "F14"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 14,
+        "retail_cell": "F14"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 26,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/pir-motion-sensor",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-014",
+    "name": "LDR Light Sensor (GL5506)",
+    "name_ar": "مقاومة ضوئية LDR (GL5506)",
+    "aliases": [
+      "LDR Light Sensor (GL5506)",
+      "LDR"
+    ],
+    "category": "sensors",
+    "price_cents": 50,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-gl5506-ldr.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 15,
+        "retail_cell": "F15"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 15,
+        "retail_cell": "F15"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 31,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.pedalpcb.com/product/a2001/",
+      "credit": "PedalPCB",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-015",
+    "name": "Sound Sensor",
+    "name_ar": "حساس الصوت",
+    "aliases": [
+      "Sound Sensor",
+      "Sound Sensor"
+    ],
+    "category": "sensors",
+    "price_cents": 300,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-sound-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 16,
+        "retail_cell": "F16"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 16,
+        "retail_cell": "F16"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 35,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/sound-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-016",
+    "name": "IR Obstacle Sensor",
+    "name_ar": "حساس العوائق بالأشعة تحت الحمراء",
+    "aliases": [
+      "IR Obstacle Sensor",
+      "IR Obstacle"
+    ],
+    "category": "sensors",
+    "price_cents": 300,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-ir-obstacle.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 17,
+        "retail_cell": "F17"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 17,
+        "retail_cell": "F17"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 27,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/infrared-obstacle-avoidance-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-017",
+    "name": "Flame Sensor",
+    "name_ar": "حساس اللهب",
+    "aliases": [
+      "Flame Sensor",
+      "Flame Sensor"
+    ],
+    "category": "sensors",
+    "price_cents": 100,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-flame-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 18,
+        "retail_cell": "F18"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 18,
+        "retail_cell": "F18"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 28,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/flame-sensor",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-018",
+    "name": "Joystick Module",
+    "name_ar": "وحدة عصا التحكم",
+    "aliases": [
+      "Joystick Module",
+      "Joystick Module"
+    ],
+    "category": "components",
+    "price_cents": 100,
+    "price_status": "confirmed",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-joystick.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 19,
+        "retail_cell": "F19"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 19,
+        "retail_cell": "F19"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 9,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/dual-axis-joystick-module",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-019",
+    "name": "4×4 Keypad",
+    "name_ar": "لوحة مفاتيح 4×4",
+    "aliases": [
+      "4×4 Keypad"
+    ],
+    "category": "components",
+    "price_cents": 250,
+    "price_status": "confirmed",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-keypad-4x4.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 20,
+        "retail_cell": "F20"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 20,
+        "retail_cell": "F20"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/4-4-matrix-array-matrix-keyboard-16-key-membrane-switch",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-020",
+    "name": "HC-05 Bluetooth Module",
+    "name_ar": "وحدة بلوتوث HC-05",
+    "aliases": [
+      "HC-05 Bluetooth Module",
+      "HC-05"
+    ],
+    "category": "communication",
+    "price_cents": 500,
+    "price_status": "confirmed",
+    "description": "A wireless communication module for connected electronics projects. Confirm wiring and logic levels before use.",
+    "description_ar": "وحدة اتصال لاسلكي للمشاريع الإلكترونية المتصلة. تحقّق من التوصيلات ومستويات الإشارات قبل الاستخدام.",
+    "image_path": "images/photos/s-hc-05.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 21,
+        "retail_cell": "F21"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 21,
+        "retail_cell": "F21"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 49,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/hc-05-bluetooth-module",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-021",
+    "name": "NRF24L01+",
+    "name_ar": "وحدة اتصال لاسلكي NRF24L01+",
+    "aliases": [
+      "NRF24L01+",
+      "NRF24L01"
+    ],
+    "category": "communication",
+    "price_cents": 300,
+    "price_status": "confirmed",
+    "description": "A wireless communication module for connected electronics projects. Confirm wiring and logic levels before use.",
+    "description_ar": "وحدة اتصال لاسلكي للمشاريع الإلكترونية المتصلة. تحقّق من التوصيلات ومستويات الإشارات قبل الاستخدام.",
+    "image_path": "images/photos/s-nrf24l01.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 22,
+        "retail_cell": "F22"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 22,
+        "retail_cell": "F22"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 51,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/nrf24l01-transceiver",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-022",
+    "name": "7-Segment Display",
+    "name_ar": "شاشة سباعية المقاطع",
+    "aliases": [
+      "7-Segment Display",
+      "7 Segment"
+    ],
+    "category": "displays",
+    "price_cents": 150,
+    "price_status": "confirmed",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-single-seven-segment.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 23,
+        "retail_cell": "F23"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 23,
+        "retail_cell": "F23"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 42,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/1-digit-0-56-inch-7-segment-common-cathode",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-023",
+    "name": "LCD 1602 I2C",
+    "name_ar": "شاشة LCD 1602 مع I2C",
+    "aliases": [
+      "LCD 1602 I2C",
+      "LCD1602 I2C"
+    ],
+    "category": "displays",
+    "price_cents": 500,
+    "price_status": "confirmed",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-lcd-1602-i2c.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 24,
+        "retail_cell": "F24"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 24,
+        "retail_cell": "F24"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 38,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/1602-16x2-lcd-display-with-i2c-iic-interface",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-024",
+    "name": "MPU6050",
+    "name_ar": "حساس الحركة والتسارع MPU6050",
+    "aliases": [
+      "MPU6050",
+      "MPU6050"
+    ],
+    "category": "sensors",
+    "price_cents": 200,
+    "price_status": "confirmed",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mpu6050.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 25,
+        "retail_cell": "F25"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 25,
+        "retail_cell": "F25"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 37,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/gyro-accelerometer-gy521-mpu6050",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-025",
+    "name": "SG90 Servo (180°)",
+    "name_ar": "محرك سيرفو SG90 (180°)",
+    "aliases": [
+      "SG90 Servo (180°)",
+      "SG90 Servo"
+    ],
+    "category": "robotics",
+    "price_cents": 300,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-sg90-servo.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 26,
+        "retail_cell": "F26"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 26,
+        "retail_cell": "F26"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 44,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.elecrow.com/tower-pro-9g-sg90-mini-servo-p-266.html",
+      "credit": "Elecrow",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-026",
+    "name": "MG996R Servo (180°)",
+    "name_ar": "محرك سيرفو MG996R (180°)",
+    "aliases": [
+      "MG996R Servo (180°)",
+      "MG996R Servo"
+    ],
+    "category": "robotics",
+    "price_cents": 800,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-mg996r-servo.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 27,
+        "retail_cell": "F27"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 27,
+        "retail_cell": "F27"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 45,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://towerpro.com.tw/product/mg996R/",
+      "credit": "TowerPro",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-027",
+    "name": "Stepper Motor Kit",
+    "name_ar": "طقم محرك خطوي",
+    "aliases": [
+      "Stepper Motor Kit"
+    ],
+    "category": "kits",
+    "price_cents": 250,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-28byj-stepper-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 28,
+        "retail_cell": "F28"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 28,
+        "retail_cell": "F28"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.elegoo.com/products/elegoo-uln2003-5v-stepper-motor-uln2003-driver-board",
+      "credit": "ELEGOO",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-028",
+    "name": "DC Gear Motor",
+    "name_ar": "محرك تيار مستمر مع علبة تروس",
+    "aliases": [
+      "DC Gear Motor"
+    ],
+    "category": "robotics",
+    "price_cents": 200,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-metal-gearmotor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 29,
+        "retail_cell": "F29"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 29,
+        "retail_cell": "F29"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-874.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-029",
+    "name": "L298N Driver",
+    "name_ar": "دارة قيادة المحركات L298N",
+    "aliases": [
+      "L298N Driver",
+      "L298N"
+    ],
+    "category": "robotics",
+    "price_cents": 200,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-l298n-driver.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 30,
+        "retail_cell": "F30"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 30,
+        "retail_cell": "F30"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 48,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.sunfounder.com/products/l298n-motor-driver-board",
+      "credit": "SunFounder",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-030",
+    "name": "CNC Shield V3",
+    "name_ar": "لوحة توسعة CNC V3",
+    "aliases": [
+      "CNC Shield V3"
+    ],
+    "category": "kits",
+    "price_cents": 700,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-cnc-shield-v3.png",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 31,
+        "retail_cell": "F31"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 31,
+        "retail_cell": "F31"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://docs.keyestudio.com/projects/KS0160/en/latest/docs/KS0160.html",
+      "credit": "Keyestudio",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-031",
+    "name": "5V Gear Motor",
+    "name_ar": "محرك مع علبة تروس 5V",
+    "aliases": [
+      "5V Gear Motor"
+    ],
+    "category": "robotics",
+    "price_cents": 200,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-tt-gearmotor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 32,
+        "retail_cell": "F32"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 32,
+        "retail_cell": "F32"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-100.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-032",
+    "name": "Robot Wheels",
+    "name_ar": "عجلات روبوت",
+    "aliases": [
+      "Robot Wheels",
+      "Robot Wheels"
+    ],
+    "category": "robotics",
+    "price_cents": 100,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-robot-wheels.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 33,
+        "retail_cell": "F33"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 33,
+        "retail_cell": "F33"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 15,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-352.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-033",
+    "name": "Smart Car Kit",
+    "name_ar": "طقم سيارة ذكية",
+    "aliases": [
+      "Smart Car Kit"
+    ],
+    "category": "kits",
+    "price_cents": 3200,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-smart-robot-car.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 34,
+        "retail_cell": "F34"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 34,
+        "retail_cell": "F34"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://us.elegoo.com/products/elegoo-smart-robot-car-kit-v-4-0",
+      "credit": "ELEGOO",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-034",
+    "name": "ESC",
+    "name_ar": "متحكم سرعة إلكتروني ESC",
+    "aliases": [
+      "ESC"
+    ],
+    "category": "robotics",
+    "price_cents": 1000,
+    "price_status": "confirmed",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-30a-esc.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 35,
+        "retail_cell": "F35"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 35,
+        "retail_cell": "F35"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://qx-motor.co/product/esc-30a/",
+      "credit": "QX-MOTOR",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-035",
+    "name": "Breadboard (400-pin)",
+    "name_ar": "لوحة تجارب (400 نقطة)",
+    "aliases": [
+      "Breadboard (400-pin)"
+    ],
+    "category": "connections",
+    "price_cents": 150,
+    "price_status": "confirmed",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-breadboard-400.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 36,
+        "retail_cell": "F36"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 36,
+        "retail_cell": "F36"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/400-points-soldless-breadboard",
+      "credit": "ElectroSlab",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-036",
+    "name": "Jumper Wires",
+    "name_ar": "أسلاك توصيل",
+    "aliases": [
+      "Jumper Wires"
+    ],
+    "category": "connections",
+    "price_cents": 225,
+    "price_status": "confirmed",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-jumper-mm.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 37,
+        "retail_cell": "F37"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 37,
+        "retail_cell": "F37"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/male-to-male-dupont-line-40-pin-30cm",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-037",
+    "name": "USB A-B Cable (0.3 m)",
+    "name_ar": "كابل USB A-B (0.3 متر)",
+    "aliases": [
+      "USB A-B Cable (0.3 m)"
+    ],
+    "category": "connections",
+    "price_cents": 500,
+    "price_status": "confirmed",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-usb-ab.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 38,
+        "retail_cell": "F38"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 38,
+        "retail_cell": "F38"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/usb-2-0-a-b-male-printer-cable",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-038",
+    "name": "USB Micro Cable (0.3 m)",
+    "name_ar": "كابل Micro USB (0.3 متر)",
+    "aliases": [
+      "USB Micro Cable (0.3 m)"
+    ],
+    "category": "connections",
+    "price_cents": 1000,
+    "price_status": "confirmed",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-usb-micro.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 39,
+        "retail_cell": "F39"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 39,
+        "retail_cell": "F39"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/micro-usb-cable",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-039",
+    "name": "USB-C Cable (0.5 m)",
+    "name_ar": "كابل USB-C (0.5 متر)",
+    "aliases": [
+      "USB-C Cable (0.5 m)"
+    ],
+    "category": "connections",
+    "price_cents": 600,
+    "price_status": "confirmed",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-usb-c.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 40,
+        "retail_cell": "F40"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 40,
+        "retail_cell": "F40"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/ugreen-usb-a-to-usb-c-cable-1m-60116-us287",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-040",
+    "name": "OLED Display (1.3\")",
+    "name_ar": "شاشة OLED (1.3 بوصة)",
+    "aliases": [
+      "OLED Display (1.3\")",
+      "OLED 1.3"
+    ],
+    "category": "displays",
+    "price_cents": 1000,
+    "price_status": "confirmed",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-oled-1-3.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 41,
+        "retail_cell": "F41"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 41,
+        "retail_cell": "F41"
+      },
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 40,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/1-3-i2c-128x64-white-oled-display-module",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-041",
+    "name": "Buck Converter",
+    "name_ar": "محول خافض للجهد",
+    "aliases": [
+      "Buck Converter"
+    ],
+    "category": "power",
+    "price_cents": 500,
+    "price_status": "confirmed",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-buck-converter.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 42,
+        "retail_cell": "F42"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 42,
+        "retail_cell": "F42"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/lm2596",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-042",
+    "name": "Sensor Shield",
+    "name_ar": "لوحة توسعة للحساسات",
+    "aliases": [
+      "Sensor Shield"
+    ],
+    "category": "kits",
+    "price_cents": 600,
+    "price_status": "confirmed",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-sensor-shield.png",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet1",
+        "row": 43,
+        "retail_cell": "F43"
+      },
+      {
+        "file": "Arduino_list_1(1).xlsx",
+        "sheet": "Sheet2",
+        "row": 43,
+        "retail_cell": "F43"
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://wiki.keyestudio.com/Ks0004_keyestudio_Sensor_Shield_V5",
+      "credit": "Keyestudio",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-043",
+    "name": "Arduino UNO R3",
+    "name_ar": "أردوينو UNO R3",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-arduino-uno.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 2,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://store.arduino.cc/products/arduino-uno-rev3",
+      "credit": "Arduino",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-044",
+    "name": "ESP32 DevKit",
+    "name_ar": "لوحة تطوير ESP32 DevKit",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-esp32-devkit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 5,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/esp32",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-045",
+    "name": "ESP32-CAM",
+    "name_ar": "لوحة ESP32-CAM مع كاميرا",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-esp32-cam.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 7,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/esp32-cam",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-046",
+    "name": "Breadboard 830",
+    "name_ar": "لوحة تجارب 830 نقطة",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-breadboard-830.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 8,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/830-ponits-soldless-breadboard",
+      "credit": "ElectroSlab",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-047",
+    "name": "Mini Breadboard",
+    "name_ar": "لوحة تجارب صغيرة",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-breadboard-mini.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 9,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/170pts-mini-breadboard-yellow",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-048",
+    "name": "Jumper Wires M-M",
+    "name_ar": "أسلاك توصيل ذكر–ذكر",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-jumper-mm.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 10,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/male-to-male-dupont-line-40-pin-30cm",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-049",
+    "name": "Jumper Wires M-F",
+    "name_ar": "أسلاك توصيل ذكر–أنثى",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-jumper-mf.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 11,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/male-to-female-dupont-line-40-pin-20cm",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-050",
+    "name": "Jumper Wires F-F",
+    "name_ar": "أسلاك توصيل أنثى–أنثى",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-jumper-ff.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 12,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/female-to-female-dupont-line-40-pin-20cm",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-051",
+    "name": "USB Micro Cable",
+    "name_ar": "كابل Micro USB",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-usb-micro.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 13,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/micro-usb-cable",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-052",
+    "name": "USB Type-C Cable",
+    "name_ar": "كابل USB Type-C",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-usb-c.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 14,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/ugreen-usb-a-to-usb-c-cable-1m-60116-us287",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-053",
+    "name": "Resistor assortment",
+    "name_ar": "مجموعة مقاومات",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-resistor-assortment.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 15,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.sparkfun.com/resistor-kit-1-4w-500-total.html",
+      "credit": "SparkFun",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-054",
+    "name": "Capacitor Kit",
+    "name_ar": "طقم مكثفات",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-capacitor-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 16,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.sunfounder.com/products/ceramic-capacitor-assortment-kit-set-of-600-small-assorted-capacitors",
+      "credit": "SunFounder",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-055",
+    "name": "Potentiometer",
+    "name_ar": "مقاومة متغيرة",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-potentiometer.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 17,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/10k-potentiometer-15mm-shaft",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-056",
+    "name": "Push Buttons",
+    "name_ar": "أزرار ضغط",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-push-buttons.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 18,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/tactile-switch-momentary",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-057",
+    "name": "LEDs",
+    "name_ar": "مصابيح LED",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-leds.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 19,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/28mm-leg-led-5mm-red",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-058",
+    "name": "RGB LEDs",
+    "name_ar": "مصابيح LED متعددة الألوان",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-rgb-leds.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 20,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/5mm-rgb-common-cathode-led",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-059",
+    "name": "Voltage Regulators",
+    "name_ar": "منظمات جهد",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-voltage-regulator.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 21,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.adafruit.com/product/2164",
+      "credit": "Adafruit",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-060",
+    "name": "Pin Headers",
+    "name_ar": "صفوف دبابيس توصيل",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-pin-headers.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 22,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/2-54mm-single-row-male-1x40-pin-header-strip-black",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-061",
+    "name": "Screw Terminals",
+    "name_ar": "أطراف توصيل براغي",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A connection accessory for building and prototyping circuits. Check connector type and dimensions.",
+    "description_ar": "ملحق توصيل لبناء الدارات والنماذج التجريبية. تحقّق من نوع الموصل والأبعاد.",
+    "image_path": "images/photos/b-screw-terminals.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 23,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/2pin-straight-pin-screw-terminal-block",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-062",
+    "name": "MQ-135",
+    "name_ar": "حساس الغاز MQ-135",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-135.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 30,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/mq-135-air-quality-sensor-module-1",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-063",
+    "name": "Soil Moisture",
+    "name_ar": "حساس رطوبة التربة",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-soil-moisture.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 32,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/soil-moisture-sensor-1",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-064",
+    "name": "Water Level",
+    "name_ar": "حساس مستوى الماء",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-water-level.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 33,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/water-level-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-065",
+    "name": "Rain Sensor",
+    "name_ar": "حساس المطر",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-rain-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 34,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/rain-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-066",
+    "name": "DS18B20",
+    "name_ar": "حساس الحرارة DS18B20",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-ds18b20.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 36,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/sensor-ds18b20-1-1",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-067",
+    "name": "OLED 0.96",
+    "name_ar": "شاشة OLED (0.96 بوصة)",
+    "aliases": [],
+    "category": "displays",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-oled-0-96.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 39,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/0-96-inch-i2c-oled-display-module-ssd1306",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-068",
+    "name": "MAX7219 Matrix",
+    "name_ar": "مصفوفة LED مع MAX7219",
+    "aliases": [],
+    "category": "displays",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-max7219-matrix.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 41,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/max7219-dot-matrix-display-module",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-069",
+    "name": "4 Digit Display",
+    "name_ar": "شاشة بأربع خانات",
+    "aliases": [],
+    "category": "displays",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A display for readings, messages, or project status. Confirm its driver and interface before connecting it.",
+    "description_ar": "شاشة لعرض القراءات والرسائل وحالة المشروع. تحقّق من دارة القيادة وواجهة الاتصال قبل توصيلها.",
+    "image_path": "images/photos/s-four-digit-display.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 43,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/tm1637-4d-seven-segment",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-070",
+    "name": "TT Motor",
+    "name_ar": "محرك TT مع علبة تروس",
+    "aliases": [],
+    "category": "robotics",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-tt-gearmotor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 46,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-100.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-071",
+    "name": "28BYJ-48 Stepper",
+    "name_ar": "محرك خطوي 28BYJ-48",
+    "aliases": [],
+    "category": "robotics",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-28byj48-stepper.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 47,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.elecrow.com/28byj48-high-quality-stepper-motor-5v-p-264.html",
+      "credit": "Elecrow",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-072",
+    "name": "HC-06",
+    "name_ar": "وحدة بلوتوث HC-06",
+    "aliases": [],
+    "category": "communication",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A wireless communication module for connected electronics projects. Confirm wiring and logic levels before use.",
+    "description_ar": "وحدة اتصال لاسلكي للمشاريع الإلكترونية المتصلة. تحقّق من التوصيلات ومستويات الإشارات قبل الاستخدام.",
+    "image_path": "images/photos/s-hc-06.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 50,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/serial-bluetooth-hc-06",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-073",
+    "name": "ESP-01",
+    "name_ar": "وحدة Wi-Fi ESP-01",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-esp-01.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 52,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/esp-01-esp8266-serial-wifi-module",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-074",
+    "name": "ESP-01 Adapter",
+    "name_ar": "محوّل وحدة ESP-01",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-esp-01-adapter.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 53,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/esp-01-adapter-3-3v-5v",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-075",
+    "name": "LM2596",
+    "name_ar": "محول خافض للجهد LM2596",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-lm2596.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 54,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/lm2596",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-076",
+    "name": "TP4056",
+    "name_ar": "وحدة شحن ليثيوم TP4056",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-tp4056.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 55,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/5v-1a-lithium-battery-charging-module-tp4056-with-current-protection",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-077",
+    "name": "18650 Battery Holder",
+    "name_ar": "حامل بطارية 18650",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-18650-holder.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "A_items",
+        "row": 56,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/18650-lithium-battery-holder",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-078",
+    "name": "RFID RC522",
+    "name_ar": "قارئ بطاقات RFID RC522",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-rfid-rc522.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 2,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/rc522-rfid-reader",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-079",
+    "name": "Fingerprint Sensor",
+    "name_ar": "حساس بصمة",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-fingerprint-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 3,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/r308-fingerprint-sensor",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-080",
+    "name": "pH Sensor",
+    "name_ar": "حساس الحموضة pH",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-ph-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 4,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-1025.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-081",
+    "name": "Turbidity Sensor",
+    "name_ar": "حساس العكارة",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-turbidity-sensor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 5,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-1394.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-082",
+    "name": "MQ-3",
+    "name_ar": "حساس الغاز MQ-3",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-3.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 6,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/mq-3-gas-sensor",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-083",
+    "name": "MQ-5",
+    "name_ar": "حساس الغاز MQ-5",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-5.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 7,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/mq-5-liquefied-gas-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-084",
+    "name": "MQ-7",
+    "name_ar": "حساس الغاز MQ-7",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-mq-7.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 8,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/mq-7-gas-sensor-1",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-085",
+    "name": "1-Channel Relay",
+    "name_ar": "وحدة ريليه بقناة واحدة",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-one-channel-relay.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 10,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/1chanel-5v-relay",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-086",
+    "name": "2-Channel Relay",
+    "name_ar": "وحدة ريليه بقناتين",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-two-channel-relay.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 11,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/2chanel-5v-relay",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-087",
+    "name": "4-Channel Relay",
+    "name_ar": "وحدة ريليه بأربع قنوات",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A power or switching component. Confirm the supplied version and its electrical ratings before use.",
+    "description_ar": "مكوّن للتغذية أو التبديل الكهربائي. تحقّق من الإصدار والحدود الكهربائية قبل الاستخدام.",
+    "image_path": "images/photos/s-four-channel-relay.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 12,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/4chanel-5v-relay",
+      "credit": "ElectroPeak",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-088",
+    "name": "RTC DS3231",
+    "name_ar": "وحدة ساعة الوقت الحقيقي DS3231",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-ds3231.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 13,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/ds3231-rtc",
+      "credit": "ElectroSlab",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-089",
+    "name": "Robot Chassis Kit",
+    "name_ar": "طقم هيكل روبوت",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-robot-chassis.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 14,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-65.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-090",
+    "name": "BC547 Transistor",
+    "name_ar": "ترانزستور BC547",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-bc547.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 16,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/bc547-transistor",
+      "credit": "ElectroSlab",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-091",
+    "name": "BC557 Transistor",
+    "name_ar": "ترانزستور BC557",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "An electronic component for learning and circuit building. Ask us to confirm the supplied value, rating, and package.",
+    "description_ar": "مكوّن إلكتروني للتعلّم وبناء الدارات. تواصل معنا لتأكيد القيمة والحدود الكهربائية ونوع العبوة.",
+    "image_path": "images/photos/b-bc557.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "B_items",
+        "row": 17,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/bc557",
+      "credit": "ElectroSlab",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-092",
+    "name": "Arduino Micro",
+    "name_ar": "أردوينو Micro",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-arduino-micro.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 2,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://store.arduino.cc/products/arduino-micro",
+      "credit": "Arduino",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-093",
+    "name": "Arduino Pro Mini",
+    "name_ar": "أردوينو Pro Mini",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-pro-mini.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 3,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/pro-mini-atmega328p-5v-16m",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-094",
+    "name": "Raspberry Pi Pico",
+    "name_ar": "راسبيري باي Pico",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-pico.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 4,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.adafruit.com/product/4864",
+      "credit": "Adafruit / Raspberry Pi",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-095",
+    "name": "Raspberry Pi Pico W",
+    "name_ar": "راسبيري باي Pico W",
+    "aliases": [],
+    "category": "boards",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A development board for programmable electronics projects. Confirm the board variant and pinout before connecting components.",
+    "description_ar": "لوحة تطوير لمشاريع الإلكترونيات القابلة للبرمجة. تحقّق من إصدار اللوحة ومخطط الأرجل قبل توصيل المكونات.",
+    "image_path": "images/photos/b-pico-w.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 5,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://shop.pimoroni.com/products/raspberry-pi-pico-w",
+      "credit": "Pimoroni / Raspberry Pi",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-096",
+    "name": "Brushless DC Motor",
+    "name_ar": "محرك تيار مستمر دون فُرش",
+    "aliases": [],
+    "category": "robotics",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-brushless-dc-motor.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 6,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.qx-motor.net/products/qx-motor-qm2812-2212-980kv-brushless-motor-cw-ccw-for-f330-f450-f550-multicopter-rc-drone-motor-parts",
+      "credit": "QX-MOTOR",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-097",
+    "name": "30A ESC",
+    "name_ar": "متحكم سرعة إلكتروني ESC بقدرة 30A",
+    "aliases": [],
+    "category": "robotics",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A component for robot motion and control. Match the power supply and controller to the supplied part.",
+    "description_ar": "مكوّن لحركة الروبوت والتحكم به. استخدم مصدر تغذية ومتحكمًا مناسبين للقطعة المورّدة.",
+    "image_path": "images/photos/r-30a-esc.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 7,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://qx-motor.co/product/esc-30a/",
+      "credit": "QX-MOTOR",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-098",
+    "name": "Color Sensor TCS3200",
+    "name_ar": "حساس الألوان TCS3200",
+    "aliases": [],
+    "category": "sensors",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A sensing component for electronics experiments and automation. Confirm the supply voltage and interface for the supplied version.",
+    "description_ar": "مكوّن استشعار للتجارب الإلكترونية والأتمتة. تحقّق من جهد التغذية وواجهة الاتصال للإصدار المورّد.",
+    "image_path": "images/photos/s-tcs3200.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "C_items",
+        "row": 8,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electropeak.com/gy-31-color-recognition-sensor-module",
+      "credit": "ElectroPeak",
+      "match_type": "exact"
+    }
+  },
+  {
+    "id": "tv-099",
+    "name": "Arduino UNO Starter Kit",
+    "name_ar": "طقم البداية أردوينو UNO",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-uno-beginner-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 2,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-345.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-100",
+    "name": "ESP32 Starter Kit",
+    "name_ar": "طقم البداية ESP32",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-esp32-starter-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 3,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.sunfounder.com/products/sunfounder-esp32-ultimate-starter-kit-with-esp32-camera-extension-board-battery",
+      "credit": "SunFounder",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-101",
+    "name": "37-in-1 Sensor Kit",
+    "name_ar": "طقم 37 حساسًا",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-37-sensor-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 4,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.sunfounder.com/products/sensor-kit-v2-for-arduino",
+      "credit": "SunFounder",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-102",
+    "name": "45-in-1 Sensor Kit",
+    "name_ar": "طقم 45 حساسًا",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-45-sensor-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 5,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/45-in-1-sensors-modules-starter-kit-for-arduino",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-103",
+    "name": "Robot Car Kit",
+    "name_ar": "طقم سيارة روبوت",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-robot-car-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 6,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-1144.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-104",
+    "name": "Line Follower Kit",
+    "name_ar": "طقم روبوت تتبّع الخط",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-line-follower-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 7,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.pololu.com/product/3737",
+      "credit": "Pololu",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-105",
+    "name": "Obstacle Avoidance Kit",
+    "name_ar": "طقم روبوت تفادي العوائق",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-obstacle-robot-kit.png",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 8,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-1233.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-106",
+    "name": "Bluetooth Robot Kit",
+    "name_ar": "طقم روبوت بلوتوث",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-bluetooth-robot-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 9,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://electroslab.com/products/electroslab-bluetooth-car-kit",
+      "credit": "ElectroSlab",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-107",
+    "name": "Electronics Learning Kit",
+    "name_ar": "طقم تعلّم الإلكترونيات",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-electronics-learning-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 10,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.dfrobot.com/product-345.html",
+      "credit": "DFRobot",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-108",
+    "name": "Breadboard Learning Kit",
+    "name_ar": "طقم تعلّم لوحة التجارب",
+    "aliases": [],
+    "category": "kits",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "A kit or expansion board for electronics and robotics. Ask us for the exact included components before ordering.",
+    "description_ar": "طقم أو لوحة توسعة للإلكترونيات والروبوتات. تواصل معنا لمعرفة المحتويات الدقيقة قبل الطلب.",
+    "image_path": "images/photos/r-breadboard-learning-kit.jpg",
+    "image_kind": "photo",
+    "sources": [
+      {
+        "file": "Arduino_list_2.xlsx",
+        "sheet": "kits",
+        "row": 11,
+        "retail_cell": null
+      }
+    ],
+    "photo_source": {
+      "source_url": "https://www.keyestudio.com/products/free-shipping-keyestudio-uno-r3-breadboard-kit-for-arduino-education-project-with-dupont-wireledresistorpdf",
+      "credit": "Keyestudio",
+      "match_type": "representative"
+    }
+  },
+  {
+    "id": "tv-109",
+    "name": "IRFB4110 MOSFET",
+    "name_ar": "موسفت IRFB4110",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Power MOSFET with IRFB4110 marking as shown. Confirm the required device and package for your repair.",
+    "description_ar": "موسفت قدرة يحمل رمز IRFB4110 كما في الصورة. أكّد القطعة والحزمة المناسبة للإصلاح.",
+    "image_path": "images/photos/upload-109.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.21.42 PM.jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-110",
+    "name": "TLP352 optocoupler",
+    "name_ar": "عازل ضوئي TLP352",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Optocoupler with TLP352 marking in the supplied photo.",
+    "description_ar": "عازل ضوئي يحمل رمز TLP352 في الصورة المرفقة.",
+    "image_path": "images/photos/upload-110.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.21.43 PM.jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-111",
+    "name": "YGW60N65F1 power semiconductor",
+    "name_ar": "قطعة قدرة YGW60N65F1",
+    "aliases": [],
+    "category": "components",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Power semiconductor with YGW60N65F1 marking. Confirm its exact rating and pinout before selecting a replacement.",
+    "description_ar": "قطعة قدرة تحمل رمز YGW60N65F1. أكّد التصنيف وترتيب الأطراف قبل اختيار البديل.",
+    "image_path": "images/photos/upload-111.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.25.54 PM (1).jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-112",
+    "name": "Black battery terminal connector",
+    "name_ar": "موصل طرف بطارية أسود",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Black threaded battery terminal connector and cover as pictured. Confirm thread size and connection rating.",
+    "description_ar": "موصل طرف بطارية أسود مع غطاء كما في الصورة. أكّد قياس السن وتصنيف الموصل.",
+    "image_path": "images/photos/upload-112.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.21.43 PM (1).jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-113",
+    "name": "Metal desoldering pump",
+    "name_ar": "شفاط قصدير معدني",
+    "aliases": [],
+    "category": "connections",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Manual metal desoldering pump shown in the supplied photo. Ask TechVerse to confirm the supplied model and nozzle.",
+    "description_ar": "شفاط قصدير يدوي معدني في الصورة المرفقة. اسأل TechVerse لتأكيد الطراز والفوهة.",
+    "image_path": "images/photos/upload-113.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.25.55 PM (1).jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-114",
+    "name": "150 A bolt-down fuse",
+    "name_ar": "مصهر تثبيت بالبراغي 150 أمبير",
+    "aliases": [],
+    "category": "power",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Bolt-down fuse photographed with a 150 A marking. Confirm voltage rating and mounting dimensions.",
+    "description_ar": "مصهر تثبيت بالبراغي يحمل علامة 150 أمبير. أكّد تصنيف الجهد وأبعاد التثبيت.",
+    "image_path": "images/photos/upload-114.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.25.54 PM.jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-115",
+    "name": "Manual desoldering pump",
+    "name_ar": "مضخة يدوية لإزالة القصدير",
+    "aliases": [],
+    "category": "repair",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Manual desoldering tool as photographed, for removing molten solder during appropriate repair work.",
+    "description_ar": "أداة يدوية لإزالة القصدير كما في الصورة، لاستخدامها أثناء أعمال الإصلاح المناسبة.",
+    "image_path": "images/photos/upload-115.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.25.54 PM (2).jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  },
+  {
+    "id": "tv-116",
+    "name": "12 V DC cooling fan (0.70 A)",
+    "name_ar": "مروحة تبريد 12 فولت تيار مستمر (0.70 أمبير)",
+    "aliases": [],
+    "category": "repair",
+    "price_cents": null,
+    "price_status": "request",
+    "description": "Brushless DC cooling fan. The supplied label shows DC 12 V and 0.70 A; confirm dimensions and connector.",
+    "description_ar": "مروحة تبريد تيار مستمر دون فرش. يعرض الملصق 12 فولت و0.70 أمبير؛ أكّد الأبعاد والموصل.",
+    "image_path": "images/photos/upload-116.jpg",
+    "image_kind": "photo",
+    "photo_source": {
+      "credit": "TechVerse",
+      "source_url": "",
+      "match_type": "supplied"
+    },
+    "sources": [
+      {
+        "file": "WhatsApp Image 2026-10-12 at 3.25.55 PM.jpeg",
+        "kind": "supplied_photo"
+      }
+    ]
+  }
+]

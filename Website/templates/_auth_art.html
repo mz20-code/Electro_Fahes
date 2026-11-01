@@ -1,0 +1,8 @@
+{% from '_macros.html' import icon with context %}
+<div class="auth-art">
+  <span class="eyebrow">TECHVERSE / {{ t('local_support') }}</span>
+  <img class="auth-brand" src="{{ url_for('static',filename='images/logo.png') }}" alt="TechVerse" width="150" height="150">
+  <h1>{{ t('account_secure') }}</h1>
+  <ul class="auth-benefits"><li>{{ icon('chip') }}{{ t('account_feature_shop') }}</li><li>{{ icon('bolt') }}{{ t('account_feature_guide') }}</li><li>{{ icon('chat') }}{{ t('account_feature_support') }}</li></ul>
+  <span class="auth-location">{{ icon('pin') }}{{ t('location') }}</span>
+</div>

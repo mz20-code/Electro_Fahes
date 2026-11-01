@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block title %}{{ title }} · TechVerse{% endblock %}{% block content %}<section class="container page-intro narrow-copy"><span class="eyebrow">TechVerse</span><h1>{{ title }}</h1>{% for paragraph in paragraphs %}<p>{{ paragraph }}</p>{% endfor %}<a class="btn btn-secondary" href="{{ url_for('contact') }}">{{ t('contact') }}</a></section>{% endblock %}

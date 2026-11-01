@@ -1,0 +1,2964 @@
+{
+  "catalogs": [
+    {
+      "id": "must-pv1800-vhm-250v",
+      "brand": "MUST",
+      "model": "PV1800 VHM 2–5.5 kW (250 V PV; T1.2)",
+      "verified": true,
+      "image": "images/brands/must-pv1800-vhm-official.jpg",
+      "image_source": {
+        "title": "MUST manufacturer VHM product image",
+        "title_ar": "صورة منتج VHM من المصنّع MUST",
+        "url": "https://www.mustpower.com/wp-content/uploads/2023/10/PV18-VHM-02-1.jpg",
+        "match": "family"
+      },
+      "source": {
+        "title": "MUST PV1800 VHM 2–5.5 kW, MPPT 80 A / PV 250 V user manual",
+        "title_ar": "دليل MUST PV1800 VHM بقدرة 2–5.5 كيلوواط، MPPT 80 أمبير / ألواح 250 فولت",
+        "edition": "T1.2 · 4200-010022-02A1",
+        "edition_ar": "T1.2 · 4200-010022-02A1",
+        "url": "https://sw.mustpower.com/Manual/001%20PV_Solar.Inverter/4200-010022-02A1%20PV1800%202-5.5KW%20VHM%20MPPT%2080A%20250V%20T1.2%2C.pdf",
+        "local_file": "/static/manuals/MUST_PV1800_VHM_250V_T1_2.pdf",
+        "fault_pages": [
+          23,
+          24
+        ],
+        "warning_pages": [
+          24,
+          25
+        ],
+        "printed_fault_pages": [
+          20,
+          21
+        ],
+        "printed_warning_pages": [
+          21,
+          22
+        ],
+        "sha256": "f4922944561b6120a73c7a4a9121f8aa210d670618c6c7bbf03ce5955cf415cc"
+      },
+      "specs": [
+        {
+          "label": "Rated output (family)",
+          "label_ar": "قدرة الخرج الاسمية للسلسلة",
+          "value": "2000–5500 W"
+        },
+        {
+          "label": "Battery system (model dependent)",
+          "label_ar": "منظومة البطارية حسب الطراز",
+          "value": "24 V / 48 V DC"
+        },
+        {
+          "label": "AC output",
+          "label_ar": "خرج التيار المتناوب",
+          "value": "230 V AC ±5%"
+        },
+        {
+          "label": "Maximum PV open-circuit voltage",
+          "label_ar": "أقصى جهد دارة مفتوحة للألواح",
+          "value": "250 V DC"
+        },
+        {
+          "label": "MPPT range (24 V models)",
+          "label_ar": "مجال MPPT لطرازات 24 فولت",
+          "value": "30–200 V DC"
+        },
+        {
+          "label": "MPPT range (48 V models)",
+          "label_ar": "مجال MPPT لطرازات 48 فولت",
+          "value": "60–200 V DC"
+        }
+      ],
+      "spec_pages": [
+        27,
+        28
+      ],
+      "entries": [
+        {
+          "code": "01",
+          "type": "Fault",
+          "name": "Fan stopped (inverter off)",
+          "name_ar": "توقّف المروحة عندما يكون العاكس متوقفًا",
+          "action": "fan",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Fault",
+          "name": "Transformer overheat",
+          "name_ar": "ارتفاع حرارة المحول",
+          "action": "heat",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Fault",
+          "name": "Battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية",
+          "action": "battery",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Fault",
+          "name": "Battery undervoltage",
+          "name_ar": "انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "05",
+          "type": "Fault",
+          "name": "Output short circuit",
+          "name_ar": "قصر في الخرج",
+          "action": "wiring",
+          "page": 23,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ]
+        },
+        {
+          "code": "06",
+          "type": "Fault",
+          "name": "Output overvoltage",
+          "name_ar": "ارتفاع جهد الخرج",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Fault",
+          "name": "Overload timeout",
+          "name_ar": "انتهاء مهلة زيادة الحمل",
+          "action": "load",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "08",
+          "type": "Fault",
+          "name": "DC bus overvoltage",
+          "name_ar": "ارتفاع جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "09",
+          "type": "Fault",
+          "name": "DC bus startup failure",
+          "name_ar": "فشل بدء تشغيل ناقل التيار المستمر",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "11",
+          "type": "Fault",
+          "name": "Main relay failure",
+          "name_ar": "خلل الريليه الرئيسي",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "21",
+          "type": "Fault",
+          "name": "Output voltage sensor fault",
+          "name_ar": "خلل حساس جهد الخرج",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "22",
+          "type": "Fault",
+          "name": "Grid voltage sensor fault",
+          "name_ar": "خلل حساس جهد الشبكة",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "23",
+          "type": "Fault",
+          "name": "Output current sensor fault",
+          "name_ar": "خلل حساس تيار الخرج",
+          "action": "service",
+          "page": 23,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "24",
+          "type": "Fault",
+          "name": "Grid current sensor fault",
+          "name_ar": "خلل حساس تيار الشبكة",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "25",
+          "type": "Fault",
+          "name": "Load current sensor fault",
+          "name_ar": "خلل حساس تيار الحمل",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "26",
+          "type": "Fault",
+          "name": "Grid overcurrent",
+          "name_ar": "زيادة تيار الشبكة",
+          "action": "grid",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "27",
+          "type": "Fault",
+          "name": "Heatsink overheat",
+          "name_ar": "ارتفاع حرارة المبدد الحراري",
+          "action": "heat",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "31",
+          "type": "Fault",
+          "name": "Charger battery voltage mismatch",
+          "name_ar": "عدم توافق فئة جهد البطارية مع الشاحن",
+          "action": "battery",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "type": "Fault",
+          "name": "Charger current sensor fault",
+          "name_ar": "خلل حساس تيار الشاحن",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "33",
+          "type": "Fault",
+          "name": "Charger current regulation fault",
+          "name_ar": "خلل التحكم بتيار الشاحن",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "41",
+          "type": "Fault",
+          "name": "Low grid voltage",
+          "name_ar": "انخفاض جهد الشبكة",
+          "action": "grid",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "42",
+          "type": "Fault",
+          "name": "High grid voltage",
+          "name_ar": "ارتفاع جهد الشبكة",
+          "action": "grid",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "43",
+          "type": "Fault",
+          "name": "Low grid frequency",
+          "name_ar": "انخفاض تردد الشبكة",
+          "action": "grid",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "44",
+          "type": "Fault",
+          "name": "High grid frequency",
+          "name_ar": "ارتفاع تردد الشبكة",
+          "action": "grid",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "51",
+          "type": "Fault",
+          "name": "Inverter overcurrent",
+          "name_ar": "زيادة تيار العاكس",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "52",
+          "type": "Fault",
+          "name": "DC bus undervoltage",
+          "name_ar": "انخفاض جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "type": "Fault",
+          "name": "Inverter startup failure",
+          "name_ar": "فشل بدء تشغيل العاكس",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "55",
+          "type": "Fault",
+          "name": "DC voltage in AC output",
+          "name_ar": "وجود جهد مستمر في الخرج المتناوب",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "56",
+          "type": "Fault",
+          "name": "Battery disconnected",
+          "name_ar": "انقطاع اتصال البطارية",
+          "action": "battery",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "57",
+          "type": "Fault",
+          "name": "Control current sensor fault",
+          "name_ar": "خلل حساس تيار التحكم",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "58",
+          "type": "Fault",
+          "name": "Output undervoltage",
+          "name_ar": "انخفاض جهد الخرج",
+          "action": "service",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "61",
+          "type": "Warning",
+          "name": "Fan stopped (inverter on)",
+          "name_ar": "توقّف المروحة أثناء تشغيل العاكس",
+          "action": "fan",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "62",
+          "type": "Warning",
+          "name": "Fan 2 stopped (inverter on)",
+          "name_ar": "توقّف المروحة الثانية أثناء تشغيل العاكس",
+          "action": "fan",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "63",
+          "type": "Warning",
+          "name": "Battery overcharge",
+          "name_ar": "زيادة شحن البطارية",
+          "action": "battery",
+          "page": 24,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "64",
+          "type": "Warning",
+          "name": "Low battery",
+          "name_ar": "انخفاض شحن البطارية",
+          "action": "low_battery",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "67",
+          "type": "Warning",
+          "name": "Overload",
+          "name_ar": "زيادة الحمل",
+          "action": "load",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "70",
+          "type": "Warning",
+          "name": "Output derating",
+          "name_ar": "خفض قدرة الخرج",
+          "action": "grid",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "72",
+          "type": "Warning",
+          "name": "Solar charger stopped: low battery",
+          "name_ar": "توقّف الشاحن الشمسي بسبب انخفاض شحن البطارية",
+          "action": "low_battery",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "73",
+          "type": "Warning",
+          "name": "Solar charger stopped: high PV voltage",
+          "name_ar": "توقّف الشاحن الشمسي بسبب ارتفاع جهد الألواح",
+          "action": "pv",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "74",
+          "type": "Warning",
+          "name": "Solar charger overload",
+          "name_ar": "زيادة حمل الشاحن الشمسي",
+          "action": "load",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "75",
+          "type": "Warning",
+          "name": "Solar charger overheat",
+          "name_ar": "ارتفاع حرارة الشاحن الشمسي",
+          "action": "heat",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "76",
+          "type": "Warning",
+          "name": "PV charger communication fault",
+          "name_ar": "خلل الاتصال بشاحن الألواح",
+          "action": "service",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "77",
+          "type": "Warning",
+          "name": "Parameter error",
+          "name_ar": "خطأ في الإعدادات",
+          "action": "settings",
+          "page": 25,
+          "steps": [
+            {
+              "en": "Check the recent settings change with your installer and follow the model’s manual.",
+              "ar": "راجع التغيير الأخير في الإعدادات مع المركّب واتبع دليل الطراز."
+            }
+          ]
+        }
+      ],
+      "scope_note": "Only PV1800 VHM models covered by the 250 V PV T1.2 manual. Do not use for 145 V PV VHM, VPM, PRO, PH, or other MUST families.",
+      "scope_note_ar": "خاص بطرازات PV1800 VHM المشمولة بدليل T1.2 لجهد ألواح 250 فولت. لا يستخدم لطرازات VHM بجهد ألواح 145 فولت أو VPM أو PRO أو PH أو غيرها من سلاسل MUST.",
+      "reviewed_on": "2026-10-12",
+      "image_match": "family"
+    },
+    {
+      "id": "bluesun-bsm-5500blv-48da",
+      "brand": "Bluesun",
+      "model": "BSM-5500BLV-48DA",
+      "verified": true,
+      "image": "images/brands/bluesun-bsm5500blv48da-official.webp",
+      "image_source": {
+        "title": "Bluesun manufacturer product image",
+        "title_ar": "صورة المنتج من المصنّع Bluesun",
+        "url": "https://www.bluesunpv.com/wp-content/uploads/2024/11/BSM-5500BLV-48DA.webp",
+        "product_page": "https://www.bluesunpv.com/5-5kw-off-grid-hybrid-solar-inverter/",
+        "match": "exact"
+      },
+      "source": {
+        "title": "Bluesun BSM-5500BLV-48DA user manual",
+        "title_ar": "دليل استخدام Bluesun BSM-5500BLV-48DA",
+        "edition": "V2.0",
+        "edition_ar": "الإصدار V2.0",
+        "url": "https://www.bluesunpv.com/wp-content/uploads/2024/11/BSM-5500BLV-48DA-User-Manual-V2.0.pdf",
+        "local_file": "/static/manuals/Bluesun_BSM5500BLV48DA_V2.pdf",
+        "fault_pages": [
+          46,
+          47,
+          48,
+          49
+        ],
+        "warning_pages": [],
+        "sha256": "2f8639197ddb512a6a69ad46e2aa7126a8b0504409474647e1f05e5388018b33"
+      },
+      "specs": [
+        {
+          "label": "Rated output",
+          "label_ar": "قدرة الخرج الاسمية",
+          "value": "5500 W"
+        },
+        {
+          "label": "Battery system",
+          "label_ar": "منظومة البطارية",
+          "value": "48 V DC"
+        },
+        {
+          "label": "AC output",
+          "label_ar": "خرج التيار المتناوب",
+          "value": "230 V AC ±5%"
+        },
+        {
+          "label": "Maximum PV power",
+          "label_ar": "القدرة القصوى للألواح",
+          "value": "6000 W"
+        },
+        {
+          "label": "Maximum PV open-circuit voltage",
+          "label_ar": "أقصى جهد دارة مفتوحة للألواح",
+          "value": "500 V DC"
+        },
+        {
+          "label": "MPPT range",
+          "label_ar": "مجال عمل MPPT",
+          "value": "120–450 V DC"
+        },
+        {
+          "label": "Maximum PV charging current",
+          "label_ar": "أقصى تيار شحن من الألواح",
+          "value": "80 A"
+        },
+        {
+          "label": "Maximum combined charging current",
+          "label_ar": "أقصى تيار شحن إجمالي",
+          "value": "80 A"
+        }
+      ],
+      "spec_pages": [
+        52,
+        53
+      ],
+      "entries": [
+        {
+          "code": "01",
+          "type": "Fault",
+          "name": "Low battery alarm",
+          "name_ar": "تنبيه انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BatVoltLow",
+          "affects_output": false
+        },
+        {
+          "code": "02",
+          "type": "Fault",
+          "name": "Battery software overcurrent",
+          "name_ar": "زيادة تيار البطارية المكتشفة برمجيًا",
+          "action": "load",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ],
+          "manual_name": "BatOverCurrSw",
+          "affects_output": true
+        },
+        {
+          "code": "03",
+          "type": "Fault",
+          "name": "Battery disconnected",
+          "name_ar": "انقطاع اتصال البطارية",
+          "action": "battery",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ],
+          "manual_name": "BatOpen",
+          "affects_output": true
+        },
+        {
+          "code": "04",
+          "type": "Fault",
+          "name": "Low battery discharge stop",
+          "name_ar": "إيقاف التفريغ بسبب انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BatLowEod",
+          "affects_output": true
+        },
+        {
+          "code": "05",
+          "type": "Fault",
+          "name": "Battery hardware overcurrent",
+          "name_ar": "زيادة تيار البطارية المكتشفة بالدارة",
+          "action": "service",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "BatOverCurrHw",
+          "affects_output": true
+        },
+        {
+          "code": "06",
+          "type": "Fault",
+          "name": "Battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية",
+          "action": "battery",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ],
+          "manual_name": "BatOverVolt",
+          "affects_output": true
+        },
+        {
+          "code": "07",
+          "type": "Fault",
+          "name": "Hardware bus overvoltage",
+          "name_ar": "ارتفاع جهد الناقل المكتشف بالدارة",
+          "action": "service",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "BusOverVoltHw",
+          "affects_output": true
+        },
+        {
+          "code": "08",
+          "type": "Fault",
+          "name": "Software bus overvoltage",
+          "name_ar": "ارتفاع جهد الناقل المكتشف برمجيًا",
+          "action": "service",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "BusOverVoltSw",
+          "affects_output": true
+        },
+        {
+          "code": "09",
+          "type": "Fault",
+          "name": "PV overvoltage",
+          "name_ar": "ارتفاع جهد الألواح",
+          "action": "pv",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ],
+          "manual_name": "PvVoltHigh",
+          "affects_output": false
+        },
+        {
+          "code": "10",
+          "type": "Fault",
+          "name": "Software boost overcurrent",
+          "name_ar": "زيادة تيار المحول الرافع المكتشفة برمجيًا",
+          "action": "service",
+          "page": 46,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "PvBoostOCSw",
+          "affects_output": false
+        },
+        {
+          "code": "11",
+          "type": "Fault",
+          "name": "Hardware boost overcurrent",
+          "name_ar": "زيادة تيار المحول الرافع المكتشفة بالدارة",
+          "action": "service",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "PvBoostOCHw",
+          "affects_output": false
+        },
+        {
+          "code": "12",
+          "type": "Fault",
+          "name": "Utility power lost",
+          "name_ar": "انقطاع كهرباء الشبكة",
+          "action": "grid",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ],
+          "manual_name": "bLineLoss",
+          "affects_output": false
+        },
+        {
+          "code": "13",
+          "type": "Fault",
+          "name": "Bypass overload",
+          "name_ar": "زيادة الحمل في وضع التجاوز",
+          "action": "load",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ],
+          "manual_name": "OverloadBypass",
+          "affects_output": true
+        },
+        {
+          "code": "14",
+          "type": "Fault",
+          "name": "Inverter overload",
+          "name_ar": "زيادة حمل العاكس",
+          "action": "load",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ],
+          "manual_name": "OverloadInverter",
+          "affects_output": true
+        },
+        {
+          "code": "15",
+          "type": "Fault",
+          "name": "Hardware inverter overcurrent",
+          "name_ar": "زيادة تيار العاكس المكتشفة بالدارة",
+          "action": "service",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "AcOverCurrHw",
+          "affects_output": true
+        },
+        {
+          "code": "17",
+          "type": "Fault",
+          "name": "Inverter short circuit",
+          "name_ar": "قصر في خرج العاكس",
+          "action": "wiring",
+          "page": 47,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ],
+          "manual_name": "InvShort",
+          "affects_output": true
+        },
+        {
+          "code": "19",
+          "type": "Fault",
+          "name": "Buck heatsink overheat",
+          "name_ar": "ارتفاع حرارة مبدد المحول الخافض",
+          "action": "heat",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ],
+          "manual_name": "OverTemperMppt",
+          "affects_output": false
+        },
+        {
+          "code": "20",
+          "type": "Fault",
+          "name": "Inverter heatsink overheat",
+          "name_ar": "ارتفاع حرارة مبدد العاكس",
+          "action": "heat",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ],
+          "manual_name": "OverTemperInv",
+          "affects_output": true
+        },
+        {
+          "code": "21",
+          "type": "Fault",
+          "name": "Fan failure",
+          "name_ar": "خلل المروحة",
+          "action": "fan",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ],
+          "manual_name": "FanFail",
+          "affects_output": true
+        },
+        {
+          "code": "22",
+          "type": "Fault",
+          "name": "Memory failure",
+          "name_ar": "خلل الذاكرة",
+          "action": "service",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "EEPROM",
+          "affects_output": true
+        },
+        {
+          "code": "23",
+          "type": "Fault",
+          "name": "Model setting error",
+          "name_ar": "خطأ إعداد الطراز",
+          "action": "settings",
+          "page": 47,
+          "steps": [
+            {
+              "en": "Check the recent settings change with your installer and follow the model’s manual.",
+              "ar": "راجع التغيير الأخير في الإعدادات مع المركّب واتبع دليل الطراز."
+            }
+          ],
+          "manual_name": "ModelNumErr",
+          "affects_output": true
+        },
+        {
+          "code": "26",
+          "type": "Fault",
+          "name": "AC output backfeeds input",
+          "name_ar": "رجوع خرج التيار المتناوب إلى الدخل",
+          "action": "wiring",
+          "page": 47,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ],
+          "manual_name": "RlyShort",
+          "affects_output": true
+        },
+        {
+          "code": "29",
+          "type": "Fault",
+          "name": "Battery boost circuit failure",
+          "name_ar": "خلل دارة رفع جهد البطارية الداخلية",
+          "action": "service",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "BusVoltLow",
+          "affects_output": true
+        },
+        {
+          "code": "30",
+          "type": "Fault",
+          "name": "Battery capacity below 10%",
+          "name_ar": "سعة البطارية أقل من 10%",
+          "action": "low_battery",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BatCapacityLow1",
+          "affects_output": false,
+          "condition": "Battery capacity codes are valid when BMS is enabled.",
+          "condition_ar": "تسري رموز سعة البطارية عند تفعيل نظام إدارة البطارية."
+        },
+        {
+          "code": "31",
+          "type": "Fault",
+          "name": "Battery capacity below 5%",
+          "name_ar": "سعة البطارية أقل من 5%",
+          "action": "low_battery",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BatCapacityLow2",
+          "affects_output": false,
+          "condition": "Battery capacity codes are valid when BMS is enabled.",
+          "condition_ar": "تسري رموز سعة البطارية عند تفعيل نظام إدارة البطارية."
+        },
+        {
+          "code": "32",
+          "type": "Fault",
+          "name": "Low capacity inverter stop",
+          "name_ar": "توقّف العاكس بسبب انخفاض سعة البطارية",
+          "action": "low_battery",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BatCapacityLowStop",
+          "affects_output": true,
+          "condition": "Battery capacity codes are valid when BMS is enabled.",
+          "condition_ar": "تسري رموز سعة البطارية عند تفعيل نظام إدارة البطارية."
+        },
+        {
+          "code": "34",
+          "type": "Fault",
+          "name": "Parallel CAN fault",
+          "name_ar": "خلل اتصال CAN في التوازي",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "CanCommFault",
+          "affects_output": true
+        },
+        {
+          "code": "35",
+          "type": "Fault",
+          "name": "Parallel ID error",
+          "name_ar": "خطأ معرّف التوازي",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaAddrErr",
+          "affects_output": true
+        },
+        {
+          "code": "37",
+          "type": "Fault",
+          "name": "Parallel current sharing fault",
+          "name_ar": "خلل مشاركة التيار في التوازي",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaShareCurrErr",
+          "affects_output": true
+        },
+        {
+          "code": "38",
+          "type": "Fault",
+          "name": "Parallel battery voltage mismatch",
+          "name_ar": "اختلاف جهد البطارية في التوازي",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaBattVoltDiff",
+          "affects_output": true
+        },
+        {
+          "code": "39",
+          "type": "Fault",
+          "name": "Parallel AC source mismatch",
+          "name_ar": "اختلاف مصدر التيار المتناوب في التوازي",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaAcSrcDiff",
+          "affects_output": true
+        },
+        {
+          "code": "40",
+          "type": "Fault",
+          "name": "Hardware synchronization error",
+          "name_ar": "خلل إشارة المزامنة العتادية",
+          "action": "parallel",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaHwSynErr",
+          "affects_output": true
+        },
+        {
+          "code": "41",
+          "type": "Fault",
+          "name": "Inverter DC voltage error",
+          "name_ar": "خلل جهد التيار المستمر للعاكس",
+          "action": "service",
+          "page": 48,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "InvDcVoltErr",
+          "affects_output": true
+        },
+        {
+          "code": "42",
+          "type": "Fault",
+          "name": "Parallel firmware mismatch",
+          "name_ar": "اختلاف البرامج الثابتة في التوازي",
+          "action": "firmware",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Firmware changes should be performed by the installer using files approved for the exact model.",
+              "ar": "يجب أن يُجري المركّب تحديثات البرنامج الثابت باستخدام ملفات معتمدة للطراز المحدد."
+            }
+          ],
+          "manual_name": "SysFwVersionDiff",
+          "affects_output": true
+        },
+        {
+          "code": "43",
+          "type": "Fault",
+          "name": "Parallel connection error",
+          "name_ar": "خطأ اتصال خطوط التوازي",
+          "action": "parallel",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ],
+          "manual_name": "ParaLineContErr",
+          "affects_output": true
+        },
+        {
+          "code": "44",
+          "type": "Fault",
+          "name": "Serial number error",
+          "name_ar": "خطأ الرقم التسلسلي",
+          "action": "service",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ],
+          "manual_name": "Serial number error",
+          "affects_output": true
+        },
+        {
+          "code": "45",
+          "type": "Fault",
+          "name": "Split-phase setting error",
+          "name_ar": "خطأ إعداد وضع الأطوار المنقسمة",
+          "action": "settings",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Check the recent settings change with your installer and follow the model’s manual.",
+              "ar": "راجع التغيير الأخير في الإعدادات مع المركّب واتبع دليل الطراز."
+            }
+          ],
+          "manual_name": "Error setting of splitphase mode",
+          "affects_output": true
+        },
+        {
+          "code": "58",
+          "type": "Fault",
+          "name": "BMS communication error",
+          "name_ar": "خلل الاتصال بنظام إدارة البطارية",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS communication error",
+          "affects_output": false
+        },
+        {
+          "code": "59",
+          "type": "Fault",
+          "name": "BMS alarm",
+          "name_ar": "تنبيه نظام إدارة البطارية",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS alarm",
+          "affects_output": false
+        },
+        {
+          "code": "60",
+          "type": "Fault",
+          "name": "BMS low battery temperature",
+          "name_ar": "انخفاض حرارة البطارية حسب نظام إدارتها",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS battery low temperature alarm",
+          "affects_output": false
+        },
+        {
+          "code": "61",
+          "type": "Fault",
+          "name": "BMS high battery temperature",
+          "name_ar": "ارتفاع حرارة البطارية حسب نظام إدارتها",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS battery over temperature alarm",
+          "affects_output": false
+        },
+        {
+          "code": "62",
+          "type": "Fault",
+          "name": "BMS battery overcurrent",
+          "name_ar": "زيادة تيار البطارية حسب نظام إدارتها",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS battery over current alarm",
+          "affects_output": false
+        },
+        {
+          "code": "63",
+          "type": "Fault",
+          "name": "BMS low battery",
+          "name_ar": "انخفاض شحن البطارية حسب نظام إدارتها",
+          "action": "low_battery",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ],
+          "manual_name": "BMS low battery talarm",
+          "affects_output": false
+        },
+        {
+          "code": "64",
+          "type": "Fault",
+          "name": "BMS battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية حسب نظام إدارتها",
+          "action": "bms",
+          "page": 49,
+          "steps": [
+            {
+              "en": "Ask the installer to check the battery protocol, communication cable, and compatible firmware.",
+              "ar": "اطلب من المركّب فحص بروتوكول البطارية وكابل الاتصال وتوافق البرامج الثابتة."
+            },
+            {
+              "en": "Keep BMS protections enabled.",
+              "ar": "اترك وسائل حماية نظام إدارة البطارية مفعّلة."
+            }
+          ],
+          "manual_name": "BMS battery over voltage alarm",
+          "affects_output": false
+        }
+      ],
+      "reserved_codes": [
+        {
+          "code": "36",
+          "page": 48
+        }
+      ],
+      "scope_note": "Only BSM-5500BLV-48DA V2.0. The manual has one combined Fault code table; no separate warning-code table is published. Code 36 is a blank reserved row and has no verified definition.",
+      "scope_note_ar": "خاص بالطراز BSM-5500BLV-48DA والإصدار V2.0. يتضمن الدليل جدولًا واحدًا لرموز الأعطال دون جدول مستقل لرموز التنبيهات. الرمز 36 سطر فارغ محجوز بلا تعريف موثّق.",
+      "reviewed_on": "2026-10-12",
+      "image_match": "family"
+    },
+    {
+      "id": "sorotec-revo-ii-v4",
+      "brand": "SOROTEC",
+      "model": "REVO II 3–5.5 kVA (manual V4.0)",
+      "verified": true,
+      "image": "images/brands/Sorotech.webp",
+      "image_match": "family",
+      "source": {
+        "title": "REVO II 3–5.5 kVA user manual hosted by DTS UPS",
+        "title_ar": "دليل REVO II بقدرة 3–5.5 كيلوفولت أمبير، مستضاف لدى DTS UPS",
+        "edition": "Version 4.0 · supplier-hosted manual",
+        "edition_ar": "الإصدار 4.0 · دليل مستضاف لدى مورّد",
+        "url": "https://www.dts-ups.com/Files/downloads/439937017REVO-II3-5K_-_Users_manual_.pdf",
+        "local_file": "/static/manuals/SOROTEC_REVO_II_3_5_5_V4.pdf",
+        "fault_pages": [
+          20
+        ],
+        "warning_pages": [
+          21
+        ],
+        "sha256": "0d2487d4e037b7b99f8d4a0c99e4e3709ac4d78be4af57aa0feac863a574a385"
+      },
+      "entries": [
+        {
+          "code": "01",
+          "type": "Fault",
+          "name": "DC bus overvoltage",
+          "name_ar": "ارتفاع جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Fault",
+          "name": "Inverter output overvoltage",
+          "name_ar": "ارتفاع جهد خرج العاكس",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Fault",
+          "name": "Inverter output undervoltage",
+          "name_ar": "انخفاض جهد خرج العاكس",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Fault",
+          "name": "DC bus startup failure",
+          "name_ar": "فشل بدء تشغيل ناقل التيار المستمر",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "05",
+          "type": "Fault",
+          "name": "Overload fault",
+          "name_ar": "عطل زيادة الحمل",
+          "action": "load",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "06",
+          "type": "Fault",
+          "name": "Output short circuit",
+          "name_ar": "قصر في الخرج",
+          "action": "wiring",
+          "page": 20,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Fault",
+          "name": "Battery undervoltage",
+          "name_ar": "انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "08",
+          "type": "Fault",
+          "name": "Inverter startup failure",
+          "name_ar": "فشل بدء تشغيل العاكس",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "09",
+          "type": "Fault",
+          "name": "DC bus undervoltage",
+          "name_ar": "انخفاض جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "type": "Fault",
+          "name": "Parallel operation fault",
+          "name_ar": "عطل التوازي",
+          "action": "parallel",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "11",
+          "type": "Fault",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "12",
+          "type": "Fault",
+          "name": "Battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية",
+          "action": "battery",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "13",
+          "type": "Fault",
+          "name": "Phase A lost",
+          "name_ar": "فقدان الطور A",
+          "action": "parallel",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "14",
+          "type": "Fault",
+          "name": "Phase B lost",
+          "name_ar": "فقدان الطور B",
+          "action": "parallel",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "type": "Fault",
+          "name": "Phase C lost",
+          "name_ar": "فقدان الطور C",
+          "action": "parallel",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "16",
+          "type": "Fault",
+          "name": "Output mismatch",
+          "name_ar": "اختلاف الخرج",
+          "action": "parallel",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Ask the installer to verify parallel settings, phase arrangement, and communication cables for this model.",
+              "ar": "اطلب من المركّب التحقق من إعدادات التوازي وتوزيع الأطوار وكابلات الاتصال لهذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "23",
+          "type": "Fault",
+          "name": "PV overcurrent",
+          "name_ar": "زيادة تيار الألواح",
+          "action": "pv",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "24",
+          "type": "Fault",
+          "name": "PV overtemperature",
+          "name_ar": "ارتفاع حرارة دائرة الألواح",
+          "action": "heat",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "25",
+          "type": "Fault",
+          "name": "PV overload",
+          "name_ar": "زيادة حمل دائرة الألواح",
+          "action": "pv",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "26",
+          "type": "Fault",
+          "name": "PV boost circuit fault",
+          "name_ar": "عطل دائرة رفع جهد الألواح",
+          "action": "service",
+          "page": 20,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "01",
+          "type": "Warning",
+          "name": "Battery undervoltage",
+          "name_ar": "انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Warning",
+          "name": "Input undervoltage",
+          "name_ar": "انخفاض جهد الدخل",
+          "action": "grid",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Warning",
+          "name": "Input overvoltage",
+          "name_ar": "ارتفاع جهد الدخل",
+          "action": "grid",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Warning",
+          "name": "Overload",
+          "name_ar": "زيادة الحمل",
+          "action": "load",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "05",
+          "type": "Warning",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "06",
+          "type": "Warning",
+          "name": "Fan stopped during operation",
+          "name_ar": "توقف المروحة أثناء التشغيل",
+          "action": "fan",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Warning",
+          "name": "Battery voltage warning (manual inconsistency)",
+          "name_ar": "تحذير جهد البطارية (تعارض في الدليل)",
+          "action": "low_battery",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Record the displayed battery voltage and code. Ask a qualified installer to confirm the cause using your exact firmware and manual.",
+              "ar": "سجّل جهد البطارية والرمز الظاهر. اطلب من مركّب مؤهل تأكيد السبب وفق البرنامج الثابت والدليل المطابقين."
+            }
+          ],
+          "manual_note": "The warning table says low-battery shutdown; the troubleshooting text describes high battery voltage. This edition is inconsistent. Ask the installer to confirm the reading and firmware before taking action.",
+          "manual_note_ar": "يذكر جدول التحذيرات توقفًا بسبب انخفاض جهد البطارية، بينما يذكر نص استكشاف الأعطال ارتفاع الجهد. هذا الإصدار متناقض. اطلب من المركّب تأكيد القراءة والبرنامج الثابت قبل اتخاذ إجراء."
+        },
+        {
+          "code": "21",
+          "type": "Warning",
+          "name": "PV undervoltage",
+          "name_ar": "انخفاض جهد الألواح",
+          "action": "pv",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "22",
+          "type": "Warning",
+          "name": "PV overvoltage",
+          "name_ar": "ارتفاع جهد الألواح",
+          "action": "pv",
+          "page": 21,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        }
+      ],
+      "specs": [],
+      "spec_pages": [],
+      "reviewed_on": "2026-10-12"
+    },
+    {
+      "id": "voltronic-axpert-vmiii-v1",
+      "brand": "Voltronic",
+      "model": "Axpert VM III 1.5 / 3 / 5 kW (manual V1.0)",
+      "verified": true,
+      "image": "images/brands/Voltronic.webp",
+      "image_match": "family",
+      "source": {
+        "title": "Axpert VM III user manual hosted by Cellcronic",
+        "title_ar": "دليل Axpert VM III مستضاف لدى Cellcronic",
+        "edition": "Version 1.0 · supplier-hosted manual",
+        "edition_ar": "الإصدار 1.0 · دليل مستضاف لدى مورّد",
+        "url": "https://cellcronic.com/wp-content/uploads/2020/01/Axpert-VM-III-Manual.pdf",
+        "local_file": "/static/manuals/Voltronic_Axpert_VMIII_V1.pdf",
+        "fault_pages": [
+          41
+        ],
+        "warning_pages": [
+          41
+        ],
+        "sha256": "25f84c7d7264dba4e9940c4a9b11c01257be91edfc46212247541d26e21b8114"
+      },
+      "entries": [
+        {
+          "code": "01",
+          "type": "Fault",
+          "name": "Fan stopped while inverter is off",
+          "name_ar": "توقف المروحة عندما يكون العاكس متوقفًا",
+          "action": "fan",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Fault",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Fault",
+          "name": "Battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية",
+          "action": "battery",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Fault",
+          "name": "Battery undervoltage",
+          "name_ar": "انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "05",
+          "type": "Fault",
+          "name": "Output short circuit or internal converter overtemperature",
+          "name_ar": "قصر في الخرج أو ارتفاع حرارة المحول الداخلي",
+          "action": "wiring",
+          "page": 41,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ]
+        },
+        {
+          "code": "06",
+          "type": "Fault",
+          "name": "Output overvoltage",
+          "name_ar": "ارتفاع جهد الخرج",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Fault",
+          "name": "Overload timeout",
+          "name_ar": "انتهاء مهلة زيادة الحمل",
+          "action": "load",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "08",
+          "type": "Fault",
+          "name": "DC bus overvoltage",
+          "name_ar": "ارتفاع جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "09",
+          "type": "Fault",
+          "name": "DC bus startup failure",
+          "name_ar": "فشل بدء تشغيل ناقل التيار المستمر",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "51",
+          "type": "Fault",
+          "name": "Overcurrent or surge",
+          "name_ar": "تيار زائد أو اندفاع تيار",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "52",
+          "type": "Fault",
+          "name": "DC bus undervoltage",
+          "name_ar": "انخفاض جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "type": "Fault",
+          "name": "Inverter startup failure",
+          "name_ar": "فشل بدء تشغيل العاكس",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "55",
+          "type": "Fault",
+          "name": "Excess DC voltage in AC output",
+          "name_ar": "جهد مستمر زائد في الخرج المتناوب",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "57",
+          "type": "Fault",
+          "name": "Current sensor failure",
+          "name_ar": "خلل حساس التيار",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "58",
+          "type": "Fault",
+          "name": "Output undervoltage",
+          "name_ar": "انخفاض جهد الخرج",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "59",
+          "type": "Fault",
+          "name": "PV voltage exceeds limit",
+          "name_ar": "تجاوز جهد الألواح للحد",
+          "action": "pv",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "01",
+          "type": "Warning",
+          "name": "Fan stopped during operation",
+          "name_ar": "توقف المروحة أثناء التشغيل",
+          "action": "fan",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Warning",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Warning",
+          "name": "Battery overcharge",
+          "name_ar": "زيادة شحن البطارية",
+          "action": "battery",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Warning",
+          "name": "Low battery",
+          "name_ar": "انخفاض شحن البطارية",
+          "action": "low_battery",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Warning",
+          "name": "Overload",
+          "name_ar": "زيادة الحمل",
+          "action": "load",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "type": "Warning",
+          "name": "Output power derating",
+          "name_ar": "خفض قدرة الخرج",
+          "action": "grid",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "type": "Warning",
+          "name": "Low PV energy",
+          "name_ar": "انخفاض طاقة الألواح",
+          "action": "pv",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "16",
+          "type": "Warning",
+          "name": "High AC input during DC bus startup",
+          "name_ar": "ارتفاع جهد دخل الشبكة أثناء بدء ناقل التيار المستمر",
+          "action": "grid",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "type": "Warning",
+          "name": "Communication interrupted",
+          "name_ar": "انقطاع الاتصال",
+          "action": "service",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "Eq",
+          "aliases": [
+            "E9"
+          ],
+          "type": "Warning",
+          "name": "Battery equalization display indicator",
+          "name_ar": "مؤشر موازنة البطارية",
+          "page": 41,
+          "steps": [
+            {
+              "en": "This display indicates battery equalization. Confirm that the selected battery type permits equalization with your installer.",
+              "ar": "يشير العرض إلى موازنة البطارية. أكّد مع المركّب أن نوع البطارية يسمح بالموازنة."
+            }
+          ]
+        },
+        {
+          "code": "bP",
+          "type": "Warning",
+          "name": "Battery not connected display indicator",
+          "name_ar": "مؤشر عدم اتصال البطارية",
+          "page": 41,
+          "steps": [
+            {
+              "en": "Ask the installer to verify whether battery-free operation is intended and supported for your exact system.",
+              "ar": "اطلب من المركّب التحقق مما إذا كان التشغيل دون بطارية مقصودًا ومدعومًا لمنظومتك."
+            }
+          ]
+        }
+      ],
+      "specs": [],
+      "spec_pages": [],
+      "reviewed_on": "2026-10-12"
+    },
+    {
+      "id": "voltronic-axpert-vmiii-twin-v11",
+      "brand": "Voltronic",
+      "model": "Axpert VM III TWIN 4 / 6 kW (manual V1.1)",
+      "verified": true,
+      "image": "images/brands/Voltronic.webp",
+      "image_match": "family",
+      "source": {
+        "title": "Voltronic Axpert VM III TWIN 4/6 kW user manual",
+        "title_ar": "دليل Voltronic Axpert VM III TWIN بقدرة 4/6 كيلوواط",
+        "edition": "Version 1.1 · manufacturer PDF",
+        "edition_ar": "الإصدار 1.1 · ملف المصنّع",
+        "url": "https://voltronicpower.com/content/download/Manual/Axpert%20VM%20III_manual.pdf",
+        "fault_pages": [
+          43
+        ],
+        "warning_pages": [
+          44
+        ]
+      },
+      "entries": [
+        {
+          "code": "01",
+          "type": "Fault",
+          "name": "Fan stopped while inverter is off",
+          "name_ar": "توقف المروحة عندما يكون العاكس متوقفًا",
+          "action": "fan",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Fault",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Fault",
+          "name": "Battery overvoltage",
+          "name_ar": "ارتفاع جهد البطارية",
+          "action": "battery",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Fault",
+          "name": "Battery undervoltage",
+          "name_ar": "انخفاض جهد البطارية",
+          "action": "low_battery",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "05",
+          "type": "Fault",
+          "name": "Output short circuit or internal converter overtemperature",
+          "name_ar": "قصر في الخرج أو ارتفاع حرارة المحول الداخلي",
+          "action": "wiring",
+          "page": 43,
+          "steps": [
+            {
+              "en": "A qualified installer must isolate all supplies and inspect the relevant wiring.",
+              "ar": "يجب أن يعزل مركّب مؤهل جميع مصادر التغذية ويفحص التوصيلات المعنية."
+            }
+          ]
+        },
+        {
+          "code": "06",
+          "type": "Fault",
+          "name": "Output overvoltage",
+          "name_ar": "ارتفاع جهد الخرج",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Fault",
+          "name": "Overload timeout",
+          "name_ar": "انتهاء مهلة زيادة الحمل",
+          "action": "load",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "08",
+          "type": "Fault",
+          "name": "DC bus overvoltage",
+          "name_ar": "ارتفاع جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "09",
+          "type": "Fault",
+          "name": "DC bus startup failure",
+          "name_ar": "فشل بدء تشغيل ناقل التيار المستمر",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "51",
+          "type": "Fault",
+          "name": "Overcurrent or surge",
+          "name_ar": "تيار زائد أو اندفاع تيار",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "52",
+          "type": "Fault",
+          "name": "DC bus undervoltage",
+          "name_ar": "انخفاض جهد ناقل التيار المستمر",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "type": "Fault",
+          "name": "Inverter startup failure",
+          "name_ar": "فشل بدء تشغيل العاكس",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "55",
+          "type": "Fault",
+          "name": "Excess DC voltage in AC output",
+          "name_ar": "جهد مستمر زائد في الخرج المتناوب",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "57",
+          "type": "Fault",
+          "name": "Current sensor failure",
+          "name_ar": "خلل حساس التيار",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "58",
+          "type": "Fault",
+          "name": "Output undervoltage",
+          "name_ar": "انخفاض جهد الخرج",
+          "action": "service",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "59",
+          "type": "Fault",
+          "name": "PV voltage exceeds limit",
+          "name_ar": "تجاوز جهد الألواح للحد",
+          "action": "pv",
+          "page": 43,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "01",
+          "type": "Warning",
+          "name": "Fan stopped during operation",
+          "name_ar": "توقف المروحة أثناء التشغيل",
+          "action": "fan",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Check for visible obstruction at the external air vents without opening the unit.",
+              "ar": "تحقّق من وجود عوائق ظاهرة عند فتحات الهواء الخارجية دون فتح الجهاز."
+            },
+            {
+              "en": "Fan wiring and replacement require a qualified technician.",
+              "ar": "يجب أن يفحص فني مؤهل توصيلات المروحة ويستبدلها عند الحاجة."
+            }
+          ]
+        },
+        {
+          "code": "02",
+          "type": "Warning",
+          "name": "Overtemperature",
+          "name_ar": "ارتفاع الحرارة",
+          "action": "heat",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Keep external ventilation openings clear and let the unit cool.",
+              "ar": "اترك فتحات التهوية الخارجية خالية من العوائق واترك الجهاز يبرد."
+            },
+            {
+              "en": "Ask a technician to inspect cooling if the alarm returns.",
+              "ar": "اطلب من فني فحص نظام التبريد إذا عاد التنبيه."
+            }
+          ]
+        },
+        {
+          "code": "03",
+          "type": "Warning",
+          "name": "Battery overcharge",
+          "name_ar": "زيادة شحن البطارية",
+          "action": "battery",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Ask the installer to verify battery compatibility, charging settings, and isolated wiring.",
+              "ar": "اطلب من المركّب التحقق من توافق البطارية وإعدادات الشحن والتوصيلات بعد عزل التغذية."
+            }
+          ]
+        },
+        {
+          "code": "04",
+          "type": "Warning",
+          "name": "Low battery",
+          "name_ar": "انخفاض شحن البطارية",
+          "action": "low_battery",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Check the displayed battery charge level and available charging supply.",
+              "ar": "تحقّق من مستوى شحن البطارية الظاهر ومن توفر مصدر للشحن."
+            },
+            {
+              "en": "Ask your installer to check battery condition and the configured battery type.",
+              "ar": "اطلب من المركّب فحص حالة البطارية ونوعها المحدد في الإعدادات."
+            }
+          ]
+        },
+        {
+          "code": "07",
+          "type": "Warning",
+          "name": "Overload",
+          "name_ar": "زيادة الحمل",
+          "action": "load",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Reduce connected loads using their normal controls.",
+              "ar": "خفّض الأحمال المتصلة باستخدام مفاتيحها العادية."
+            },
+            {
+              "en": "If the alarm remains, arrange an inspection.",
+              "ar": "إذا استمر التنبيه، اطلب فحص الجهاز."
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "type": "Warning",
+          "name": "Output power derating",
+          "name_ar": "خفض قدرة الخرج",
+          "action": "grid",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "15",
+          "type": "Warning",
+          "name": "Low PV energy",
+          "name_ar": "انخفاض طاقة الألواح",
+          "action": "pv",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Stop using the affected system and ask the installer to verify the PV string design against this model’s limits.",
+              "ar": "أوقف استخدام النظام المتأثر واطلب من المركّب التحقق من تصميم سلاسل الألواح وفق حدود هذا الطراز."
+            }
+          ]
+        },
+        {
+          "code": "16",
+          "type": "Warning",
+          "name": "High AC input during DC bus startup",
+          "name_ar": "ارتفاع جهد دخل الشبكة أثناء بدء ناقل التيار المستمر",
+          "action": "grid",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Check whether utility power is available. A technician should verify voltage and frequency.",
+              "ar": "تحقّق من توفر كهرباء الشبكة. يجب أن يفحص فني الجهد والتردد."
+            }
+          ]
+        },
+        {
+          "code": "32",
+          "type": "Warning",
+          "name": "Communication failure between inverter and remote display panel",
+          "name_ar": "خلل الاتصال بين العاكس ولوحة العرض البعيدة",
+          "action": "service",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Record the code and contact a qualified service technician if it persists.",
+              "ar": "سجّل الرمز وتواصل مع فني صيانة مؤهل إذا استمر العطل."
+            }
+          ]
+        },
+        {
+          "code": "Eq",
+          "aliases": [
+            "E9"
+          ],
+          "type": "Warning",
+          "name": "Battery equalization display indicator",
+          "name_ar": "مؤشر موازنة البطارية",
+          "page": 44,
+          "steps": [
+            {
+              "en": "This display indicates battery equalization. Confirm that the selected battery type permits equalization with your installer.",
+              "ar": "يشير العرض إلى موازنة البطارية. أكّد مع المركّب أن نوع البطارية يسمح بالموازنة."
+            }
+          ]
+        },
+        {
+          "code": "bP",
+          "type": "Warning",
+          "name": "Battery not connected display indicator",
+          "name_ar": "مؤشر عدم اتصال البطارية",
+          "page": 44,
+          "steps": [
+            {
+              "en": "Ask the installer to verify whether battery-free operation is intended and supported for your exact system.",
+              "ar": "اطلب من المركّب التحقق مما إذا كان التشغيل دون بطارية مقصودًا ومدعومًا لمنظومتك."
+            }
+          ]
+        }
+      ],
+      "specs": [],
+      "spec_pages": [],
+      "reviewed_on": "2026-10-12"
+    }
+  ],
+  "pending": [
+    {
+      "brand": "Bluesun",
+      "model": "BSM-5000LV-48H",
+      "url": "https://www.bluesunpv.com/downloads/",
+      "image": "images/brands/BSM.jpg"
+    },
+    {
+      "brand": "Dusun",
+      "model": null,
+      "url": "",
+      "image": "",
+      "reason": "Exact brand spelling and inverter model need confirmation; no code list enabled.",
+      "reason_ar": "يجب تأكيد اسم العلامة وطراز العاكس؛ لم تُفعّل قائمة رموز."
+    }
+  ]
+}
