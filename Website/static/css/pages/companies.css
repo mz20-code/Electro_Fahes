@@ -1,0 +1,13 @@
+/* TechVerse — Company directory (companies.html). Loaded only on this page. */
+
+.companies-hero > .btn { margin-top: 22px; }
+.companies-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
+.company-card { display: flex; flex-direction: column; gap: 10px; padding: 26px; transition: border-color var(--motion-fast), transform var(--motion-normal) var(--ease-out); }
+.company-card:hover { border-color: var(--accent-ink); transform: translateY(-3px); }
+.company-monogram { width: 56px; height: 56px; display: grid; place-items: center; border-radius: 16px; background: var(--surface-2); color: var(--accent-ink); font-size: 24px; font-weight: 800; border: 1px solid var(--border); }
+.company-card h2 { font-size: 20px; margin: 6px 0 0; }
+.company-card p { margin: 0; color: var(--muted); font-size: 14px; }
+.company-card .button-row { margin-top: auto; padding-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.companies-grid > .empty-state { grid-column: 1 / -1; padding: 56px 24px; border: 1px dashed var(--border); background: var(--surface); text-align: center; }
+@media (max-width: 1050px) { .companies-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .companies-grid { grid-template-columns: 1fr; } .companies-hero > .btn { width: 100%; justify-content: center; } }

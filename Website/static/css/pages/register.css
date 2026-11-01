@@ -1,0 +1,26 @@
+/* TechVerse — Create-account page (register.html). Loaded only on the register page. */
+
+.register-shell { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 28px; align-items: stretch; padding-block: 48px 24px; max-width: 1180px; }
+.register-side { display: flex; flex-direction: column; gap: 22px; padding: 40px 36px; border-radius: var(--radius-lg); background: var(--accent); color: var(--accent-text); position: relative; overflow: hidden; isolation: isolate; }
+.register-side::after { content: ""; position: absolute; z-index: -1; inset-inline-end: -80px; bottom: -80px; width: 280px; height: 280px; border-radius: 50%; border: 44px solid #14140010; }
+.register-side .eyebrow { color: var(--accent-text); display: inline-flex; align-items: center; gap: 10px; }
+.register-side .small-dot { background: var(--accent-text); box-shadow: none; }
+.register-side h1 { font-size: clamp(30px, 3.2vw, 44px); margin: 0; max-width: 12ch; }
+.register-steps { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 12px; counter-reset: none; }
+.register-steps li { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; background: #14140010; font-weight: 600; font-size: 14px; }
+.register-steps b { font-family: var(--mono); display: grid; place-items: center; min-width: 36px; height: 30px; border-radius: 999px; background: var(--accent-text); color: var(--accent); font-size: 12px; }
+.register-location { margin: auto 0 0; display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.register-location .icon { width: 16px; height: 16px; }
+
+.register-form { padding: 40px 44px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); align-self: stretch; }
+.register-form h2 { font-size: clamp(26px, 2.4vw, 32px); margin: 0; }
+.register-form > p { margin-top: 10px; color: var(--muted); }
+.register-form form { margin-top: 24px; }
+.register-form .btn-primary { margin-top: 12px; min-height: 52px; }
+
+@media (max-width: 1050px) { .register-shell { grid-template-columns: 1fr; } .register-side h1 { max-width: none; } }
+@media (max-width: 600px) {
+  .register-shell { padding-top: 20px; gap: 16px; }
+  .register-side, .register-form { padding: 26px 20px; }
+  .register-steps li { padding: 10px 12px; }
+}

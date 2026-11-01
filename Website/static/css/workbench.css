@@ -98,123 +98,6 @@ a, button, select, [role="tab"], label[for] { cursor: pointer; }
 .language-button { border-radius: 999px; }
 .header-login { border-radius: 999px; }
 
-/* ---------- Home: hero ---------- */
-.wb-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 28px; padding-block: 44px 20px; align-items: stretch; }
-.wb-hero-main { display: flex; flex-direction: column; justify-content: center; padding-block: 12px; }
-.wb-kicker { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-.wb-hero h1 { font-size: clamp(40px, 5.6vw, 78px); max-width: 11ch; font-weight: 750; }
-.wb-hero-main > p { margin-top: 20px; font-size: 17px; color: var(--muted); max-width: 52ch; }
-.wb-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-.wb-hero-facts { list-style: none; padding: 0; margin: 34px 0 0; display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: 13px; color: var(--muted); }
-.wb-hero-facts li { display: inline-flex; align-items: center; gap: 8px; }
-.wb-hero-facts .icon { width: 18px; height: 18px; color: var(--accent-ink); }
-
-.wb-hero-stage { position: relative; min-height: 420px; border-radius: var(--radius-lg); overflow: hidden;
-  background: radial-gradient(120% 90% at 70% 20%, #2a2a12 0%, var(--surface) 55%); border: 1px solid var(--border); box-shadow: var(--shadow); isolation: isolate; }
-:root[data-theme="light"] .wb-hero-stage { background: radial-gradient(120% 90% at 70% 20%, #fff7bf 0%, var(--surface) 60%); }
-.wb-stage-grid { position: absolute; inset: 0; z-index: -1;
-  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 22px 22px; mask-image: radial-gradient(circle at 60% 45%, #000 30%, transparent 75%); }
-.wb-stage-main, .wb-stage-side { position: absolute; object-fit: contain; background: var(--stage); border-radius: 14px; box-shadow: var(--shadow-lift); }
-.wb-stage-main { width: 62%; aspect-ratio: 4 / 3; inset-inline-start: 10%; top: 16%; padding: 14px; transform: rotate(-5deg); }
-.wb-stage-side { width: 38%; aspect-ratio: 4 / 3; inset-inline-end: 7%; bottom: 13%; padding: 10px; transform: rotate(6deg); border: 3px solid var(--accent); }
-.wb-stage-tag { position: absolute; display: inline-flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: .08em; padding: 8px 12px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); color: var(--text); box-shadow: var(--shadow); }
-.wb-stage-tag .icon { width: 14px; height: 14px; color: var(--accent-ink); }
-.wb-tag-a { top: 22px; inset-inline-end: 22px; }
-.wb-tag-b { bottom: 22px; inset-inline-start: 22px; background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
-.wb-tag-b .icon { color: var(--accent-text); }
-
-/* ---------- Home: bento tiles ---------- */
-.wb-bento { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 16px; margin-block: 18px 8px; }
-.wb-tile { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 26px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); color: var(--text); text-decoration: none; overflow: hidden; box-shadow: var(--shadow);
-  transition: border-color var(--motion-fast), box-shadow var(--motion-normal), transform var(--motion-normal) var(--ease-out); }
-.wb-tile:hover, .wb-tile:focus-visible { border-color: var(--accent-ink); box-shadow: var(--glow); transform: translateY(-3px); }
-.wb-tile h2 { font-size: clamp(20px, 1.7vw, 26px); line-height: 1.2; margin: 0; }
-.wb-tile p { margin: 0; color: var(--muted); font-size: 14px; }
-.wb-tile .eyebrow { font-size: 10px; }
-.wb-tile-icon { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 14px; background: var(--accent-soft); color: var(--accent-ink); margin-bottom: 8px; }
-.wb-tile-icon .icon { width: 22px; height: 22px; }
-.wb-tile-link { margin-top: auto; padding-top: 14px; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 650; color: var(--accent-ink); }
-.wb-tile-link .icon { width: 18px; height: 18px; transition: transform var(--motion-normal) var(--ease-out); }
-.wb-tile:hover .wb-tile-link .icon { transform: translateX(4px); }
-html[dir="rtl"] .wb-tile:hover .wb-tile-link .icon { transform: translateX(-4px); }
-html[dir="rtl"] .wb-tile-link .icon, html[dir="rtl"] .wb-category-arrow { transform: scaleX(-1); }
-.wb-tile-guide { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
-.wb-tile-guide p, .wb-tile-guide .eyebrow, .wb-tile-guide .wb-tile-link { color: var(--accent-text); }
-.wb-tile-guide .wb-tile-icon { background: #14140014; color: var(--accent-text); }
-.wb-tile-guide:hover, .wb-tile-guide:focus-visible { border-color: var(--text); box-shadow: 0 22px 50px -22px #ffe500aa; }
-.wb-steps { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 10px 0 0; }
-.wb-steps li { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 600; padding: 6px 12px 6px 6px; border-radius: 999px; background: #14140012; }
-html[dir="rtl"] .wb-steps li { padding: 6px 6px 6px 12px; }
-.wb-steps b { display: grid; place-items: center; min-width: 26px; height: 22px; border-radius: 999px; background: var(--accent-text); color: var(--accent); font-size: 11px; }
-
-/* ---------- Home: sections ---------- */
-.wb-section { margin-top: 64px; }
-.wb-section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px 40px; flex-wrap: wrap; margin-bottom: 22px; }
-.wb-section-head h2 { font-size: clamp(26px, 2.6vw, 38px); margin: 6px 0 0; }
-.wb-section-head p { margin: 0; color: var(--muted); max-width: 46ch; font-size: 14px; }
-
-.wb-categories { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
-.wb-category { position: relative; display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 14px; align-items: center; min-height: 84px; padding: 16px 18px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); color: var(--text); text-decoration: none;
-  transition: border-color var(--motion-fast), background var(--motion-fast), transform var(--motion-normal) var(--ease-out); }
-.wb-category:hover, .wb-category:focus-visible { border-color: var(--accent-ink); background: var(--surface-2); transform: translateY(-2px); }
-.wb-category-icon { grid-row: 1 / 3; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--surface-2); color: var(--accent-ink); transition: background var(--motion-fast), color var(--motion-fast); }
-.wb-category:hover .wb-category-icon { background: var(--accent); color: var(--accent-text); }
-.wb-category-icon .icon { width: 22px; height: 22px; }
-.wb-category-name { font-weight: 650; font-size: 14px; line-height: 1.3; padding-inline-end: 18px; }
-.wb-category-count { font-size: 12px; color: var(--muted); }
-.wb-category-arrow { position: absolute; inset-inline-end: 14px; top: 16px; width: 16px; height: 16px; color: var(--muted); opacity: 0; transition: opacity var(--motion-fast); }
-.wb-category:hover .wb-category-arrow, .wb-category:focus-visible .wb-category-arrow { opacity: 1; color: var(--accent-ink); }
-
-.wb-brand-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
-.wb-brand { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); color: var(--text); text-decoration: none; transition: border-color var(--motion-fast), background var(--motion-fast); }
-.wb-brand:hover, .wb-brand:focus-visible { border-color: var(--accent-ink); background: var(--surface-2); }
-.wb-brand img { width: 56px; height: 56px; object-fit: contain; border-radius: 10px; background: var(--stage); padding: 5px; flex-shrink: 0; }
-.wb-brand span { display: grid; min-width: 0; }
-.wb-brand b { font-size: 15px; }
-.wb-brand small { font-size: 12px; color: var(--muted); font-family: var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-
-/* Home catalog sits after the new sections. */
-.catalog-entry #products { margin-top: 64px; }
-
-/* ---------- Catalog ---------- */
-.shop-sidebar .category-list { gap: 4px; }
-.category-button { border-radius: 12px; transition: background var(--motion-fast), color var(--motion-fast); }
-.category-button.active { background: var(--accent); color: var(--accent-text); }
-.category-button.active .icon { color: var(--accent-text); }
-.search-field, .catalog-sort, .view-switch { border-radius: 999px; background: var(--surface); }
-.search-field input { border-radius: 999px; }
-.shop-help { border-radius: var(--radius); }
-.filter-chip { border-radius: 999px; }
-
-.products-grid { gap: 16px; }
-.product-card { border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow);
-  transition: border-color var(--motion-fast), box-shadow var(--motion-normal), transform var(--motion-normal) var(--ease-out); }
-.product-card:hover, .product-card:focus-within { border-color: var(--accent-ink); box-shadow: var(--shadow-lift); transform: translateY(-3px); }
-.product-image { background: var(--stage); margin: 8px; border-radius: 12px; border-bottom: 0; padding: 30px 16px 14px; }
-.product-image img { mix-blend-mode: multiply; }
-.product-sku { background: #16181b0f; color: #3a3e44; border-radius: 999px; padding: 3px 9px; font-size: 10px; letter-spacing: .06em; }
-.product-body { padding: 10px 18px 18px; }
-.product-name { font-weight: 650; line-height: 1.35; }
-.product-price { font-family: var(--mono); font-weight: 700; letter-spacing: -.02em; }
-.add-button { border-radius: 999px; width: 42px; height: 42px; min-width: 44px; min-height: 44px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); transition: background var(--motion-fast), color var(--motion-fast), border-color var(--motion-fast); }
-.product-card:hover .add-button, .add-button:focus-visible { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
-.list-view .product-image { margin: 8px; border-inline-end: 0; }
-
-/* ---------- Inverter guide ---------- */
-.advisor-flow span { border-radius: 999px; }
-.tab-row { border-radius: 999px; }
-.tab { border-radius: 999px; }
-.advisor-brands, .lookup-card { border-radius: var(--radius-lg); box-shadow: var(--shadow); }
-.brand-button { border-radius: 12px; }
-.inverter-model-card { border-radius: var(--radius); box-shadow: var(--shadow); transition: border-color var(--motion-fast), transform var(--motion-normal) var(--ease-out), box-shadow var(--motion-normal); }
-.inverter-model-card:hover, .inverter-model-card:focus-visible, .inverter-model-card.selected { border-color: var(--accent-ink); transform: translateY(-3px); box-shadow: var(--glow); }
-/* Fix: images used percentage heights inside an auto-sized grid track and
-   overflowed onto the card text. Constrain them to the art box instead. */
-.inverter-model-art { display: flex; align-items: center; justify-content: center; height: 180px; overflow: hidden; background: var(--stage); margin: 8px; border-radius: 12px; }
-.inverter-model-art img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
-.inverter-model-card > h3 { font-family: var(--mono); letter-spacing: -.01em; }
-
 /* ---------- Generic surfaces ---------- */
 .auth-art, .auth-form, .technician-card, .settings-card, .contact-card, .admin-card, .cart-summary, .lookup-card, .product-detail { border-radius: var(--radius-lg); }
 input, select, textarea { border-radius: 12px; background: var(--surface); }
@@ -243,64 +126,55 @@ html[dir="rtl"] .site-footer::before { background: linear-gradient(270deg, var(-
 .footer-bottom .icon { width: 14px; height: 14px; }
 .whatsapp-float { box-shadow: 0 14px 30px -12px #000a; }
 
-/* ---------- Responsive ---------- */
+
+/* ---------- Shared page hero (each page adds its own variations) ---------- */
+.pg-hero { position: relative; margin-top: 28px; padding: 40px 44px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; isolation: isolate; }
+.pg-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px); background-size: 24px 24px; mask-image: linear-gradient(90deg, transparent, #000 70%); }
+html[dir="rtl"] .pg-hero::before { mask-image: linear-gradient(270deg, transparent, #000 70%); }
+.pg-hero .eyebrow { display: inline-flex; align-items: center; gap: 10px; }
+.pg-hero h1 { margin-top: 14px; font-size: clamp(32px, 4vw, 56px); max-width: 18ch; }
+.pg-hero p { margin-top: 14px; color: var(--muted); max-width: 60ch; }
+.pg-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.pg-crumb { color: var(--muted); }
+.pg-crumb a { color: inherit; }
+.pg-crumb a:hover { color: var(--text); }
+
+/* ---------- Shared panels ---------- */
+.panel { border-radius: var(--radius-lg); border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow); }
+.empty-state { border-radius: var(--radius-lg); }
+
+/* ---------- Product card (Home featured row and Shop) ---------- */
+.product-card { border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow);
+  transition: border-color var(--motion-fast), box-shadow var(--motion-normal), transform var(--motion-normal) var(--ease-out); }
+.product-card:hover, .product-card:focus-within { border-color: var(--accent-ink); box-shadow: var(--shadow-lift); transform: translateY(-3px); }
+.product-image { background: var(--stage); margin: 8px; border-radius: 12px; border-bottom: 0; padding: 30px 16px 14px; }
+.product-image img { mix-blend-mode: multiply; }
+.product-sku { background: #16181b0f; color: #3a3e44; border-radius: 999px; padding: 3px 9px; font-size: 10px; letter-spacing: .06em; }
+.product-body { padding: 10px 18px 18px; }
+.product-name { font-weight: 650; line-height: 1.35; }
+.product-price { font-family: var(--mono); font-weight: 700; letter-spacing: -.02em; }
+.add-button { border-radius: 999px; min-width: 44px; min-height: 44px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text); transition: background var(--motion-fast), color var(--motion-fast), border-color var(--motion-fast); }
+.product-card:hover .add-button, .add-button:focus-visible { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
+
+/* ---------- Shared responsive ---------- */
 @media (max-width: 1200px) {
-  .wb-categories { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .footer-top { grid-template-columns: 1.2fr 1fr 1fr; }
   .footer-contact { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; }
 }
-@media (max-width: 1050px) {
-  .wb-hero { grid-template-columns: 1fr; }
-  .wb-hero-stage { min-height: 340px; }
-  .wb-bento { grid-template-columns: 1fr 1fr; }
-  .wb-tile-guide { grid-column: 1 / -1; }
-  .wb-categories { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .inverter-model-art { height: 160px; }
-}
 @media (max-width: 800px) {
-  .wb-section { margin-top: 48px; }
-  .wb-categories { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pg-hero { padding: 30px 26px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 28px; }
   .footer-brand { grid-column: 1 / -1; }
 }
 @media (max-width: 600px) {
-  .wb-hero { padding-block: 26px 8px; gap: 20px; }
-  .wb-hero h1 { font-size: clamp(36px, 11vw, 48px); }
-  .wb-hero-main > p { font-size: 15px; }
-  .wb-hero-actions .btn { flex: 1 1 100%; justify-content: center; }
-  .wb-hero-stage { min-height: 250px; }
-  .wb-stage-tag { font-size: 10px; padding: 6px 10px; }
-  .wb-tag-a { top: 14px; inset-inline-end: 14px; }
-  .wb-tag-b { bottom: 14px; inset-inline-start: 14px; }
-  .wb-bento { grid-template-columns: 1fr; }
-  .wb-tile { padding: 22px; }
-  .wb-category { min-height: 72px; padding: 12px; column-gap: 10px; }
-  .wb-category-icon { width: 38px; height: 38px; }
-  .wb-category-name { font-size: 13px; padding-inline-end: 0; }
-  .wb-category-arrow { display: none; }
-  .wb-brand-list { grid-template-columns: 1fr 1fr; }
-  .wb-brand { padding: 10px; gap: 10px; }
-  .wb-brand img { width: 44px; height: 44px; }
+  .pg-hero { margin-top: 16px; padding: 26px 20px; }
+  .pg-hero-actions .btn { flex: 1 1 100%; justify-content: center; }
   .product-image { margin: 6px; padding: 26px 10px 10px; }
   .product-body { padding: 8px 12px 14px; }
   .footer-contact bdi { font-size: 18px; }
   .footer-bottom { flex-direction: column; gap: 6px; align-items: flex-start; }
 }
-
-/* ---------- Motion ---------- */
-@media (prefers-reduced-motion: no-preference) {
-  .wb-hero-main > * { animation: wb-rise .5s var(--ease-out) both; }
-  .wb-hero-main > :nth-child(2) { animation-delay: 60ms; }
-  .wb-hero-main > :nth-child(3) { animation-delay: 120ms; }
-  .wb-hero-main > :nth-child(4) { animation-delay: 180ms; }
-  .wb-hero-main > :nth-child(5) { animation-delay: 240ms; }
-  .wb-stage-main { animation: wb-float-a 7s ease-in-out infinite alternate; }
-  .wb-stage-side { animation: wb-float-b 8s ease-in-out infinite alternate; }
-}
-@keyframes wb-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-@keyframes wb-float-a { from { transform: rotate(-5deg) translateY(0); } to { transform: rotate(-4deg) translateY(-8px); } }
-@keyframes wb-float-b { from { transform: rotate(6deg) translateY(0); } to { transform: rotate(4.5deg) translateY(6px); } }
 @media (prefers-reduced-motion: reduce) {
-  .wb-tile, .wb-category, .product-card, .inverter-model-card { transition: none; }
-  .wb-tile:hover, .wb-category:hover, .product-card:hover, .inverter-model-card:hover { transform: none; }
+  .product-card, .wb-tile, .pg-card { transition: none !important; }
+  .product-card:hover, .wb-tile:hover, .pg-card:hover { transform: none !important; }
 }

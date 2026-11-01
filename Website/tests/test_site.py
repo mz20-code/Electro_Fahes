@@ -68,7 +68,7 @@ def test_anonymous_api_data_is_protected(client,path):
 
 def test_welcome_signin_enter_and_logout_flow(app,client):
     page=client.get('/').data
-    assert b'id="shop-search"' in page and b'entry-form-panel' not in page
+    assert b'id="featured"' in page and b'id="shop-search"' not in page and b'entry-form-panel' not in page
     assert b'/login?next=/shop/product/tv-001' in page and b'/login?next=/advisor' in page
     assert b'data-add-cart' not in page and b'id="chat-form"' not in page
     user(app)
@@ -76,7 +76,7 @@ def test_welcome_signin_enter_and_logout_flow(app,client):
     assert response.location=='/shop'
     assert client.get('/').location=='/shop' and client.get('/shop').status_code==200
     assert post(client,'/logout').location=='/'
-    assert b'id="shop-search"' in client.get('/').data and client.get('/shop').status_code==302
+    assert b'id="featured"' in client.get('/').data and client.get('/shop').status_code==302
     assert client.get('/api/products').status_code==401
 
 @pytest.mark.parametrize('return_to',['/shop?category=boards','/advisor','https://untrusted.example/','//untrusted.example/','/\\untrusted.example/'])

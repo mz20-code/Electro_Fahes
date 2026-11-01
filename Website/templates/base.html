@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css',v=release) }}">
   <link rel="stylesheet" href="{{ url_for('static',filename='css/experience.css',v=release) }}">
   <link rel="stylesheet" href="{{ url_for('static',filename='css/workbench.css',v=release) }}">
+  {% block page_css %}{% endblock %}
   {% block extra_css %}{% endblock %}
 </head>
 <body class="page-{{ request.endpoint }} {% block body_class %}{% endblock %}">
@@ -24,7 +25,7 @@
   {% if user %}{% for endpoint,key in [('shop','shop'),('ai_advisor','advisor'),('membership','technicians'),('videos','videos'),('companies','companies')] %}
     <a href="{{ url_for(endpoint) }}" {% if request.endpoint==endpoint %}aria-current="page" class="active"{% endif %}>{{ t(key) }}</a>
   {% endfor %}{% else %}
-    <a href="{{ url_for('index') }}#products" {% if request.endpoint in ['index','arabic_preview','english_preview'] %}class="active" aria-current="page"{% endif %}>{{ t('shop') }}</a>
+    <a href="{{ url_for('index') }}#featured" {% if request.endpoint in ['index','arabic_preview','english_preview'] %}class="active" aria-current="page"{% endif %}>{{ t('shop') }}</a>
     <a href="{{ url_for('login',next=url_for('ai_advisor')) }}">{{ t('advisor') }}</a>
     <a href="{{ url_for('contact') }}" {% if request.endpoint=='contact' %}class="active" aria-current="page"{% endif %}>{{ t('contact') }}</a>
   {% endif %}
@@ -40,7 +41,7 @@
 <main id="main">{% block content %}{% endblock %}</main>
 <footer class="site-footer"><div class="container footer-top">
   <div class="footer-brand"><a class="wordmark" href="{{ url_for('shop') if user else url_for('index') }}"><img src="{{ url_for('static',filename='images/logo.png') }}" width="40" height="40" alt=""><span>Tech<span>Verse</span></span></a><p>{{ t('footer_tagline') }}</p><p class="footer-description">{{ t('footer_description') }}</p></div>
-  <nav class="footer-links" aria-label="{{ t('footer_explore') }}"><h2 class="footer-heading">{{ t('footer_explore') }}</h2>{% if user %}<a href="{{ url_for('shop') }}">{{ t('shop') }}</a><a href="{{ url_for('ai_advisor') }}">{{ t('advisor') }}</a><a href="{{ url_for('membership') }}">{{ t('technicians') }}</a><a href="{{ url_for('companies') }}">{{ t('companies') }}</a>{% else %}<a href="{{ url_for('index') }}#products">{{ t('shop') }}</a><a href="{{ url_for('login',next=url_for('ai_advisor')) }}">{{ t('advisor') }}</a><a href="{{ url_for('register') }}">{{ t('register') }}</a>{% endif %}</nav>
+  <nav class="footer-links" aria-label="{{ t('footer_explore') }}"><h2 class="footer-heading">{{ t('footer_explore') }}</h2>{% if user %}<a href="{{ url_for('shop') }}">{{ t('shop') }}</a><a href="{{ url_for('ai_advisor') }}">{{ t('advisor') }}</a><a href="{{ url_for('membership') }}">{{ t('technicians') }}</a><a href="{{ url_for('companies') }}">{{ t('companies') }}</a>{% else %}<a href="{{ url_for('index') }}#featured">{{ t('shop') }}</a><a href="{{ url_for('login',next=url_for('ai_advisor')) }}">{{ t('advisor') }}</a><a href="{{ url_for('register') }}">{{ t('register') }}</a>{% endif %}</nav>
   <nav class="footer-links" aria-label="{{ t('footer_company') }}"><h2 class="footer-heading">{{ t('footer_company') }}</h2><a href="{{ url_for('about') }}">{{ t('about') }}</a>{% if user %}<a href="{{ url_for('sources') }}">{{ t('sources') }}</a>{% endif %}<a href="{{ url_for('contact') }}">{{ t('contact') }}</a><a href="{{ url_for('privacy') }}">{{ t('privacy') }}</a>{% if user and user.role=='admin' %}<a href="{{ url_for('admin_panel') }}">{{ t('admin') }}</a>{% endif %}</nav>
   <a class="footer-contact" href="tel:{{ company_phone_link }}"><span>{{ t('local_support') }}</span><bdi>{{ company_phone }}</bdi><span class="footer-contact-cta">{{ t('contact') }}{{ icon('arrow') }}</span></a>
 </div><div class="container footer-bottom"><span>© {{ current_year }} TechVerse. {{ t('rights') }}</span><span>{{ icon('pin') }}{{ t('location') }}</span></div></footer>

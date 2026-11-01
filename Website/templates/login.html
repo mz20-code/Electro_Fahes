@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
 {% from '_macros.html' import field,icon with context %}
 {% block title %}{{ t('login') }} · TechVerse{% endblock %}
-{% block body_class %}auth-page{% endblock %}
+{% block body_class %}auth-page login-page{% endblock %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static',filename='css/pages/login.css',v=release) }}">{% endblock %}
 {% block content %}
-<section class="auth-layout container">{% include '_auth_art.html' %}<div class="auth-form"><a class="text-link auth-back" href="{{ url_for('index') }}">{{ t('back_shop') }}{{ icon('arrow') }}</a><span class="eyebrow">{{ t('account_registration_eyebrow') }}</span><h2>{{ t('login_title') }}</h2><p>{{ t('login_description') }}</p><form method="post" data-enhanced-form><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.form.get('next',request.args.get('next','/')) }}">{{ field('email','email','email',request.form.get('email',''),placeholder='email_placeholder',autocomplete='email') }}{{ field('password','password','password',autocomplete='current-password') }}<button class="btn btn-primary full-width">{{ t('login') }}{{ icon('arrow') }}</button></form><p class="auth-switch">{{ t('need_account') }} <a href="{{ url_for('register',next=request.form.get('next',request.args.get('next','/'))) }}">{{ t('register') }}</a></p></div></section>
+<section class="container login-shell">
+  <div class="login-card">
+    <div class="login-brand" aria-hidden="true">
+      <img src="{{ url_for('static',filename='images/logo.png') }}" alt="" width="72" height="72">
+      <p class="login-brand-title">{{ t('login_side_title') }}</p>
+      <ul class="login-brand-list"><li>{{ icon('chip') }}{{ t('account_feature_shop') }}</li><li>{{ icon('bolt') }}{{ t('account_feature_guide') }}</li><li>{{ icon('chat') }}{{ t('account_feature_support') }}</li></ul>
+    </div>
+    <div class="auth-form login-form">
+      <a class="text-link auth-back" href="{{ url_for('index') }}">{{ t('back_shop') }}{{ icon('arrow') }}</a>
+      <span class="eyebrow">{{ t('account_registration_eyebrow') }}</span>
+      <h1>{{ t('login_title') }}</h1>
+      <p>{{ t('login_description') }}</p>
+      <form method="post" data-enhanced-form><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="next" value="{{ request.form.get('next',request.args.get('next','/')) }}">{{ field('email','email','email',request.form.get('email',''),placeholder='email_placeholder',autocomplete='email') }}{{ field('password','password','password',autocomplete='current-password') }}<button class="btn btn-primary full-width">{{ t('login') }}{{ icon('arrow') }}</button></form>
+      <p class="auth-switch">{{ t('need_account') }} <a href="{{ url_for('register',next=request.form.get('next',request.args.get('next','/'))) }}">{{ t('register') }}</a></p>
+    </div>
+  </div>
+</section>
 {% endblock %}

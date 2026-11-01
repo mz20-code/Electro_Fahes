@@ -2,6 +2,25 @@
 {% from '_macros.html' import field,icon with context %}
 {% block title %}{{ t('register') }} · TechVerse{% endblock %}
 {% block body_class %}auth-page register-page{% endblock %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static',filename='css/pages/register.css',v=release) }}">{% endblock %}
 {% block content %}
-<section class="auth-layout container">{% include '_auth_art.html' %}<div class="auth-form"><span class="eyebrow">{{ t('account_registration_eyebrow') }}</span><h2>{{ t('register_title') }}</h2><p>{{ t('account_registration_description') }}</p><form method="post" data-enhanced-form><input type="hidden" name="next" value="{{ request.form.get('next',request.args.get('next','/')) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{{ field('full_name','full_name',value=request.form.get('full_name',''),placeholder='name_placeholder',autocomplete='name') }}<div class="form-grid">{{ field('email','email','email',request.form.get('email',''),placeholder='email_placeholder',autocomplete='email') }}{{ field('phone','phone','tel',request.form.get('phone',''),placeholder='phone_placeholder',autocomplete='tel') }}</div>{{ field('password','password','password',autocomplete='new-password') }}<p class="field-hint">{{ t('password_help') }}</p>{{ field('confirm_password','confirm_password','password',autocomplete='new-password') }}<button class="btn btn-primary full-width">{{ t('register') }}{{ icon('arrow') }}</button></form><p class="auth-switch">{{ t('have_account') }} <a href="{{ url_for('login',next=request.form.get('next',request.args.get('next','/'))) }}">{{ t('login') }}</a></p></div></section>
+<section class="container register-shell">
+  <aside class="register-side">
+    <span class="eyebrow"><span class="small-dot"></span>TECHVERSE</span>
+    <h1>{{ t('register_side_title') }}</h1>
+    <ol class="register-steps">
+      <li><b>01</b><span>{{ t('register_step_1') }}</span></li>
+      <li><b>02</b><span>{{ t('register_step_2') }}</span></li>
+      <li><b>03</b><span>{{ t('register_step_3') }}</span></li>
+    </ol>
+    <p class="register-location">{{ icon('pin') }}{{ t('location') }}</p>
+  </aside>
+  <div class="auth-form register-form">
+    <span class="eyebrow">{{ t('account_registration_eyebrow') }}</span>
+    <h2>{{ t('register_title') }}</h2>
+    <p>{{ t('account_registration_description') }}</p>
+    <form method="post" data-enhanced-form><input type="hidden" name="next" value="{{ request.form.get('next',request.args.get('next','/')) }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}">{{ field('full_name','full_name',value=request.form.get('full_name',''),placeholder='name_placeholder',autocomplete='name') }}<div class="form-grid">{{ field('email','email','email',request.form.get('email',''),placeholder='email_placeholder',autocomplete='email') }}{{ field('phone','phone','tel',request.form.get('phone',''),placeholder='phone_placeholder',autocomplete='tel') }}</div><div class="form-grid">{{ field('password','password','password',autocomplete='new-password') }}{{ field('confirm_password','confirm_password','password',autocomplete='new-password') }}</div><p class="field-hint">{{ t('password_help') }}</p><button class="btn btn-primary full-width">{{ t('register') }}{{ icon('arrow') }}</button></form>
+    <p class="auth-switch">{{ t('have_account') }} <a href="{{ url_for('login',next=request.form.get('next',request.args.get('next','/'))) }}">{{ t('login') }}</a></p>
+  </div>
+</section>
 {% endblock %}

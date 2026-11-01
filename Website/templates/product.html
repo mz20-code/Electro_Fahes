@@ -2,11 +2,32 @@
 {% from '_macros.html' import icon with context %}
 {% block title %}{{ local(product,'name') }} · TechVerse{% endblock %}
 {% block body_class %}product-page{% endblock %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static',filename='css/pages/product.css',v=release) }}">{% endblock %}
 {% block content %}
-<section class="container section product-section">
-  <nav class="breadcrumbs" aria-label="{{ t('back_shop') }}"><a href="{{ url_for('shop') }}">{{ t('shop') }}</a>{{ icon('chevron') }}<a href="{{ url_for('shop',category=product.category) }}">{{ t('cat_'+product.category) }}</a>{{ icon('chevron') }}<span><bdi>{{ product.id|upper }}</bdi></span></nav>
-  <div class="product-detail"><div><div class="product-large-image"><span class="product-reference-label">{{ t('product_reference') }}</span><img src="{{ image_url(product.image_path) }}" alt="{{ local(product,'name') }}" width="640" height="480" fetchpriority="high"></div><p class="product-image-caption">{{ icon('shield') }}{{ t('product_order_help') }}</p></div>
-  <div class="product-copy"><span class="product-category-pill">{{ icon(product.category) }}{{ t('cat_'+product.category) }}</span><h1>{{ local(product,'name') }}</h1><p>{{ local(product,'description') }}</p><div class="product-purchase"><span class="product-price">{% if product.price_cents is not none %}{{ money(product.price_cents) }}{% else %}{{ t('request_price') }}{% endif %}</span>{% if product.price_cents is none %}<p class="small muted">{{ t('product_request_caption') }}</p>{% endif %}<div class="button-row"><button type="button" class="btn btn-primary" data-add-cart="{{ product.id }}">{{ icon('cart') }}{{ t('add_to_cart') }}</button><a class="btn btn-secondary" href="{{ wa_url(t('whatsapp_product')+' '+local(product,'name')) }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ icon('whatsapp') }}{{ t('ask_product') }}</a></div></div>
-  <details class="detail-note product-know-more" open><summary>{{ t('product_details_heading') }}</summary><p class="small muted">{{ t('sku') }}: <bdi>{{ product.id }}</bdi></p><p class="small muted">{{ t('photo_note') }}</p>{% if product.photo_source and product.photo_source.source_url %}{% if product.photo_source.match_type=='representative' %}<p class="small muted">{{ t('representative_photo') }}</p>{% endif %}<a class="photo-credit text-link" href="{{ product.photo_source.source_url }}" target="_blank" rel="noopener noreferrer">{{ t('photo_source') }}: {{ product.photo_source.credit }}{{ icon('link') }}</a>{% endif %}</details></div></div>
+<section class="container product-section">
+  <nav class="breadcrumbs pd-crumbs" aria-label="{{ t('back_shop') }}"><a href="{{ url_for('shop') }}">{{ t('shop') }}</a>{{ icon('chevron') }}<a href="{{ url_for('shop',category=product.category) }}">{{ t('cat_'+product.category) }}</a>{{ icon('chevron') }}<span><bdi>{{ product.id|upper }}</bdi></span></nav>
+  <div class="pd-layout">
+    <div class="pd-media">
+      <div class="product-large-image pd-stage"><span class="product-reference-label">{{ t('product_reference') }}</span><img src="{{ image_url(product.image_path) }}" alt="{{ local(product,'name') }}" width="640" height="480" fetchpriority="high"></div>
+      <p class="product-image-caption">{{ icon('shield') }}{{ t('product_order_help') }}</p>
+    </div>
+    <div class="product-copy pd-info">
+      <div class="pd-tags"><span class="product-category-pill">{{ icon(product.category) }}{{ t('cat_'+product.category) }}</span><span class="pd-sku">{{ t('sku') }} · <bdi>{{ product.id|upper }}</bdi></span></div>
+      <h1>{{ local(product,'name') }}</h1>
+      <p class="pd-description">{{ local(product,'description') }}</p>
+      <div class="product-purchase pd-buy">
+        <span class="pd-price-label">{{ t('price_label') }}</span>
+        <span class="product-price">{% if product.price_cents is not none %}{{ money(product.price_cents) }}{% else %}{{ t('request_price') }}{% endif %}</span>
+        {% if product.price_cents is none %}<p class="small muted">{{ t('product_request_caption') }}</p>{% endif %}
+        <div class="button-row"><button type="button" class="btn btn-primary" data-add-cart="{{ product.id }}">{{ icon('cart') }}{{ t('add_to_cart') }}</button><a class="btn btn-secondary" href="{{ wa_url(t('whatsapp_product')+' '+local(product,'name')) }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ icon('whatsapp') }}{{ t('ask_product') }}</a></div>
+      </div>
+      <ul class="pd-assurances">
+        <li>{{ icon('pin') }}<span>{{ t('location') }}</span></li>
+        <li>{{ icon('chat') }}<span>{{ t('local_support') }}</span></li>
+        <li>{{ icon('repair') }}<a href="{{ url_for('membership') }}">{{ t('technicians') }}</a></li>
+      </ul>
+      <details class="detail-note product-know-more" open><summary>{{ t('product_details_heading') }}</summary><p class="small muted">{{ t('sku') }}: <bdi>{{ product.id }}</bdi></p><p class="small muted">{{ t('photo_note') }}</p>{% if product.photo_source and product.photo_source.source_url %}{% if product.photo_source.match_type=='representative' %}<p class="small muted">{{ t('representative_photo') }}</p>{% endif %}<a class="photo-credit text-link" href="{{ product.photo_source.source_url }}" target="_blank" rel="noopener noreferrer">{{ t('photo_source') }}: {{ product.photo_source.credit }}{{ icon('link') }}</a>{% endif %}</details>
+    </div>
+  </div>
 </section>
 {% endblock %}

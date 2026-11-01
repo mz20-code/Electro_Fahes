@@ -1,0 +1,6 @@
+/* TechVerse — Company registration (company_register.html). Loaded only on this page. */
+
+.company-register-hero h1 { margin-top: 10px; }
+.narrow-form { max-width: 880px; margin-top: 28px; padding: 32px; border-top: 4px solid var(--accent); }
+.narrow-form .btn-primary { margin-top: 10px; }
+@media (max-width: 600px) { .narrow-form { padding: 22px; } .narrow-form .btn-primary { width: 100%; justify-content: center; } }

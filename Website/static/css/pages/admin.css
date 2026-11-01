@@ -1,0 +1,19 @@
+/* TechVerse — Administration area (admin_panel, admin_products, edit_product, import_products). Loaded only on admin pages. */
+
+.admin-hero { border-top: 4px solid var(--accent); }
+.admin-hero .button-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.admin-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.admin-layout > .panel, .admin-layout > form.panel { padding: 26px; }
+.admin-layout > .panel:nth-child(n+3) { grid-column: 1 / -1; }
+.admin-layout h2 { font-size: 20px; display: flex; align-items: center; gap: 10px; }
+.count-pill { font-family: var(--mono); font-size: 12px; padding: 3px 10px; border-radius: 999px; background: var(--accent); color: var(--accent-text); }
+.admin-account-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; margin-top: 14px; }
+.admin-account { padding: 14px 16px; border-radius: 14px; background: var(--surface-2); }
+.admin-account h3 { font-size: 15px; margin: 0 0 4px; }
+.product-form { margin-top: 24px; padding: 30px; }
+.admin-products-hero ~ * table, .catalog-scroll table { font-size: 14px; }
+table { border-collapse: collapse; width: 100%; }
+th { text-align: start; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--line-subtle); }
+@media (max-width: 800px) { .admin-layout { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .admin-layout > .panel, .admin-layout > form.panel, .product-form { padding: 20px; } }

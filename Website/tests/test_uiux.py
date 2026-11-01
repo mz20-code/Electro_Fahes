@@ -56,16 +56,19 @@ def test_authenticated_markup_and_assets(app, client, language, path):
             assert client.get(target).status_code == 200, target
 
 
-def test_catalog_controls_have_labels_and_private_links(client):
-    body = client.get("/").get_data(as_text=True)
+def test_catalog_controls_have_labels_and_private_links(app, client):
+    home = client.get("/").get_data(as_text=True)
+    assert "data-add-cart" not in home and 'id="shop-search"' not in home
+    assert "/login?next=/shop/product/tv-001" in home
+    assert "/login?next=/shop?category%3Dboards" in home
+    login_as(client, user(app))
+    body = client.get("/shop").get_data(as_text=True)
     markup = Markup(body)
     ids = {a.get("id") for _, a in markup.tags}
     assert {"shop-search", "shop-sort", "clear-search", "active-category", "catalog-status", "collection-title"} <= ids
     assert body.count("data-catalog-view=") == 2
-    assert "data-add-cart" not in body
     assert 'id="catalog-status"' in body and 'aria-atomic="true"' in body
-    assert b"/login?next=/shop/product/tv-001" in body.encode()
-    assert b"results-count" not in body.encode()
+    assert "results-count" not in body
 
 
 def test_new_translation_keys_cover_both_languages():

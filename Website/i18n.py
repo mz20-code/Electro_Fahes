@@ -502,6 +502,16 @@ brands_copy|Each code is checked against that model's official manual.|كل رم
 items_count|items|منتجات
 footer_explore|Explore|استكشف
 footer_company|TechVerse|TechVerse
+featured_heading|Popular parts|قطع مطلوبة
+featured_all|See the full shop|عرض المتجر كاملًا
+cta_title|Ready to build something?|جاهز لتصنع شيئًا؟
+cta_copy|Create a free account to see every product, save a cart, and use the inverter guide.|أنشئ حسابًا مجانيًا لرؤية كل المنتجات وحفظ سلتك واستخدام دليل الإنفرتر.
+price_label|Price|السعر
+login_side_title|Welcome back to the workbench.|أهلًا بعودتك إلى الورشة.
+register_side_title|One account. Everything TechVerse.|حساب واحد. كل ما في TechVerse.
+register_step_1|Create your free account|أنشئ حسابك المجاني
+register_step_2|Browse every part and price|تصفّح كل القطع والأسعار
+register_step_3|Send an order request or decode an inverter code|أرسل طلبًا أو افهم رمز خطأ الإنفرتر
 '''
 PAIRS={k:(en,ar) for k,en,ar in (line.split('|',2) for line in _TEXT.strip().splitlines() if line.strip())}
 translations={lang:{k:pair[i] for k,pair in PAIRS.items()} for i,lang in enumerate(('en','ar'))}

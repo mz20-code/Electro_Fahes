@@ -60,17 +60,45 @@ Review on actual phones/desktops before production deployment.
 
 ## Workbench edition (2026-11-01)
 
-Redesign layer: `static/css/workbench.css`, loaded after `experience.css`.
-Direction from UI UX Pro Max ("Feature-Rich Showcase" + bento blocks), kept on
-the TechVerse palette rather than the tool's generic store palette.
+### CSS files
 
-- Home: hero with product "stage", bento service tiles (inverter guide in
-  signal yellow, technicians, support), category tiles with real item counts
-  linking to `?category=`, inverter brand/manual strip, then the catalog.
-- Pill navigation with a yellow active state; rounded pill buttons with an
-  arrow nudge on hover; cards lift 3px with a yellow border on hover.
-- Product photos sit on a light "stage" in both themes; SKUs, prices, model
-  names, and the phone number use a local monospace stack.
-- Four-column footer (brand, explore, company, contact card).
+Shared on every page (loaded by `base.html`):
+
+- `static/css/style.css`, `static/css/experience.css` — original base styles.
+- `static/css/workbench.css` — design tokens, header, buttons, forms, footer,
+  the shared page hero (`.pg-hero`) and the product card.
+
+One file per page in `static/css/pages/`, linked from that page's template
+through `{% block page_css %}`:
+
+| Page | Template | CSS |
+| --- | --- | --- |
+| Home | welcome.html | pages/home.css |
+| Sign in | login.html | pages/login.css |
+| Create account | register.html | pages/register.css |
+| Shop | shop.html (+ _catalog.html) | pages/shop.css |
+| Product | product.html | pages/product.css |
+| Inverter guide | ai_advisor.html | pages/advisor.css |
+| Technicians | membership.html | pages/technicians.css |
+| Technician application | technician_application.html | pages/technician-apply.css |
+| Companies | companies.html | pages/companies.css |
+| Company registration | company_register.html | pages/company-register.css |
+| Cart | cart.html | pages/cart.css |
+| Settings | settings.html | pages/settings.css |
+| Contact | contact.html | pages/contact.css |
+| Videos | learn.html | pages/learn.css |
+| About / Privacy | text_page.html | pages/text-page.css |
+| Errors | error.html | pages/error.css |
+| Administration | admin_panel, admin_products, edit_product, import_products | pages/admin.css |
+| Sources | sources.html, photo_sources.html | pages/sources.css |
+
+### Page notes
+
+- Home is a landing page only: hero, service tiles, categories, eight popular
+  products, inverter brands, and a create-account band. The full catalog is on
+  the Shop page (signed-in).
+- Sign in and Create account have separate layouts (dark brand card vs. yellow
+  step list).
+- Product: sticky photo stage, price card, local-support row.
 - Fix: inverter model card images no longer overflow onto the card text.
 - All motion is disabled under `prefers-reduced-motion: reduce`.

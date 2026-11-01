@@ -1,0 +1,36 @@
+/* TechVerse — Inverter guide / advisor page (ai_advisor.html). Loaded only on the advisor page. */
+
+/* ---------- Inverter guide ---------- */
+.advisor-flow span { border-radius: 999px; }
+.tab-row { border-radius: 999px; }
+.tab { border-radius: 999px; }
+.advisor-brands, .lookup-card { border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+.brand-button { border-radius: 12px; }
+.inverter-model-card { border-radius: var(--radius); box-shadow: var(--shadow); transition: border-color var(--motion-fast), transform var(--motion-normal) var(--ease-out), box-shadow var(--motion-normal); }
+.inverter-model-card:hover, .inverter-model-card:focus-visible, .inverter-model-card.selected { border-color: var(--accent-ink); transform: translateY(-3px); box-shadow: var(--glow); }
+/* Fix: images used percentage heights inside an auto-sized grid track and
+   overflowed onto the card text. Constrain them to the art box instead. */
+.inverter-model-art { display: flex; align-items: center; justify-content: center; height: 180px; overflow: hidden; background: var(--stage); margin: 8px; border-radius: 12px; }
+.inverter-model-art img { width: auto; height: auto; max-width: 100%; max-height: 100%; }
+.inverter-model-card > h3 { font-family: var(--mono); letter-spacing: -.01em; }
+
+
+
+.advisor-hero { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 20px 32px; align-items: start; }
+.advisor-hero > :not(.advisor-hero-copy):not(.advisor-hero-mark) { grid-column: 1 / -1; }
+.advisor-hero-mark { width: 120px; height: 120px; border-radius: 32px; display: grid; place-items: center; background: var(--accent); color: var(--accent-text); box-shadow: 0 24px 60px -24px #ffe500aa; transform: rotate(6deg); }
+.advisor-hero-mark .icon { width: 56px; height: 56px; stroke-width: 1.4; }
+.advisor-flow { display: flex; flex-wrap: wrap; gap: 10px; }
+.advisor-flow span { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 8px; background: var(--surface-2); border: 1px solid var(--border); font-size: 13px; font-weight: 600; }
+html[dir="rtl"] .advisor-flow span { padding: 8px 8px 8px 14px; }
+.advisor-flow b { display: grid; place-items: center; min-width: 30px; height: 24px; border-radius: 999px; background: var(--accent); color: var(--accent-text); font-size: 11px; border: 0; }
+.advisor-layout { margin-top: 28px; }
+.advisor-brands { position: sticky; top: 110px; align-self: start; }
+.brand-button.active, .brand-button[aria-pressed="true"] { background: var(--accent-soft); }
+.lookup-result { border-radius: var(--radius); }
+.selected-catalog { border-radius: var(--radius-lg); }
+.catalog-scroll table td:nth-child(2) bdi { font-family: var(--mono); font-weight: 700; }
+.chat-sidebar, .chat-workspace { border-radius: var(--radius-lg); }
+.prompt-card { border-radius: var(--radius); }
+@media (max-width: 1050px) { .advisor-brands { position: static; } .inverter-model-art { height: 160px; } }
+@media (max-width: 600px) { .advisor-hero { grid-template-columns: 1fr; } .advisor-hero-mark { display: none; } }

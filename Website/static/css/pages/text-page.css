@@ -1,0 +1,6 @@
+/* TechVerse — About / privacy text pages (text_page.html). Loaded only on these pages. */
+
+.text-hero { max-width: 880px; }
+.text-hero h1 { margin-bottom: 10px; }
+.text-hero p { font-size: 16px; line-height: 1.75; max-width: 68ch; }
+.text-hero > .btn { margin-top: 24px; }

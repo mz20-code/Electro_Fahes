@@ -2,8 +2,25 @@
 {% from '_macros.html' import icon with context %}
 {% block title %}{{ t('shop') }} · TechVerse{% endblock %}
 {% block body_class %}shop-page{% endblock %}
+{% block page_css %}<link rel="stylesheet" href="{{ url_for('static',filename='css/pages/shop.css',v=release) }}">{% endblock %}
 {% block content %}
-<section class="container page-intro shop-page-intro"><span class="eyebrow">TECHVERSE / {{ t('shop') }}</span><div class="shop-intro-line"><div><h1>{{ t('shop_intro') }}</h1><p>{{ t('shop_description') }}</p></div><a class="btn btn-secondary" href="{{ wa_url() }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ icon('whatsapp') }}{{ t('shop_help_link') }}</a></div></section>
+<section class="container pg-hero shop-hero">
+  <div class="shop-hero-copy">
+    <span class="eyebrow"><span class="small-dot"></span>TECHVERSE / {{ t('shop') }}</span>
+    <h1>{{ t('shop_intro') }}</h1>
+    <p>{{ t('shop_description') }}</p>
+    <div class="pg-hero-actions">
+      <a class="btn btn-primary" href="#products">{{ t('catalog_browse') }}{{ icon('arrow') }}</a>
+      <a class="btn btn-secondary" href="{{ wa_url() }}" {% if wa_configured %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ icon('whatsapp') }}{{ t('shop_help_link') }}</a>
+    </div>
+  </div>
+  <a class="shop-hero-guide" href="{{ url_for('ai_advisor') }}">
+    <span class="shop-hero-guide-icon">{{ icon('bolt') }}</span>
+    <span class="eyebrow">{{ t('guide_kicker') }}</span>
+    <strong>{{ t('tile_guide_title') }}</strong>
+    <span class="text-link">{{ t('get_started') }}{{ icon('arrow') }}</span>
+  </a>
+</section>
 {% include '_catalog.html' %}
 {% endblock %}
 {% block extra_js %}<script src="{{ url_for('static',filename='js/shop.js',v=release) }}" defer></script>{% endblock %}
